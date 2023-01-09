@@ -1,5 +1,7 @@
 # Ranorex
 *.rxlog
+.rximgres
+.rxsettings
 
 # Object files
 *.o
