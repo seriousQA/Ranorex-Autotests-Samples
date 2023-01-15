@@ -1,0 +1,20 @@
+﻿<Properties>
+  <Array name="active" />
+  <ActiveConfiguration value="Release" />
+  <ActivePlatform value="x86" />
+  <Array name="bookmarks" />
+  <Array name="files" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{42F53197-2924-4EC5-9789-6C297AE27EA7}</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>..</string>
+      <string>..\..</string>
+      <string>..\..\Common</string>
+      <string>..\..\Common\ProjectWindow</string>
+      <string>7da33778-e045-4ed9-b2fe-0c21b0408fa9</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution TestProduct[TestProduct[Calculation[]SETUP[]TestProductRepository.rxrep[]]]]&#xD;&#xA;Solution TestProduct\TestProduct\TestProduct.rxtst&#xD;&#xA;Solution TestProduct\TestProduct\Calculation" />
+  <StartupProject value="{42F53197-2924-4EC5-9789-6C297AE27EA7}" />
+</Properties>

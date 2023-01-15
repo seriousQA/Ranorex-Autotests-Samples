@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{42F53197-2924-4EC5-9789-6C297AE27EA7}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TestProductRepository</RootNamespace>
+    <AssemblyName>TestProductRepositoryAutotests</AssemblyName>
+    <RanorexVersion>9.0</RanorexVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <projectdefaultrepository>52556155-1e77-4529-9f97-fbbf76f91ff7</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <OutputPath>..\..\..\Build\Autotests\TestProduct\$(Configuration)_$(Platform)\</OutputPath>
+    <BaseIntermediateOutputPath>..\..\..\Tmp\Autotests\</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>..\..\..\Tmp\Autotests\TestProductRepository\$(Configuration)_$(Platform)\</IntermediateOutputPath>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Win32.Primitives" />
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Common\ProjectWindow\OpenProject.cs">
+      <Link>ProjectWindow\OpenProject.cs</Link>
+      <id>0e987476-cb57-412c-875d-fcc0e599e0de</id>
+    </Compile>
+    <Compile Include="..\..\Common\ProjectWindow\ProjectWindowlib.cs">
+      <Link>ProjectWindow\ProjectWindowlib.cs</Link>
+      <id>679597bf-b067-4da0-8d1c-7253c974fd2e</id>
+    </Compile>
+    <Compile Include="..\..\Common\SETUP\CleanDust.cs">
+      <Link>SETUP\CleanDust.cs</Link>
+      <id>fb870bd1-5aca-4714-8f4b-bde91c6d756c</id>
+    </Compile>
+    <Compile Include="..\..\Common\SETUP\CreateFolderResult.cs">
+      <Link>SETUP\CreateFolderResult.cs</Link>
+      <id>a4138470-a2f5-45eb-b571-3db7224b1861</id>
+    </Compile>
+    <Compile Include="..\..\Common\SETUP\SetKeyboardLayout.cs">
+      <Link>SETUP\SetKeyboardLayout.cs</Link>
+      <id>93736698-1f6f-4489-b1c8-acb14a7e5332</id>
+    </Compile>
+    <Compile Include="..\..\Common\SETUP\SETUPlib.cs">
+      <Link>SETUP\SETUPlib.cs</Link>
+      <id>49798e72-048a-4346-a401-d32b165a7d52</id>
+    </Compile>
+    <Compile Include="..\..\Common\SETUP\TheFirstRun.cs">
+      <Link>SETUP\TheFirstRun.cs</Link>
+      <id>9cc9a53f-6520-4929-af8e-f4b31ffc4621</id>
+    </Compile>
+    <Compile Include="..\..\Common\StartPopupWatcher\StartPopupWatcher.cs">
+      <Link>StartPopupWatcher\StartPopupWatcher.cs</Link>
+      <id>7576cd7c-4066-408e-b9e2-8a74840d822a</id>
+    </Compile>
+    <Compile Include="..\..\Common\TEARDOWN\CleanupFolderResult.cs">
+      <Link>TEARDOWN\CleanupFolderResult.cs</Link>
+      <id>25839352-ce00-4cc7-873b-2c3e6a0b6846</id>
+    </Compile>
+    <Compile Include="..\..\Common\TEARDOWN\CloseApp.cs">
+      <Link>TEARDOWN\CloseApp.cs</Link>
+      <id>b31c5cb3-57b6-4422-8df1-41ef8ceed917</id>
+    </Compile>
+    <Compile Include="..\..\Common\TEARDOWN\TEARDOWNlib.cs">
+      <Link>TEARDOWN\TEARDOWNlib.cs</Link>
+      <id>69e48c82-c087-4297-a452-e83a4b518587</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>6c31243a-401d-4ec5-93c3-be1ddaf606b5</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>8216c949-56a4-4460-8f48-91ceccb82644</id>
+    </Compile>
+    <Compile Include="ProjectWindow\ProjectWindowRepository.cs">
+      <DependentUpon>ProjectWindowRepository.rxrep</DependentUpon>
+      <id>c36f797f-8303-4163-ba21-2c54d588b9a3</id>
+      <BoundTo>4e1d2a87-dc2e-4a4a-ae81-3f691e920225</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="SETUP\SETUPRepository.cs">
+      <DependentUpon>SETUPRepository.rxrep</DependentUpon>
+      <id>90ac16d9-a67e-4a66-a42e-80a602524782</id>
+      <BoundTo>a54f6e69-66ee-4078-969d-4c5e79282e40</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Calculation\DataCompare.cs">
+      <id>23e426f3-0097-4e00-bdf9-c8952869445f</id>
+    </Compile>
+    <Compile Include="Calculation\Cax423_in_Cax633.cs">
+      <id>e3aa9cd3-2562-4628-a1a2-538dc8e94397</id>
+    </Compile>
+    <Compile Include="Calculation\Cax423_in_CaxMCK.cs">
+      <id>0d5d7288-6363-4151-927a-3e7b4ed8cf90</id>
+    </Compile>
+    <Compile Include="Calculation\CK42_in_5_426.cs">
+      <id>16b39df5-bebf-4ab7-a6b3-eee99af734a8</id>
+    </Compile>
+    <Compile Include="Calculation\File_Compare_function.cs">
+      <id>496c49ea-179c-4223-a1f6-19dc65f34042</id>
+    </Compile>
+    <Compile Include="Calculation\UniversalImportPoint.cs">
+      <id>33f3ca89-b74d-42da-8eda-cc78190d19b9</id>
+    </Compile>
+    <Compile Include="Calculation\N24_426_in_25_426.cs">
+      <id>473640db-4fc4-4bd4-9cb1-7a0d4c9061b2</id>
+    </Compile>
+    <Compile Include="Calculation\N24_426_in_Cax423.cs">
+      <id>c94f29d6-eee1-4e28-8284-a9454dbde0e4</id>
+    </Compile>
+    <Compile Include="Calculation\N5_426_in_CK42.cs">
+      <id>d8e5e5f2-d60e-45c6-8eb9-a917541eeb80</id>
+    </Compile>
+    <Compile Include="Calculation\TestProductMathlib.cs">
+      <id>baef0941-4849-4671-bf7e-9b7979850807</id>
+    </Compile>
+    <Compile Include="Calculation\Supportlib.cs">
+      <id>769d5baa-30da-410d-a9de-261e62bd4fd3</id>
+    </Compile>
+    <Compile Include="Calculation\Calculate.cs">
+      <id>1d667257-e910-4e6c-bd1d-efaae1c996b8</id>
+    </Compile>
+    <Compile Include="StartPopupWatcher\StartPopupWatcherRepository.cs">
+      <DependentUpon>StartPopupWatcherRepository.rxrep</DependentUpon>
+      <id>8d9c5311-fd4a-438b-bc44-a0d893bb3475</id>
+      <BoundTo>30d06438-4082-4915-88fe-b2d39126cdf8</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="TEARDOWN\TEARDOWNRepository.cs">
+      <DependentUpon>TEARDOWNRepository.rxrep</DependentUpon>
+      <id>6c7b60e0-a6ca-4549-b36c-cdbd07ad1b15</id>
+      <BoundTo>dc1aa8fa-7ad8-4afa-9535-66f8be37372f</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="TestProductRepository.cs">
+      <DependentUpon>TestProductRepository.rxrep</DependentUpon>
+      <id>683975c1-8e92-4766-b019-588530007fe5</id>
+      <BoundTo>379ea6e3-3e13-4101-b611-be0bc8980f3c</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Common\ProjectWindow\ProjectWindowRepository.rximg">
+      <BoundTo>4e1d2a87-dc2e-4a4a-ae81-3f691e920225</BoundTo>
+      <DependentUpon>ProjectWindowRepository.rxrep</DependentUpon>
+      <Link>ProjectWindow\ProjectWindowRepository.rximg</Link>
+      <imageblob>true</imageblob>
+      <id>630e1572-83cd-4fa8-a397-032e54b1fd8f</id>
+    </None>
+    <None Include="..\..\Common\ProjectWindow\ProjectWindowRepository.rxrep">
+      <Link>ProjectWindow\ProjectWindowRepository.rxrep</Link>
+      <id>4e1d2a87-dc2e-4a4a-ae81-3f691e920225</id>
+      <repoid>705a2861-7371-42c3-9990-25a4035a6a71</repoid>
+      <reporootid>91b5063c-991e-4569-8a65-1fd9e4489978</reporootid>
+    </None>
+    <None Include="..\..\Common\SETUP\SETUPRepository.rximg">
+      <BoundTo>a54f6e69-66ee-4078-969d-4c5e79282e40</BoundTo>
+      <DependentUpon>SETUPRepository.rxrep</DependentUpon>
+      <Link>SETUP\SETUPRepository.rximg</Link>
+      <imageblob>true</imageblob>
+      <id>b2619c4a-3602-4a72-9d6a-7d0b11d8f20a</id>
+    </None>
+    <None Include="..\..\Common\SETUP\SETUPRepository.rxrep">
+      <Link>SETUP\SETUPRepository.rxrep</Link>
+      <id>a54f6e69-66ee-4078-969d-4c5e79282e40</id>
+      <repoid>bba45f16-bf8b-4f95-a22d-bba8941e2639</repoid>
+      <reporootid>3ba399e0-e261-4256-bad3-b90c9aa68b0c</reporootid>
+    </None>
+    <None Include="..\..\Common\StartPopupWatcher\StartPopupWatcherRepository.rximg">
+      <BoundTo>30d06438-4082-4915-88fe-b2d39126cdf8</BoundTo>
+      <DependentUpon>StartPopupWatcherRepository.rxrep</DependentUpon>
+      <Link>StartPopupWatcher\StartPopupWatcherRepository.rximg</Link>
+      <imageblob>true</imageblob>
+      <id>c68c0b0e-d193-413a-90a6-d775bbb0194d</id>
+    </None>
+    <None Include="..\..\Common\StartPopupWatcher\StartPopupWatcherRepository.rxrep">
+      <Link>StartPopupWatcher\StartPopupWatcherRepository.rxrep</Link>
+      <id>30d06438-4082-4915-88fe-b2d39126cdf8</id>
+      <repoid>567c4d32-2810-4de6-9b54-9a102fa81b32</repoid>
+      <reporootid>8ff4a2c8-e4aa-4b95-97f5-5576edb6ee7b</reporootid>
+    </None>
+    <None Include="..\..\Common\TEARDOWN\TEARDOWNRepository.rximg">
+      <Link>TEARDOWN\TEARDOWNRepository.rximg</Link>
+      <DependentUpon>TEARDOWNRepository.rxrep</DependentUpon>
+      <id>7aa07475-c894-4f6f-a27a-eff5f19c92c9</id>
+      <BoundTo>dc1aa8fa-7ad8-4afa-9535-66f8be37372f</BoundTo>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="..\..\Common\TEARDOWN\TEARDOWNRepository.rxrep">
+      <Link>TEARDOWN\TEARDOWNRepository.rxrep</Link>
+      <id>dc1aa8fa-7ad8-4afa-9535-66f8be37372f</id>
+      <repoid>dea5881c-fa54-46b4-91c5-451398ac51a6</repoid>
+      <reporootid>5d41cd6a-52d6-4352-9310-43b487a1d714</reporootid>
+    </None>
+    <None Include="app.config">
+      <id>c1bfbb1e-037f-4501-9fcf-41947425ca2e</id>
+    </None>
+    <None Include="TestProductRepository.rximg">
+      <BoundTo>379ea6e3-3e13-4101-b611-be0bc8980f3c</BoundTo>
+      <DependentUpon>TestProductRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>9b412dad-8b42-4917-86f4-53b4c81ebf05</id>
+    </None>
+    <None Include="TestProductRepository.rxrep">
+      <id>379ea6e3-3e13-4101-b611-be0bc8980f3c</id>
+      <repoid>4bb6123b-1205-46f9-8758-6b4889eec156</repoid>
+      <reporootid>89f861dc-98dc-49c2-bf42-20af7dcabd34</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestProduct.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>00d899e8-8ec9-4b34-ba99-ffc33c81faf0</id>
+    </Content>
+    <Content Include="TestProduct.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>dfb023cc-4fe8-457f-be98-2e45c9517b58</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Calculation">
+      <id>7da33778-e045-4ed9-b2fe-0c21b0408fa9</id>
+    </Folder>
+    <Folder Include="ProjectWindow">
+      <id>8bc69d65-ff3a-4fb7-a448-2e4748b45f55</id>
+    </Folder>
+    <Folder Include="TEARDOWN">
+      <id>967a5f21-819f-4733-b30e-61f8a45dffd2</id>
+    </Folder>
+    <Folder Include="StartPopupWatcher">
+      <id>5b8eb005-94a5-43e1-a03b-47aeb42a994c</id>
+    </Folder>
+    <Folder Include="SETUP">
+      <id>036867f9-8de7-4407-b7ee-dda0cd68317c</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>
