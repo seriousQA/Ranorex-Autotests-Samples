@@ -11,12 +11,15 @@ Data driving testing (DDT). Data source: SimpleDataConnector.
 
 ## Geodetic coordinates in Geocentric coordinates smart folder with 2 Test Cases:
 1. **WGS84(G1150)(BLHe)inWGS84(G1150)(XYZ)** XYZ data. Rows:4.
+
 Description: Geodetic coordinates in Geocentric coordinates. WGS84 (G1150) in WGS84 (G1150).
+
 2. **CK42(BLHe)inCK42(XYZ)** XYZ data. Rows:3.
+
 Description: Geodetic coordinates in Geocentric coordinates. CK42 (GOST 32453-2017) in CK42 (GOST 32453-2017).
 
 ## Geocentric coordinates in Geodetic coordinates smart folder with 2 Test Cases:
-3 **WGS84(XYZ)inWGS84(BLHe)** BLHe data. Rows:5.
+3. **WGS84(XYZ)inWGS84(BLHe)** BLHe data. Rows:5.
 Description: Geocentric coordinates in Geodetic coordinates. WGS84 in WGS84.
 4. **PZ90(XYZ)inPZ90(BLHe)** BLHe data. Rows:4.
 Description: Geocentric coordinates in Geodetic coordinates. PZ90 in PZ90.
