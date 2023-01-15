@@ -4641,7 +4641,7 @@ namespace TestProductRepository
             RepoItemInfo _parametersInfo;
             RepoItemInfo _applyInfo;
             RepoItemInfo _okbtnInfo;
-            RepoItemInfo _flatcoordinatesInfo;
+            RepoItemInfo _planecoordinatesInfo;
             RepoItemInfo _restoreutilityInfo;
             RepoItemInfo _plcoordInfo;
 
@@ -4655,7 +4655,7 @@ namespace TestProductRepository
                 _parametersInfo = new RepoItemInfo(this, "Parameters", "button[@accessiblerole='SplitButton']/container[12]/tree[@accessiblerole='Outline']/treeitem[15]", "", 30000, null, "7fce364c-f339-403e-961c-995f00fabea2");
                 _applyInfo = new RepoItemInfo(this, "Apply", "?/?/button[@accessiblename='Apply']", "", 30000, null, "7e626538-d470-4469-beec-19078600c93f");
                 _okbtnInfo = new RepoItemInfo(this, "OKBtn", "?/?/button[@accessiblename='OK']", "", 30000, null, "7c6bf372-938a-4873-89cd-db720d09666b");
-                _flatcoordinatesInfo = new RepoItemInfo(this, "FlatCoordinates", "container[@name='splitter']/?/?/element/tree[@type='QTreeWidget']/treeitem[@text='Flat coordinates']", "", 30000, null, "645de70d-15cf-42ef-b461-24af95b0c142");
+                _planecoordinatesInfo = new RepoItemInfo(this, "PlaneCoordinates", "container[@name='splitter']/?/?/element/tree[@type='QTreeWidget']/treeitem[@text='Plane coordinates']", "", 30000, null, "645de70d-15cf-42ef-b461-24af95b0c142");
                 _restoreutilityInfo = new RepoItemInfo(this, "RestoreUtility", "button[@text='Restore utility']", "", 30000, null, "f828af1d-c05f-4a4f-94bd-356cc5e176c6");
                 _plcoordInfo = new RepoItemInfo(this, "plCoord", "container[@name='splitter']/?/?/element/tree[@type='QTreeWidget']/?/?/cell[@columnindex='2' and @rowindex='2']", "", 30000, null, "4bb485c0-9d81-44f0-bbbe-b4f6562af6bd");
             }
@@ -4781,26 +4781,26 @@ namespace TestProductRepository
             }
 
             /// <summary>
-            /// The FlatCoordinates item.
+            /// The PlaneCoordinates item.
             /// </summary>
             [RepositoryItem("645de70d-15cf-42ef-b461-24af95b0c142")]
-            public virtual Ranorex.TreeItem FlatCoordinates
+            public virtual Ranorex.TreeItem PlaneCoordinates
             {
                 get
                 {
-                    return _flatcoordinatesInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                    return _planecoordinatesInfo.CreateAdapter<Ranorex.TreeItem>(true);
                 }
             }
 
             /// <summary>
-            /// The FlatCoordinates item info.
+            /// The PlaneCoordinates item info.
             /// </summary>
             [RepositoryItemInfo("645de70d-15cf-42ef-b461-24af95b0c142")]
-            public virtual RepoItemInfo FlatCoordinatesInfo
+            public virtual RepoItemInfo PlaneCoordinatesInfo
             {
                 get
                 {
-                    return _flatcoordinatesInfo;
+                    return _planecoordinatesInfo;
                 }
             }
 

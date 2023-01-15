@@ -4,6 +4,7 @@
 *.rxsettings
 *.rximg
 *.rxrep
+*.rxuser
 
 # Object files
 *.o
