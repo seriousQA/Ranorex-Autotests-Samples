@@ -12,6 +12,7 @@
       <string>..\..</string>
       <string>..\..\Common</string>
       <string>..\..\Common\ProjectWindow</string>
+      <string>..\..\Common\SETUP</string>
       <string>..\..\Common\StartPopupWatcher</string>
       <string>7da33778-e045-4ed9-b2fe-0c21b0408fa9</string>
     </ArrayOfString>

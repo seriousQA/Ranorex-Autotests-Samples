@@ -21,8 +21,8 @@ using Ranorex.Core.Testing;
 namespace Calculation
 {
     /// <summary>
-    /// Calculate the coordinates from CK 1942 zone 24 (24_426) coordinate system to the CK 1942 zone 25 (25_426) coordinate system.
-    /// CS = coordinate system.
+    /// Calculate the coordinates from CS 'CK 1942 zone 24 (24_426)' coordinate system 
+    /// to the CS 'CK 1942 zone 25 (25_426)' coordinate system. CS = coordinate system.
     /// </summary>
     [TestModule("9E619F5A-B4B4-496D-8546-F7C5DA8BB8EA", ModuleType.UserCode, 1)]
     public class N24_426_in_25_426 : ITestModule

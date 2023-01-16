@@ -21,8 +21,8 @@ using Ranorex.Core.Testing;
 namespace Calculation
 {
     /// <summary>
-    /// Calculate the coordinates from CK 1942 zone 24 (24_426) coordinate system to the Cax_423 coordinate system.
-    /// CS = coordinate system.
+    /// Calculate the coordinates from CS 'CK 1942 zone 24 (24_426)' coordinate system 
+    /// to the CS 'Cax_423' coordinate system. CS = coordinate system.
     /// </summary>
     [TestModule("3F51ABE0-B064-4EF4-AABC-2C45EB736D2B", ModuleType.UserCode, 1)]
     public class N24_426_in_Cax423 : ITestModule

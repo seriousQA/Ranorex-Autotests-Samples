@@ -21,8 +21,8 @@ using Ranorex.Core.Testing;
 namespace Calculation
 {
     /// <summary>
-    /// Calculate the coordinates from Cax_423 coordinate system to the CaxMCK coordinate system.
-    /// CS = coordinate system.
+    /// Calculate the coordinates from CS 'Cax_423' coordinate system 
+    /// to the CS 'CaxMCK' coordinate system. CS = coordinate system.
     /// </summary>
     [TestModule("91D2AE54-9B12-44EF-A18A-C46BF0EE0D59", ModuleType.UserCode, 1)]
     public class Cax423_in_CaxMCK : ITestModule

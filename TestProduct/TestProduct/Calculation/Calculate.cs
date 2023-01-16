@@ -22,6 +22,7 @@ namespace TestProduct
 {
     /// <summary>
     /// Test Product > Operations > Calculation
+    /// and if Transformation Widget exists then transformation of planar rectangular coordinates
     /// </summary>
     [TestModule("E38E1FC5-5F98-4D60-A766-4304647F795B", ModuleType.UserCode, 1)]
     public class Calculate : ITestModule
@@ -44,13 +45,13 @@ namespace TestProduct
 			
 			/// <summary>
     		/// Selecting transformation parameters
-    		/// <param name="name">geodetic point name.</param>
-    		/// <param name="x1">x-coordinate.</param>
+    		/// <param name="name"> point name.</param>
+    		/// <param name="x1">plane coordinate x1 of initial  point (N).</param>
     		/// for example, value="1234,005"
-    		/// <param name="y1">y-coordinate.</param>
+    		/// <param name="y1">plane coordinate y1 of initial  point (E).</param>
     		/// for example, value="5000,999"
-    		/// <param name="alpha">rectangle.</param>
-    		/// for example, value="50°40'30\"" (50 degrees, 40 minutes, 30 seconds (d°m′s″))
+    		/// <param name="alpha">the angle of rotation of the new CS in relation to the CS being converted;.</param>
+    		/// for example, value="05°40'30\"" (5 degrees, 40 minutes, 30 seconds (d°m′s″))
     		/// </summary>
 			if (repo.SelectTransformationParameters.SelfInfo.Exists(100))
 			{

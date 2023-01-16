@@ -21,13 +21,20 @@ using Ranorex.Core.Testing;
 namespace TestProduct
 {
 	/// <summary>
-    /// 1) Calculating from Geodetic coordinate system to Earth-centered coordinate system.
-    /// 2) Compare x,y,z values by rows (actual - in TestProduct, expected - in data source).
+    /// 1) Calculating from one coordinate system to another coordinate system.
+    /// 2) Compare values by rows (actual - in TestProduct, expected - in data source).
     /// In data source values have benn verified by calculations in Mathcad by A. Kiselevich. 
     /// </summary>
 	[TestModule("4F42A03A-60E0-4913-B027-4A2C44F2E304", ModuleType.UserCode, 1)]
     public class DataCompare : ITestModule
-    { 
+    {
+		// =================================================================================    	
+    	// The geocentric/Earth-centered coordinate system is a geographic coordinate system in which 
+		// the earth is modeled as a sphere or spheroid in a right-handed XYZ (Cartesian) 
+		// system measured from the center of the earth.
+		// =================================================================================
+		
+		// the X-axis points to the prime meridian -> X-coordinate (X)
     	string _X = "";
     	[TestVariable("043544f2-0e17-44d6-8c4e-e9beb39bfb89")]
     	public string X
@@ -36,6 +43,7 @@ namespace TestProduct
     		set { _X = value;}
     	}
     	
+    	// the Y-axis points 90° away in the equatorial plane -> Y-coordinate (Y)
     	string _Y = "";
     	[TestVariable("7bd230f1-3bf1-4110-9d5a-2d3989fc9233")]
     	public string Y
@@ -44,6 +52,7 @@ namespace TestProduct
     		set { _Y = value;}
     	}
     	
+    	// the Z-axis points in the direction of the North Pole -> Z-coordinate (Z)
     	string _Z = "";
     	[TestVariable("c5147e61-2de7-45d5-8238-e281b62658bb")]
     	public string Z
@@ -51,7 +60,14 @@ namespace TestProduct
     		get { return _Z; }
     		set { _Z = value;}
     	}
+    	// =================================================================================
     	
+    	// =================================================================================
+    	// Geodetic coordinates are angular coordinates (longitude and latitude) 
+		// and are defined relative to a particular Earth geodetic datum.
+    	// =================================================================================
+    	
+    	// geodetic latitude (north/south) (B)
     	string _B = "";
     	[TestVariable("cd7394bf-d487-4f87-9fa5-13941253df47")]
     	public string B
@@ -60,14 +76,31 @@ namespace TestProduct
     		set { _B = value; }
     	}
     	
+    	// geodetic longitude (east/west) (L)
     	string _L = "";
     	[TestVariable("f8b6be3e-6704-4d18-87ab-267e81c5a151")]
     	public string L
     	{
     		get { return _L; }
     		set { _L = value; }
-    	}
+    	}    	
     	
+		// ellipsoidal height (He)    	
+    	string _He = "";
+    	[TestVariable("724f0c95-e455-4ec6-8033-ff398aebfd34")]
+    	public string He
+    	{
+    		get { return _He; }
+    		set { _He = value; }
+    	}
+    	// =================================================================================
+    	
+    	// =================================================================================
+    	// Plane (planimetric rectangular) coordinates are linear values (x,y)
+		// that define the relative position of a point in the plane.
+    	// =================================================================================
+    	
+    	// the X-axis -> plane coordinate x (N)
     	string _N = "";
     	[TestVariable("a6a73771-1c27-40b5-9dca-6e9ef4ba54d6")]
     	public string N
@@ -76,6 +109,7 @@ namespace TestProduct
     		set { _N = value; }
     	}
     	
+    	// the Y-axis -> plane coordinate y (E)
     	string _E = "";
     	[TestVariable("8a39a544-2338-4a99-a42c-9c47a0a855bf")]
     	public string E
@@ -83,15 +117,12 @@ namespace TestProduct
     		get { return _E; }
     		set { _E = value; }
     	}
+    	// =================================================================================
     	
-    	string _He = "";
-    	[TestVariable("724f0c95-e455-4ec6-8033-ff398aebfd34")]
-    	public string He
-    	{
-    		get { return _He; }
-    		set { _He = value; }
-    	}
-    	
+		// Normal heights (Hn) is a type of height above sea level introduced by Mikhail Molodenskii. 
+		// Hn of a point is computed as the ratio of a point's geopotential number
+		// (i.e. its geopotential difference with that of sea level),
+		// by the average normal gravity computed along the plumb line of the point.
     	string _Hn = "";
     	[TestVariable("628147fb-7365-456c-b31d-6458a9ac48e9")]
     	public string Hn
