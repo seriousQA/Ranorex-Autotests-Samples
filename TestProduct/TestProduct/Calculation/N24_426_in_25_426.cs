@@ -137,13 +137,7 @@ namespace Calculation
             repo.TransformParamWidget.OKBtn.Click();
             
             // Representation of the East
-			repo.ProjectWindow.File.Click();
-			repo.MenuFile.ProjectProperties.Click();
-			repo.ProjectConfDialog.Parameters.Click();
-			repo.ProjectConfDialog.NZone.DoubleClick();
-			repo.ComboDropdown.ListItemYes.Click();
-			repo.ProjectConfDialog.Apply.Click();
-			repo.ProjectConfDialog.OKBtn.Click();
+			TestProduct.Supportlib.EastRepresentation();
         }
     }
 }

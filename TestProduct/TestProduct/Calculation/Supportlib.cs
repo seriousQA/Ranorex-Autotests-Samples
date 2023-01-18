@@ -118,5 +118,20 @@ namespace TestProduct
 			repo.ImportPointWithPattern.MainWindow.Import.Click();
 			Delay.Milliseconds(100);	
     	}
+    	
+    	/// <summary>
+    	/// Representation of the East
+    	/// </summary>
+    	[UserCodeMethod]
+    	public static void EastRepresentation()
+    	{
+    		repo.ProjectWindow.File.Click();
+			repo.MenuFile.ProjectProperties.Click();
+			repo.ProjectConfDialog.Parameters.Click();
+			repo.ProjectConfDialog.NZone.DoubleClick();
+			repo.ComboDropdown.ListItemYes.Click();
+			repo.ProjectConfDialog.Apply.Click();
+			repo.ProjectConfDialog.OKBtn.Click();
+    	}
     }
 }
