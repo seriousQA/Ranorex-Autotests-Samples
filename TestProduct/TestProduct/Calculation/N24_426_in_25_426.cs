@@ -44,93 +44,34 @@ namespace Calculation
             Delay.SpeedFactor = 1.0;
             
             var repo = TestProductRepository.TestProductRepository.Instance;
-            
-            // ===========================================================================
-            // Creating of CS CK 1942 zone 24 (24_426)
-            // ===========================================================================
-            
-			// File > Geodesic Library
-			repo.ProjectWindow.File.Click();
-			repo.MenuFile.GeodesicLibrary.Click();
-			repo.GeodeticLibraryDialog.CoordinateSystems.Click();
-						
-			// Geodetic Library > Create coordinate system (CS) > Select Transverse Mercator projection
-			repo.GeodeticLibraryDialog.Splitter.Create.Click();
-			repo.SetProjectionType.List.Click();
-			repo.ComboDropdown.TransverseMercator.Click();
-			repo.SetProjectionType.OKBtn.Click();
-			
-			// Rename the new CS to 24_426
-			repo.GeodeticLibraryDialog.ParamWidget.NewCS.DoubleClick();
-			repo.GeodeticLibraryDialog.Splitter.QLineEdit.TextValue = "24_426";
-			
-			// Datum > CK-42 (GOST 32453-2017)
-			repo.GeodeticLibraryDialog.ParamWidget.WGS84.DoubleClick();
-			repo.ComboDropdown.CK42GOST.Click();
-			
-			// Zone width > 6 deg
-			repo.GeodeticLibraryDialog.ParamWidget.ZoneWidth.DoubleClick();
-			repo.ComboDropdown.ListItem6Deg.Click();
-			
-			// Zone number > 24
-			repo.GeodeticLibraryDialog.ParamWidget.ZoneNo.DoubleClick();
-			repo.GeodeticDataLibrary.QLineEdit.PressKeys("{NumPad2}{NumPad4}{Return}");
-            
-            // Eo > 500 000
-            repo.GeodeticLibraryDialog.ParamWidget.Eo.DoubleClick();	
-            repo.GeodeticLibraryDialog.Splitter.QtSpinboxLineedit.TextValue = "500000";
-            repo.GeodeticLibraryDialog.Apply.Click();
-            repo.GeodeticLibraryDialog.OKBtn.Click();
-            // ===========================================================================
-            
-			// ===========================================================================
-            // Creating of CS CK 1942 zone 25 (25_426)
-            // ===========================================================================
-            
-			// File > Geodesic Library
-			repo.ProjectWindow.File.Click();
-			repo.MenuFile.GeodesicLibrary.Click();
-			
-			// Geodetic Library > Create coordinate system (CS) > Select Transverse Mercator projection
-			repo.GeodeticLibraryDialog.Splitter.Create.Click();
-			repo.SetProjectionType.List.Click();
-			repo.ComboDropdown.TransverseMercator.Click();
-			repo.SetProjectionType.OKBtn.Click();
-			
-			// Rename the new CS to 25_426
-			repo.GeodeticLibraryDialog.ParamWidget.NewCS.DoubleClick();
-			repo.GeodeticLibraryDialog.Splitter.QLineEdit.TextValue = "25_426";
-			
-			// Datum > CK-42 (GOST 32453-2017)
-			repo.GeodeticLibraryDialog.ParamWidget.WGS84.DoubleClick();
-			repo.ComboDropdown.CK42GOST.Click();
-			
-			// Zone width > 6 deg
-			repo.GeodeticLibraryDialog.ParamWidget.ZoneWidth.DoubleClick();
-			repo.ComboDropdown.ListItem6Deg.Click();
-			
-			// Zone number > 25
-			repo.GeodeticLibraryDialog.ParamWidget.ZoneNo.DoubleClick();
-			repo.GeodeticDataLibrary.QLineEdit.PressKeys("{NumPad2}{NumPad5}{Return}");
-            
-            // Eo > 500 000
-            repo.GeodeticLibraryDialog.ParamWidget.Eo.DoubleClick();
-            repo.GeodeticLibraryDialog.Splitter.QtSpinboxLineedit.TextValue = "500000";
-            repo.GeodeticLibraryDialog.Apply.Click();
-            repo.GeodeticLibraryDialog.OKBtn.Click();
-            // ===========================================================================	
 
-			/// <summary>
-            /// Left panel Transformation points (Widget) > Select Coordinate System > CS CK 1942 zone 24 (24_426)
-			/// <param name="CSname">the user Coordinate System name.</param>
-			/// </summary>
-			TestProduct.Supportlib.SelectUserCoordinateSystemLeft("24_426");            
+            // Creating of CS CK 1942 zone 24 (24_426)
+            string CSname1 = "24_426";
+            string ZoneWidthValue1 = "6";
+            string ZoneNumberValue1 = "24";
+            string AxialMeridianValue1 = "";
+            string N0Value1 = "";
+            string E0Value1 = "500000";
+            
+            TestProduct.Supportlib.CreateNewCoordinateSystem(CSname1, ZoneWidthValue1, ZoneNumberValue1, 
+                                                             AxialMeridianValue1, N0Value1, E0Value1);
+
+            // Creating of CS CK 1942 zone 25 (25_426)
+            string CSname2 = "25_426";
+            string ZoneWidthValue2 = "6";
+            string ZoneNumberValue2 = "25";
+            string AxialMeridianValue2 = "";
+            string N0Value2 = "";
+            string E0Value2 = "500000";
+            
+			TestProduct.Supportlib.CreateNewCoordinateSystem(CSname2, ZoneWidthValue2, ZoneNumberValue2, 
+                                                             AxialMeridianValue2, N0Value2, E0Value2);
+
+            // Left panel Transformation points (Widget) > Select Coordinate System > CS CK 1942 zone 24 (24_426)            
+			TestProduct.Supportlib.SelectUserCoordinateSystemLeft(CSname1);            
  
-            /// <summary>
-            /// Right panel Transformation points (Widget) > Select Coordinate System > CS CK 1942 zone 25 (25_426)
-			/// <param name="CSname">the user Coordinate System name.</param>
-			/// </summary>
-            TestProduct.Supportlib.SelectUserCoordinateSystemRight("25_426"); 
+			// Right panel Transformation points (Widget) > Select Coordinate System > CS CK 1942 zone 25 (25_426)
+            TestProduct.Supportlib.SelectUserCoordinateSystemRight(CSname2); 
             
             // Representation of the East
 			TestProduct.Supportlib.EastRepresentation();

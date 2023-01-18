@@ -149,6 +149,18 @@ namespace TestProductRepository
             set { _CSname = value; }
         }
 
+        string _ZoneWidthValue = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable ZoneWidthValue.
+        /// </summary>
+        [TestVariable("70268e19-ee17-4fe9-848f-568a2dfa8b00")]
+        public string ZoneWidthValue
+        {
+            get { return _ZoneWidthValue; }
+            set { _ZoneWidthValue = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -1383,6 +1395,7 @@ namespace TestProductRepository
             RepoItemInfo _notstandartInfo;
             RepoItemInfo _importfromgeodeticlibraryInfo;
             RepoItemInfo _helmertInfo;
+            RepoItemInfo _listitenzonewidthInfo;
 
             /// <summary>
             /// Creates a new ComboDropdown  folder.
@@ -1403,9 +1416,10 @@ namespace TestProductRepository
                 _listitem5Info = new RepoItemInfo(this, "ListItem5", "?/?/listitem[@text='5']", "", 30000, null, "5535fc97-e1c0-4661-919b-6d8b6712e0bd");
                 _wgs84Info = new RepoItemInfo(this, "WGS84", "?/?/listitem[@text='WGS-84']", "", 30000, null, "b42c84d5-9622-48e4-9d21-82c15b6e9454");
                 _listitem0001Info = new RepoItemInfo(this, "ListItem0001", "?/?/listitem[@text='0.001']", "", 30000, null, "5a9ce205-bd51-4ffe-bd43-0b9b366e6573");
-                _notstandartInfo = new RepoItemInfo(this, "NotStandart", "?/?/listitem[@text='Notstandart']", "", 30000, null, "7c81a933-bd5b-4ebf-a626-23b0d64a114d");
+                _notstandartInfo = new RepoItemInfo(this, "NotStandart", "?/?/listitem[@text='Non-standard']", "", 30000, null, "7c81a933-bd5b-4ebf-a626-23b0d64a114d");
                 _importfromgeodeticlibraryInfo = new RepoItemInfo(this, "ImportFromGeodeticLibrary", "?/?/listitem[@text>'Import from geodetic library']", "", 30000, null, "6e5362d2-5127-44c1-9424-04aabcfe6b45");
                 _helmertInfo = new RepoItemInfo(this, "Helmert", "?/?/listitem[@text='Helmert']", "", 30000, null, "018dbf65-357d-41f0-9325-44c63050d86f");
+                _listitenzonewidthInfo = new RepoItemInfo(this, "ListItenZoneWidth", "?/?/listitem[@text=$ZoneWidthValue]", "", 30000, null, "ddcd7e64-d41d-4e66-b890-f06011549c19");
             }
 
             /// <summary>
@@ -1813,6 +1827,30 @@ namespace TestProductRepository
                 get
                 {
                     return _helmertInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ListItenZoneWidth item.
+            /// </summary>
+            [RepositoryItem("ddcd7e64-d41d-4e66-b890-f06011549c19")]
+            public virtual Ranorex.ListItem ListItenZoneWidth
+            {
+                get
+                {
+                    return _listitenzonewidthInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ListItenZoneWidth item info.
+            /// </summary>
+            [RepositoryItemInfo("ddcd7e64-d41d-4e66-b890-f06011549c19")]
+            public virtual RepoItemInfo ListItenZoneWidthInfo
+            {
+                get
+                {
+                    return _listitenzonewidthInfo;
                 }
             }
         }

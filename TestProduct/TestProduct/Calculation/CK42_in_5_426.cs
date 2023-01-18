@@ -42,55 +42,24 @@ namespace Calculation
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             
-			var repo = TestProductRepository.TestProductRepository.Instance;
-			
-			// ===========================================================================
+			var repo = TestProductRepository.TestProductRepository.Instance;			
+
             // Creating of CS CK 1942 zone 5 (5_426)
-            // ===========================================================================
+            string CSname1 = "5_426";
+            string ZoneWidthValue1 = "6";
+            string ZoneNumberValue1 = "5";
+            string AxialMeridianValue1 = "";
+            string N0Value1 = "";
+            string E0Value1 = "500000";
             
-			// File > Geodesic Library
-			repo.ProjectWindow.File.Click();
-			repo.MenuFile.GeodesicLibrary.Click();
-			repo.GeodeticLibraryDialog.CoordinateSystems.Click();
-			
-			// Geodetic Library > Create coordinate system (CS) > Select Transverse Mercator projection
-			repo.GeodeticLibraryDialog.Splitter.Create.Click();
-			repo.SetProjectionType.List.Click();
-			repo.ComboDropdown.TransverseMercator.Click();
-			repo.SetProjectionType.OKBtn.Click();
-			
-			// Rename the new CS to 5_426
-			repo.GeodeticLibraryDialog.ParamWidget.NewCS.DoubleClick();
-			repo.GeodeticLibraryDialog.Splitter.QLineEdit.TextValue = "5_426";
-			
-			// Datum > CK-42 (GOST 32453-2017)
-			repo.GeodeticLibraryDialog.ParamWidget.WGS84.DoubleClick();
-			repo.ComboDropdown.CK42GOST.Click();
-			
-			// Zone number > 5
-			repo.GeodeticLibraryDialog.ParamWidget.CellWidhZone.DoubleClick();
-			repo.ComboDropdown.ListItem6Deg.Click();
-			repo.GeodeticLibraryDialog.ParamWidget.CellZone.DoubleClick();
-			repo.ComboDropdown.ListItem5.Click();
+            TestProduct.Supportlib.CreateNewCoordinateSystem(CSname1, ZoneWidthValue1, ZoneNumberValue1, 
+                                                             AxialMeridianValue1, N0Value1, E0Value1);
             
-            // Eo > 500 000
-            repo.GeodeticLibraryDialog.ParamWidget.Eo.DoubleClick();	
-            repo.GeodeticLibraryDialog.Splitter.QtSpinboxLineedit.TextValue = "500000";
-            repo.GeodeticLibraryDialog.Apply.Click();
-            repo.GeodeticLibraryDialog.OKBtn.Click();
-            // ===========================================================================
-            
-            /// <summary>
-            /// Left panel Transformation points (Widget) > Select Coordinate System > CS CK-42 (GOST 32453-2017)
-			/// <param name="CSname">the user Coordinate System name.</param>
-			/// </summary>
-			TestProduct.Supportlib.SelectUserCoordinateSystemLeft("CK-42 (GOST 32453-2017)");            
- 
-            /// <summary>
-            /// Right panel Transformation points (Widget) > Select Coordinate System > CS CK 1942 zone 5 (5_426)
-			/// <param name="CSname">the user Coordinate System name.</param>
-			/// </summary>
-            TestProduct.Supportlib.SelectUserCoordinateSystemRight("5_426"); 
+            // Left panel Transformation points (Widget) > Select Coordinate System > CS CK-42 (GOST 32453-2017)			
+			TestProduct.Supportlib.SelectUserCoordinateSystemLeft("CK-42 (GOST 32453-2017)");  
+			
+            // Right panel Transformation points (Widget) > Select Coordinate System > CS CK 1942 zone 5 (5_426)
+            TestProduct.Supportlib.SelectUserCoordinateSystemRight(CSname1); 
             
             // Representation of the East 
 			TestProduct.Supportlib.EastRepresentation();		

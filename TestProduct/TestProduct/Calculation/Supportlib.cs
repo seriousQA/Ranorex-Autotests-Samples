@@ -27,7 +27,7 @@ namespace TestProduct
     public class Supportlib
     {
     	/// <summary>
-    	/// Operations > Calculation (gui)
+    	/// Operations > Calculation (gui).
     	/// </summary>
     	[UserCodeMethod]
     	public static void Calculation()
@@ -41,7 +41,7 @@ namespace TestProduct
     	}
     	
 		/// <summary>
-    	/// Selecting transformation parameters
+    	/// Selecting transformation parameters.
     	/// <param name="name">geodetic point name.</param>
     	/// <param name="x1">x-coordinate.</param>
     	/// for example, value="1234,005"
@@ -74,7 +74,7 @@ namespace TestProduct
     	}
     	
     	/// <summary>
-    	/// Universal Import Point (gui)
+    	/// Universal Import Point (gui).
     	/// <param name="product">the test product name.</param>
     	/// <param name="filename">the file name with file-format.</param>
     	/// for example, value="5_426.txt"
@@ -120,7 +120,7 @@ namespace TestProduct
     	}
     	
     	/// <summary>
-    	/// Representation of the East
+    	/// Representation of the East.
     	/// </summary>
     	[UserCodeMethod]
     	public static void EastRepresentation()
@@ -137,7 +137,7 @@ namespace TestProduct
     	}
     	
     	/// <summary>
-    	/// Select the user Coordinate System (left panel)
+    	/// Select the user Coordinate System (left panel).
     	/// <param name="CSname">the user Coordinate System name.</param>
     	/// </summary>
     	[UserCodeMethod]
@@ -165,7 +165,7 @@ namespace TestProduct
     	}    	
     	
     	/// <summary>
-    	/// Select the user Coordinate System (right panel)
+    	/// Select the user Coordinate System (right panel).
     	/// <param name="CSname">the user Coordinate System name.</param>
     	/// </summary>
     	[UserCodeMethod]
@@ -190,6 +190,80 @@ namespace TestProduct
             }
             repo.SelectCoordinateSystem.OKBtn.Click();
             repo.TransformParamWidget.OKBtn.Click();
+    	}    	
+    	
+    	/// <summary>
+    	/// Cretae a new CS with parameters.
+    	/// <param name="CSname">the user Coordinate System name.</param>
+    	/// <param name="ZoneWidthValue">the width value of Zone ("Non-standard" or "3" or "6").</param>
+    	/// <param name="ZoneNumberValue">the numer of Zone.</param>
+    	/// <param name="AxialMeridianValue">the Axial Meridian value.</param>
+    	/// <param name="N0Value">the value of N0.</param>
+    	/// <param name="E0Value">the value of E0.</param>
+    	/// </summary>
+    	[UserCodeMethod]
+    	public static void CreateNewCoordinateSystem(string CSname, string ZoneWidthValue, 
+    	                                             string ZoneNumberValue, string AxialMeridianValue,
+    	                                             string N0Value, string E0Value)
+    	{
+    		var repo = TestProductRepository.TestProductRepository.Instance;
+    		
+    		// File > Geodesic Library
+			repo.ProjectWindow.File.Click();
+			repo.MenuFile.GeodesicLibrary.Click();
+			repo.GeodeticLibraryDialog.CoordinateSystems.Click();
+			
+			// Geodetic Library > Create coordinate system (CS) > Select Transverse Mercator projection
+			repo.GeodeticLibraryDialog.Splitter.Create.Click();
+			repo.SetProjectionType.List.Click();
+			repo.ComboDropdown.TransverseMercator.Click();
+			repo.GeodeticLibraryDialog.OKBtn.Click();
+			
+			// Rename the new CS to 'CSname'
+			repo.GeodeticLibraryDialog.ParamWidget.NewCS.DoubleClick();
+			repo.GeodeticLibraryDialog.Splitter.QLineEdit.TextValue = CSname;
+			
+			// Datum > CK-42 (GOST 32453-2017)
+			repo.GeodeticLibraryDialog.ParamWidget.WGS84.DoubleClick();
+			repo.ComboDropdown.CK42GOST.Click();
+			
+			// Zone width > "Non-standard" or "3" or "6"
+			if(!ZoneWidthValue.IsEmpty())
+			{
+							repo.GeodeticLibraryDialog.ParamWidget.ZoneWidth.DoubleClick();
+							repo.ComboDropdown.ListItenZoneWidth.Click();
+			}
+			
+			// Zone number
+			if(!ZoneNumberValue.IsEmpty())
+			{
+				repo.GeodeticLibraryDialog.ParamWidget.ZoneNo.DoubleClick();
+				repo.GeodeticDataLibrary.QLineEdit.TextValue = ZoneNumberValue;
+			}
+			
+			// Axial Meridian 
+			if(!AxialMeridianValue.IsEmpty())
+			{
+				repo.GeodeticLibraryDialog.ParamWidget.AxisMeridian.DoubleClick();
+				repo.GeodeticLibraryDialog.Splitter.QtSpinboxLineedit.TextValue = AxialMeridianValue;
+			}
+			
+			// N0 
+			if(!N0Value.IsEmpty())
+			{
+				repo.GeodeticLibraryDialog.ParamWidget.No.DoubleClick();
+				repo.GeodeticLibraryDialog.Splitter.QtSpinboxLineedit.TextValue = N0Value;
+			}
+			
+			// E0 
+			if(!E0Value.IsEmpty())
+			{
+            	repo.GeodeticLibraryDialog.ParamWidget.Eo.DoubleClick();	
+            	repo.GeodeticLibraryDialog.Splitter.QtSpinboxLineedit.TextValue = E0Value;
+			}
+
+            repo.GeodeticLibraryDialog.Apply.Click();
+            repo.GeodeticLibraryDialog.OKBtn.Click();
     	}
     }
 }

@@ -43,96 +43,35 @@ namespace Calculation
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             
-            // Cax423 in CaxMCK
-            
             var repo = TestProductRepository.TestProductRepository.Instance;
-            
-			// ===========================================================================
+
             // Creating of CS CaxMCK
-            // ===========================================================================
+            string CSname1 = "Cax_MCK";
+            string ZoneWidthValue1 = "";
+            string ZoneNumberValue1 = "";
+            string AxialMeridianValue1 = "141°57'00,00\"";
+            string N0Value1 = "-5781357,63";
+            string E0Value1 = "25000";
             
-            // File > Geodesic Library
-			repo.ProjectWindow.File.Click();
-			repo.MenuFile.GeodesicLibrary.Click();
-			repo.GeodeticLibraryDialog.CoordinateSystems.Click();
+            TestProduct.Supportlib.CreateNewCoordinateSystem(CSname1, ZoneWidthValue1, ZoneNumberValue1, 
+                                                             AxialMeridianValue1, N0Value1, E0Value1);
 			
-			// Geodetic Library > Create coordinate system (CS) > Select Transverse Mercator projection
-			repo.GeodeticLibraryDialog.Splitter.Create.Click();
-			repo.SetProjectionType.List.Click();
-			repo.ComboDropdown.TransverseMercator.Click();
-			repo.SetProjectionType.OKBtn.Click();
-            
-            // Rename the new CS to Cax_MCK
-			repo.GeodeticLibraryDialog.ParamWidget.NewCS.DoubleClick();
-			repo.GeodeticLibraryDialog.Splitter.QLineEdit.TextValue = "Cax_MCK";
-			
-			// Datum > CK-42 (GOST 32453-2017)
-			repo.GeodeticLibraryDialog.ParamWidget.WGS84.DoubleClick();
-			repo.ComboDropdown.CK42GOST.Click();
-			
-            // Eo > 250 000
-            repo.GeodeticLibraryDialog.ParamWidget.Eo.DoubleClick();	
-            repo.GeodeticLibraryDialog.Splitter.QtSpinboxLineedit.TextValue = "25000";
-            
-			// N0			
-			repo.GeodeticLibraryDialog.ParamWidget.No.DoubleClick();
-			repo.GeodeticLibraryDialog.Splitter.QtSpinboxLineedit.TextValue = "-5781357,63";
-			
-			// Axial Meridian 
-			repo.GeodeticLibraryDialog.ParamWidget.AxisMeridian.DoubleClick();
-			repo.GeodeticLibraryDialog.Splitter.QtSpinboxLineedit.TextValue = "141°57'00,00\"";			
-            repo.GeodeticLibraryDialog.Apply.Click();
-            repo.GeodeticLibraryDialog.OKBtn.Click();				
-			// ===========================================================================
-			
-			// ===========================================================================
             // Creating of CS Cax_423
-            // ===========================================================================
-			
-            // File > Geodesic Library
-			repo.ProjectWindow.File.Click();
-			repo.MenuFile.GeodesicLibrary.Click();
-			
-			// Geodetic Library > Create coordinate system (CS) > Select Transverse Mercator projection
-			repo.GeodeticLibraryDialog.Splitter.Create.Click();
-			repo.SetProjectionType.List.Click();
-			repo.ComboDropdown.TransverseMercator.Click();
-			repo.SetProjectionType.OKBtn.Click();
-			
-			// Rename the new CS to Cax_423
-			repo.GeodeticLibraryDialog.ParamWidget.NewCS.DoubleClick();
-			repo.GeodeticLibraryDialog.Splitter.QLineEdit.TextValue = "Cax_423";
-			
-			// Datum > CK-42 (GOST 32453-2017)
-			repo.GeodeticLibraryDialog.ParamWidget.WGS84.DoubleClick();
-			repo.ComboDropdown.CK42GOST.Click();
-			
-			// Zone width > 3 deg
-			repo.GeodeticLibraryDialog.ParamWidget.ZoneWidth.DoubleClick();
-			repo.ComboDropdown.ListItem3Deg.Click();
-			
-			// Zone number > 47
-			repo.GeodeticLibraryDialog.ParamWidget.ZoneNo.DoubleClick();
-			repo.GeodeticDataLibrary.QLineEdit.PressKeys("{NumPad4}{NumPad7}{Return}");
-			
-            // Eo > 250 000
-            repo.GeodeticLibraryDialog.ParamWidget.Eo.DoubleClick();	
-            repo.GeodeticLibraryDialog.Splitter.QtSpinboxLineedit.TextValue = "250000";
-            repo.GeodeticLibraryDialog.Apply.Click();
-            repo.GeodeticLibraryDialog.OKBtn.Click();
-            // ===========================================================================   
-          
-			/// <summary>
+            string CSname2 = "Cax_423";
+            string ZoneWidthValue2 = "3";
+            string ZoneNumberValue2 = "47";
+            string AxialMeridianValue2 = "";
+            string N0Value2 = "";
+            string E0Value2 = "250000";
+            
+			TestProduct.Supportlib.CreateNewCoordinateSystem(CSname2, ZoneWidthValue2, ZoneNumberValue2, 
+                                                             AxialMeridianValue2, N0Value2, E0Value2);  
+            
             /// Left panel Transformation points (Widget) > Select Coordinate System > CS Cax423  
-			/// <param name="CSname">the user Coordinate System name.</param>
-			/// </summary>
-			TestProduct.Supportlib.SelectUserCoordinateSystemLeft("Cax_423");            
- 
-            /// <summary>
+			TestProduct.Supportlib.SelectUserCoordinateSystemLeft(CSname2);            
+
             /// Right panel Transformation points (Widget) > Select Coordinate System > CS CaxMCK
-			/// <param name="CSname">the user Coordinate System name.</param>
-			/// </summary>
-            TestProduct.Supportlib.SelectUserCoordinateSystemRight("Cax_MCK"); 
+            TestProduct.Supportlib.SelectUserCoordinateSystemRight(CSname1); 
         }
 	}
 }
