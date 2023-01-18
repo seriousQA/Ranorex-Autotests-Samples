@@ -125,6 +125,8 @@ namespace TestProduct
     	[UserCodeMethod]
     	public static void EastRepresentation()
     	{
+    		var repo = TestProductRepository.TestProductRepository.Instance;
+    		
     		repo.ProjectWindow.File.Click();
 			repo.MenuFile.ProjectProperties.Click();
 			repo.ProjectConfDialog.Parameters.Click();
@@ -132,6 +134,62 @@ namespace TestProduct
 			repo.ComboDropdown.ListItemYes.Click();
 			repo.ProjectConfDialog.Apply.Click();
 			repo.ProjectConfDialog.OKBtn.Click();
+    	}
+    	
+    	/// <summary>
+    	/// Select the user Coordinate System (left panel)
+    	/// <param name="CSname">the user Coordinate System name.</param>
+    	/// </summary>
+    	[UserCodeMethod]
+    	public static void SelectUserCoordinateSystemLeft(string CSname)
+    	{
+    		var repo = TestProductRepository.TestProductRepository.Instance;
+    		
+    		repo.ProjectWindow.LeftWidget.Local.Click();
+            repo.TransformParamWidget.Local.DoubleClick();
+            repo.ComboDropdown.ImportFromGeodeticLibrary.Click();
+			if (CSname=="CK-42 (GOST 32453-2017)")
+            {
+            	repo.SelectCoordinateSystem.GeodeticCS.DoubleClick();
+            	repo.SelectCoordinateSystem.CS.EnsureVisible();
+            	repo.SelectCoordinateSystem.CS.Click();
+            }
+            else
+            {
+				repo.SelectCoordinateSystem.ItemWidget.ExpandAll();
+				repo.SelectCoordinateSystem.CS.EnsureVisible();
+            	repo.SelectCoordinateSystem.CS.Click();
+            }
+            repo.SelectCoordinateSystem.OKBtn.Click();
+            repo.TransformParamWidget.OKBtn.Click();
+    	}    	
+    	
+    	/// <summary>
+    	/// Select the user Coordinate System (right panel)
+    	/// <param name="CSname">the user Coordinate System name.</param>
+    	/// </summary>
+    	[UserCodeMethod]
+    	public static void SelectUserCoordinateSystemRight(string CSname)
+    	{
+    		var repo = TestProductRepository.TestProductRepository.Instance;
+    		
+    		repo.ProjectWindow.RightWidget.Local.Click();
+            repo.TransformParamWidget.Local.DoubleClick();
+            repo.ComboDropdown.ImportFromGeodeticLibrary.Click();            
+            if (CSname=="CK-42 (GOST 32453-2017)")
+            {
+            	repo.SelectCoordinateSystem.GeodeticCS.DoubleClick();
+            	repo.SelectCoordinateSystem.CS.EnsureVisible();
+            	repo.SelectCoordinateSystem.CS.Click();
+            }
+            else
+            {
+				repo.SelectCoordinateSystem.ItemWidget.ExpandAll();
+				repo.SelectCoordinateSystem.CS.EnsureVisible();
+            	repo.SelectCoordinateSystem.CS.Click();
+            }
+            repo.SelectCoordinateSystem.OKBtn.Click();
+            repo.TransformParamWidget.OKBtn.Click();
     	}
     }
 }

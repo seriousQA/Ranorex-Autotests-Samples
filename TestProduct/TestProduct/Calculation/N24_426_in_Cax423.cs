@@ -120,22 +120,18 @@ namespace Calculation
             repo.GeodeticLibraryDialog.OKBtn.Click();
             
             // ===========================================================================
-						
-			// Left panel Transformation points (Widget) > Select Coordinate System > SC CK 1942 zone 24 (24_426)        
-            repo.ProjectWindow.DocWidget.Local.Click();
-            repo.TransformParamWidget.Local.DoubleClick();
-            repo.ComboDropdown.ImportFromGeodeticLibrary.Click();
-            repo.SelectCoordinateSystem.CK24_426.Click();
-            repo.SelectCoordinateSystem.OKBtn.Click();
-            repo.TransformParamWidget.OKBtn.Click();
-            			
-            // Right panel Transformation points (Widget) > Select Coordinate System > SC Cax_423
-            repo.ProjectWindow.Widget.Local.Click();
-            repo.TransformParamWidget.Local.DoubleClick();
-            repo.ComboDropdown.ImportFromGeodeticLibrary.Click();
-            repo.SelectCoordinateSystem.Cax423.Click();
-            repo.SelectCoordinateSystem.OKBtn.Click();
-            repo.TransformParamWidget.OKBtn.Click();
+           
+			/// <summary>
+            /// Left panel Transformation points (Widget) > Select Coordinate System > CS CK 1942 zone 24 (24_426)
+			/// <param name="CSname">the user Coordinate System name.</param>
+			/// </summary>
+			TestProduct.Supportlib.SelectUserCoordinateSystemLeft("24_426");            
+ 
+            /// <summary>
+            /// Right panel Transformation points (Widget) > Select Coordinate System > CS Cax_423
+			/// <param name="CSname">the user Coordinate System name.</param>
+			/// </summary>
+            TestProduct.Supportlib.SelectUserCoordinateSystemRight("Cax_423"); 
             
             // Representation of the East
             TestProduct.Supportlib.EastRepresentation();

@@ -80,25 +80,17 @@ namespace Calculation
             repo.GeodeticLibraryDialog.OKBtn.Click();
             // ===========================================================================
             
-            // Left panel Transformation points (Widget) > Select Coordinate System > SC CK-42 (GOST 32453-2017)           
-            repo.ProjectWindow.DocWidget.Local.Click();
-            repo.TransformParamWidget.Local.DoubleClick();
-            repo.ComboDropdown.ImportFromGeodeticLibrary.Click();
-            repo.SelectCoordinateSystem.GeodeticCS.DoubleClick();
-            repo.SelectCoordinateSystem.CK42GOST.Click();
-            repo.SelectCoordinateSystem.OKBtn.Click();
-            repo.TransformParamWidget.OKBtn.Click();
-
-            // Right panel Transformation points (Widget) > Select Coordinate System > SC CK 1942 zone 5 (5_426)
-            repo.ProjectWindow.Widget.Local.Click();
-            repo.TransformParamWidget.Local.DoubleClick();
-            repo.ComboDropdown.ImportFromGeodeticLibrary.Click();
-			repo.SelectCoordinateSystem.ItemWidget.ExpandAll();
-			repo.SelectCoordinateSystem.CS5_426.EnsureVisible();
-			repo.SelectCoordinateSystem.CS5_426.MoveTo();
-			repo.SelectCoordinateSystem.CS5_426.Click();
-            repo.SelectCoordinateSystem.OKBtn.Click();
-            repo.TransformParamWidget.OKBtn.Click();
+            /// <summary>
+            /// Left panel Transformation points (Widget) > Select Coordinate System > CS CK-42 (GOST 32453-2017)
+			/// <param name="CSname">the user Coordinate System name.</param>
+			/// </summary>
+			TestProduct.Supportlib.SelectUserCoordinateSystemLeft("CK-42 (GOST 32453-2017)");            
+ 
+            /// <summary>
+            /// Right panel Transformation points (Widget) > Select Coordinate System > CS CK 1942 zone 5 (5_426)
+			/// <param name="CSname">the user Coordinate System name.</param>
+			/// </summary>
+            TestProduct.Supportlib.SelectUserCoordinateSystemRight("5_426"); 
             
             // Representation of the East 
 			TestProduct.Supportlib.EastRepresentation();		

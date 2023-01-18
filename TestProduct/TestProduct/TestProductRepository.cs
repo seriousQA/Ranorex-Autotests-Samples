@@ -137,6 +137,18 @@ namespace TestProductRepository
             set { _value = value; }
         }
 
+        string _CSname = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable CSname.
+        /// </summary>
+        [TestVariable("f02e0e13-e9c1-47a4-be2c-cab901a50a07")]
+        public string CSname
+        {
+            get { return _CSname; }
+            set { _CSname = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -1811,9 +1823,9 @@ namespace TestProductRepository
         [RepositoryFolder("3662a38e-71ee-45f1-9923-847fba9fbb81")]
         public partial class ProjectWindowAppFolder : RepoGenBaseFolder
         {
-            TestProductRepositoryFolders.DocWidgetFolder _docwidget;
+            TestProductRepositoryFolders.LeftWidgetFolder _leftwidget;
             TestProductRepositoryFolders.PointItemViewFolder _pointitemview;
-            TestProductRepositoryFolders.WidgetFolder _widget;
+            TestProductRepositoryFolders.RightWidgetFolder _rightwidget;
             RepoItemInfo _fileInfo;
             RepoItemInfo _operationsInfo;
             RepoItemInfo _calculationInfo;
@@ -1829,9 +1841,9 @@ namespace TestProductRepository
             public ProjectWindowAppFolder(RepoGenBaseFolder parentFolder) :
                     base("ProjectWindow", "/form[@name='ProjectWindow']", parentFolder, 30000, null, true, "3662a38e-71ee-45f1-9923-847fba9fbb81", "")
             {
-                _docwidget = new TestProductRepositoryFolders.DocWidgetFolder(this);
+                _leftwidget = new TestProductRepositoryFolders.LeftWidgetFolder(this);
                 _pointitemview = new TestProductRepositoryFolders.PointItemViewFolder(this);
-                _widget = new TestProductRepositoryFolders.WidgetFolder(this);
+                _rightwidget = new TestProductRepositoryFolders.RightWidgetFolder(this);
                 _fileInfo = new RepoItemInfo(this, "File", "element[@type='ui::MenuBar']/?/?/menuitem[@text='File']", "", 30000, null, "a975bca5-0616-4936-85ca-2e2f9784746e");
                 _operationsInfo = new RepoItemInfo(this, "Operations", "element[@type='ui::MenuBar']/?/?/menuitem[@text='Operations']", "", 30000, null, "4af58311-cabf-41ed-8ca8-5cbd6f39f5a5");
                 _calculationInfo = new RepoItemInfo(this, "Calculation", ".//form[@name~'Widget']/toolbar[@name='_Custom_Toolbar_1']/button[@text='Calculation']", "", 30000, null, "6df0b446-55d9-4268-bbed-d72fcc9ed89c");
@@ -2059,12 +2071,12 @@ namespace TestProductRepository
             }
 
             /// <summary>
-            /// The DocWidget folder.
+            /// The LeftWidget folder.
             /// </summary>
             [RepositoryFolder("c712a20e-a860-4f72-91e6-7068de16fef9")]
-            public virtual TestProductRepositoryFolders.DocWidgetFolder DocWidget
+            public virtual TestProductRepositoryFolders.LeftWidgetFolder LeftWidget
             {
-                get { return _docwidget; }
+                get { return _leftwidget; }
             }
 
             /// <summary>
@@ -2077,28 +2089,28 @@ namespace TestProductRepository
             }
 
             /// <summary>
-            /// The Widget folder.
+            /// The RightWidget folder.
             /// </summary>
             [RepositoryFolder("e12b3b7e-44c0-4fa4-add1-53b1e882d302")]
-            public virtual TestProductRepositoryFolders.WidgetFolder Widget
+            public virtual TestProductRepositoryFolders.RightWidgetFolder RightWidget
             {
-                get { return _widget; }
+                get { return _rightwidget; }
             }
         }
 
         /// <summary>
-        /// The DocWidgetFolder folder.
+        /// The LeftWidgetFolder folder.
         /// </summary>
         [RepositoryFolder("c712a20e-a860-4f72-91e6-7068de16fef9")]
-        public partial class DocWidgetFolder : RepoGenBaseFolder
+        public partial class LeftWidgetFolder : RepoGenBaseFolder
         {
             RepoItemInfo _localInfo;
 
             /// <summary>
-            /// Creates a new DocWidget  folder.
+            /// Creates a new LeftWidget  folder.
             /// </summary>
-            public DocWidgetFolder(RepoGenBaseFolder parentFolder) :
-                    base("DocWidget", "", parentFolder, 30000, null, false, "c712a20e-a860-4f72-91e6-7068de16fef9", "")
+            public LeftWidgetFolder(RepoGenBaseFolder parentFolder) :
+                    base("LeftWidget", "", parentFolder, 30000, null, false, "c712a20e-a860-4f72-91e6-7068de16fef9", "")
             {
                 _localInfo = new RepoItemInfo(this, "Local", "container[@type~'Widget']//form[@name~'Widget']/?/?/form[@name~'Widget']/toolbar[@name='_Custom_Toolbar_1']/button[@text>'Local' and @basetype='QToolButton']", "", 30000, null, "bf69ceda-87c5-4407-b72b-0fa794714e52");
             }
@@ -2427,10 +2439,10 @@ namespace TestProductRepository
         }
 
         /// <summary>
-        /// The WidgetFolder folder.
+        /// The RightWidgetFolder folder.
         /// </summary>
         [RepositoryFolder("e12b3b7e-44c0-4fa4-add1-53b1e882d302")]
-        public partial class WidgetFolder : RepoGenBaseFolder
+        public partial class RightWidgetFolder : RepoGenBaseFolder
         {
             RepoItemInfo _cax423Info;
             RepoItemInfo _cax633Info;
@@ -2438,10 +2450,10 @@ namespace TestProductRepository
             RepoItemInfo _localInfo;
 
             /// <summary>
-            /// Creates a new Widget  folder.
+            /// Creates a new RightWidget  folder.
             /// </summary>
-            public WidgetFolder(RepoGenBaseFolder parentFolder) :
-                    base("Widget", ".//form[@name~'Widget']", parentFolder, 30000, null, false, "e12b3b7e-44c0-4fa4-add1-53b1e882d302", "")
+            public RightWidgetFolder(RepoGenBaseFolder parentFolder) :
+                    base("RightWidget", ".//form[@name~'Widget']", parentFolder, 30000, null, false, "e12b3b7e-44c0-4fa4-add1-53b1e882d302", "")
             {
                 _cax423Info = new RepoItemInfo(this, "Cax423", "?/?/form[@name~'Widget']/toolbar[@name='_Custom_Toolbar_1']/button[@text='Cax_423']", "", 30000, null, "466fee7d-aff8-4843-b2e3-10a3fa38b6dd");
                 _cax633Info = new RepoItemInfo(this, "Cax633", "container[@name~'Widget']/form[@name~'Widget']/?/?/button[@text='Cax_633']", "", 30000, null, "07d43a1a-2bf1-4f1b-9537-3a1ec68abfe1");
@@ -5135,6 +5147,7 @@ namespace TestProductRepository
             RepoItemInfo _cax633Info;
             RepoItemInfo _caxmckInfo;
             RepoItemInfo _itemwidgetInfo;
+            RepoItemInfo _csInfo;
 
             /// <summary>
             /// Creates a new SelectCoordinateSystem  folder.
@@ -5146,16 +5159,17 @@ namespace TestProductRepository
                 _geodeticcsInfo = new RepoItemInfo(this, "GeodeticCS", ".//tree[@name='itemWidget']/treeitem[@text='Geodetic CS']", "", 30000, null, "44658d5e-c263-4d75-8feb-8962eaa02768");
                 _okbtnInfo = new RepoItemInfo(this, "OKBtn", "?/?/button[@text='OK']", "", 30000, null, "a4be8ce8-70e8-4546-8e56-5ecca34aeb7f");
                 _nationalInfo = new RepoItemInfo(this, "National", ".//tree[@name='itemWidget']/treeitem[@text='National']", "", 30000, null, "d82c5af9-eb28-4762-92de-11f3af80bb70");
-                _cs5_426Info = new RepoItemInfo(this, "CS5_426", "element[@name='ResourceEditor']/?/?/tree[@name='itemWidget']/?/?/treeitem[@text='5_426']", "", 30000, null, "61ec7312-039d-4546-b60c-865a296aea96");
+                _cs5_426Info = new RepoItemInfo(this, "CS5_426", ".//tree[@name='itemWidget']/?/?/treeitem[@text='5_426']", "", 30000, null, "61ec7312-039d-4546-b60c-865a296aea96");
                 _wgs84Info = new RepoItemInfo(this, "WGS84", ".//tree[@name='itemWidget']/treeitem[@text='Geodetic CS']/treeitem[@text='WGS-84']", "", 30000, null, "d36a39b4-3e3d-4b51-9f8a-5d375c139f20");
                 _lambert1spInfo = new RepoItemInfo(this, "Lambert1SP", ".//tree[@name='itemWidget']/treeitem[@text='Lambert_1SP']", "", 30000, null, "c502dc8a-49be-47be-9fa5-4fccb04f45b6");
                 _lambert2spInfo = new RepoItemInfo(this, "Lambert2SP", ".//tree[@name='itemWidget']/treeitem[@text='Lambert_2SP']", "", 30000, null, "bb5e5a05-0391-45c4-906e-8b7940b4c952");
                 _ck24_426Info = new RepoItemInfo(this, "CK24_426", ".//tree[@name='itemWidget']//treeitem[@text='24_426']", "", 30000, null, "527d49ab-9b82-42a5-b0a3-e4dbe9499d1b");
                 _ck25_426Info = new RepoItemInfo(this, "CK25_426", ".//tree[@name='itemWidget']//treeitem[@text='25_426']", "", 30000, null, "44a1a41a-430c-4859-bacf-c9ea485acc78");
-                _cax423Info = new RepoItemInfo(this, "Cax423", "element[@name='ResourceEditor']/?/?/tree[@name='itemWidget']//treeitem[@text='Cax_423']", "", 30000, null, "00833305-9449-4166-bfd2-2d7cc76259ab");
+                _cax423Info = new RepoItemInfo(this, "Cax423", ".//tree[@name='itemWidget']//treeitem[@text='Cax_423']", "", 30000, null, "00833305-9449-4166-bfd2-2d7cc76259ab");
                 _cax633Info = new RepoItemInfo(this, "Cax633", ".//tree[@name='itemWidget']//treeitem[@text='Cax_633']", "", 30000, null, "be7f13f7-ef22-4cff-b99c-636ff35249cb");
                 _caxmckInfo = new RepoItemInfo(this, "CaxMCK", ".//tree[@name='itemWidget']//treeitem[@text='Cax_MCK']", "", 30000, null, "59f9b7c2-d3fb-45a8-9651-ff82a4a0793c");
                 _itemwidgetInfo = new RepoItemInfo(this, "ItemWidget", "element[@name='ResourceEditor']/?/?/tree[@name='itemWidget']", "", 30000, null, "efedf1c8-59a5-4ab0-a3f6-345b18124e0d");
+                _csInfo = new RepoItemInfo(this, "CS", ".//tree[@name='itemWidget']//treeitem[@text=$CSname]", "", 30000, null, "17729cf9-a705-4d97-bae7-60ae6bb01372");
             }
 
             /// <summary>
@@ -5515,6 +5529,30 @@ namespace TestProductRepository
                 get
                 {
                     return _itemwidgetInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CS item.
+            /// </summary>
+            [RepositoryItem("17729cf9-a705-4d97-bae7-60ae6bb01372")]
+            public virtual Ranorex.TreeItem CS
+            {
+                get
+                {
+                    return _csInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CS item info.
+            /// </summary>
+            [RepositoryItemInfo("17729cf9-a705-4d97-bae7-60ae6bb01372")]
+            public virtual RepoItemInfo CSInfo
+            {
+                get
+                {
+                    return _csInfo;
                 }
             }
         }

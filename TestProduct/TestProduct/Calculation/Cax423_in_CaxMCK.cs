@@ -120,23 +120,19 @@ namespace Calculation
             repo.GeodeticLibraryDialog.Splitter.QtSpinboxLineedit.TextValue = "250000";
             repo.GeodeticLibraryDialog.Apply.Click();
             repo.GeodeticLibraryDialog.OKBtn.Click();
-            // ===========================================================================                  	
-			
-			// Left panel Transformation points (Widget) > Select Coordinate System > SC Cax423     
-            repo.ProjectWindow.DocWidget.Local.Click();
-            repo.TransformParamWidget.Local.DoubleClick();
-            repo.ComboDropdown.ImportFromGeodeticLibrary.Click();
-            repo.SelectCoordinateSystem.Cax423.Click();
-            repo.SelectCoordinateSystem.OKBtn.Click();
-            repo.TransformParamWidget.OKBtn.Click();
-            			
-            // Right panel Transformation points (Widget) > Select Coordinate System > SC CaxMCK
-            repo.ProjectWindow.Widget.Local.Click();
-            repo.TransformParamWidget.Local.DoubleClick();
-            repo.ComboDropdown.ImportFromGeodeticLibrary.Click();
-            repo.SelectCoordinateSystem.CaxMCK.Click();
-            repo.SelectCoordinateSystem.OKBtn.Click();
-            repo.TransformParamWidget.OKBtn.Click();
+            // ===========================================================================   
+          
+			/// <summary>
+            /// Left panel Transformation points (Widget) > Select Coordinate System > CS Cax423  
+			/// <param name="CSname">the user Coordinate System name.</param>
+			/// </summary>
+			TestProduct.Supportlib.SelectUserCoordinateSystemLeft("Cax_423");            
+ 
+            /// <summary>
+            /// Right panel Transformation points (Widget) > Select Coordinate System > CS CaxMCK
+			/// <param name="CSname">the user Coordinate System name.</param>
+			/// </summary>
+            TestProduct.Supportlib.SelectUserCoordinateSystemRight("Cax_MCK"); 
         }
-        }
-    }
+	}
+}
