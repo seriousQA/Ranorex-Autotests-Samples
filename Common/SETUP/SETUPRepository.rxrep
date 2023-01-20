@@ -1,0 +1,709 @@
+﻿<repository
+id="bba45f16-bf8b-4f95-a22d-bba8941e2639"
+name="SETUPRepository"
+rxversion="9.0">
+	<codegen
+	classname="SETUPRepository"
+	namespace="SETUP">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="3ba399e0-e261-4256-bad3-b90c9aa68b0c"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="3d7e668e-a424-46c2-9b4d-136422dbd4fd"
+		isrooted="True"
+		name="FirstRunDialog"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,qtelement"
+			capname="text"
+			id="b6b24b17-dcd7-45e0-a921-fa36648e2ded"
+			name="Path"
+			refimgid="851d03cb-a871-46f3-a2ac-6e0600b0f035"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='FirstRunDialog']/text[@name='Path' and @basetype='QLineEdit']
+			</item>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="3c4293d8-0dc5-4126-96b3-1804c70141d1"
+			name="OKBtn"
+			refimgid="159949b8-fba1-426d-98c7-8ab579c0858c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='FirstRunDialog']/?/?/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@name='FirstRunDialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJpSURBVDhPpdNdSFNhGAfwF7LIJJmkQXRhIGIj
+LDIIs9ZJzRLR0DmkLNvNxBozadMilfmZlp6zzYltfYgxm3HQyGEOpqUGIQ6hBL+GOmo5iSIqG8uc
+0b/tBF10JBg98L95ef8/npuHBIam6V6NRrMSbAI9DmAYxuNbXUWwoRn6OwfQfmDJ7UYw4QCa9nFA
+M/3fAO1xuxfhcjnheOPCu4+fYbbPQDc4hvGpV/731/8GmvzAxIId/ZNj6JlbwugnL4pG5nD43gDK
+zS1gn92Bc2F+fYBh2VAj29Znf9+FSY8Tyz+BFQAPvvggGxpD1aPr6O4vQ2tnI2Znp9ff4OGMYfGM
+xQbj22WM/wCsa4DE/gFCgxXKdjXENWWQqi/jifUxH7hm6a7eVtGOzVdMiL01gr19TsR0O7BBbUG4
+yogKsxEdfRYo6jXovKuH+2+A0ptcW2StIPk3QIpvg5SaQRQdIIUGxNfcx/DLYbimX2ByiEVvO8Pf
+QHiV/rq90F/OqgTJqwMR14PkNCJCqkHr4HNMTNkxamNhs7IwMuV8IL9O/bRA6y8dLwVJuQQikoMc
+LYYgUwVlcy1Mhlp06MtRa9CiSCnlA2U3VRdKW9LXjimk2JhwFkSYCxKTBRKdgdDYQ0hJS8SBXBlE
+DQ1QaSr5gKSkJC5LvtuRWhyNBDGFyLiTIFEUyNYkLqFxeRDkteFIFY0eay8fCMwJiUSRejryW0Hh
+LmTmZGOTIBkhOzIQliRH1Lk27CzQrjXp9NDpdH+i1WoDwO9rpCgqJDFdJD2YvGdAsO+UJyz+vDec
+Unojsuu9EakX56P2p1VzH3lDyC/4mKrUa/xUZQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="6d523494-2aa9-4cf7-81dc-537ed78f9066"
+		isrooted="True"
+		name="StartDialog"
+		refimgid="4cf0e7c5-f0b7-4a22-bea1-f9a653fa27ed"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="b84202c0-a94f-4d6c-b570-50395d7d3a56"
+			name="CreateNewProject"
+			refimgid="8df1a681-654b-4925-8541-4390aec2442f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@type='StartDialog']/button[@text='Create New Project']
+			</item>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="373ec341-b08f-4633-b1d1-c8944acea685"
+			name="OpenProject"
+			refimgid="f07caac2-7c3a-4c02-b8cc-3530af9d2154"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@type='StartDialog']/button[@text='Open Project']
+			</item>
+			<basepath>
+				/form[@type='StartDialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJpSURBVDhPpdNdSFNhGAfwF7LIJJmkQXRhIGIj
+LDIIs9ZJzRLR0DmkLNvNxBozadMilfmZlp6zzYltfYgxm3HQyGEOpqUGIQ6hBL+GOmo5iSIqG8uc
+0b/tBF10JBg98L95ef8/npuHBIam6V6NRrMSbAI9DmAYxuNbXUWwoRn6OwfQfmDJ7UYw4QCa9nFA
+M/3fAO1xuxfhcjnheOPCu4+fYbbPQDc4hvGpV/731/8GmvzAxIId/ZNj6JlbwugnL4pG5nD43gDK
+zS1gn92Bc2F+fYBh2VAj29Znf9+FSY8Tyz+BFQAPvvggGxpD1aPr6O4vQ2tnI2Znp9ff4OGMYfGM
+xQbj22WM/wCsa4DE/gFCgxXKdjXENWWQqi/jifUxH7hm6a7eVtGOzVdMiL01gr19TsR0O7BBbUG4
+yogKsxEdfRYo6jXovKuH+2+A0ptcW2StIPk3QIpvg5SaQRQdIIUGxNfcx/DLYbimX2ByiEVvO8Pf
+QHiV/rq90F/OqgTJqwMR14PkNCJCqkHr4HNMTNkxamNhs7IwMuV8IL9O/bRA6y8dLwVJuQQikoMc
+LYYgUwVlcy1Mhlp06MtRa9CiSCnlA2U3VRdKW9LXjimk2JhwFkSYCxKTBRKdgdDYQ0hJS8SBXBlE
+DQ1QaSr5gKSkJC5LvtuRWhyNBDGFyLiTIFEUyNYkLqFxeRDkteFIFY0eay8fCMwJiUSRejryW0Hh
+LmTmZGOTIBkhOzIQliRH1Lk27CzQrjXp9NDpdH+i1WoDwO9rpCgqJDFdJD2YvGdAsO+UJyz+vDec
+Unojsuu9EakX56P2p1VzH3lDyC/4mKrUa/xUZQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="7846dc71-9b6d-4c80-bfef-f400f97cb875"
+		isrooted="True"
+		name="OpenProject"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,nativeitem,checkable"
+			capname="button"
+			id="a3cbd65d-a8c7-4c98-98f7-675338fadbb3"
+			name="PreviousLocations"
+			refimgid="b7508591-7296-4c24-b539-a7cde6ea2cd2"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Open Project']/element[@class='WorkerW']//progressbar/toolbar[@class='ToolbarWindow32']/button[@text='Previous locations']
+			</item>
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="56856e32-e757-4bdf-9ed2-b3b746cd4d30"
+			name="Text41477"
+			refimgid="7d2683f9-792a-4694-afe6-fa6efba8ce30"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Open Project']/element[@class='WorkerW']//combobox[@controlid='41477']/text[@controlid='41477']
+			</item>
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="cd7cda52-a63c-4613-8020-050dcfad69cd"
+			name="Text1148"
+			refimgid="29a66e6c-ddba-4051-b56d-b6bce14fb2e2"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Open Project']/?/?/text[@controlid='1148']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="288726d3-b25b-403d-93ae-9763d0cc4a8e"
+			name="OpenBtn"
+			refimgid="b3229488-7712-4644-81ce-3a97f3ea134c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Open Project']/button[@text='&amp;Open']
+			</item>
+			<item
+			addcaps="combobox,nativewindow"
+			capname="combobox"
+			id="2cf381a7-efba-44b0-b095-aefe916b8eba"
+			name="ComboBox1136"
+			refimgid="00cab88e-d397-405b-aa2d-068acbfaa088"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Open Project']/combobox[@controlid='1136']
+			</item>
+			<basepath>
+				/form[@title='Open Project']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJpSURBVDhPpdNdSFNhGAfwF7LIJJmkQXRhIGIj
+LDIIs9ZJzRLR0DmkLNvNxBozadMilfmZlp6zzYltfYgxm3HQyGEOpqUGIQ6hBL+GOmo5iSIqG8uc
+0b/tBF10JBg98L95ef8/npuHBIam6V6NRrMSbAI9DmAYxuNbXUWwoRn6OwfQfmDJ7UYw4QCa9nFA
+M/3fAO1xuxfhcjnheOPCu4+fYbbPQDc4hvGpV/731/8GmvzAxIId/ZNj6JlbwugnL4pG5nD43gDK
+zS1gn92Bc2F+fYBh2VAj29Znf9+FSY8Tyz+BFQAPvvggGxpD1aPr6O4vQ2tnI2Znp9ff4OGMYfGM
+xQbj22WM/wCsa4DE/gFCgxXKdjXENWWQqi/jifUxH7hm6a7eVtGOzVdMiL01gr19TsR0O7BBbUG4
+yogKsxEdfRYo6jXovKuH+2+A0ptcW2StIPk3QIpvg5SaQRQdIIUGxNfcx/DLYbimX2ByiEVvO8Pf
+QHiV/rq90F/OqgTJqwMR14PkNCJCqkHr4HNMTNkxamNhs7IwMuV8IL9O/bRA6y8dLwVJuQQikoMc
+LYYgUwVlcy1Mhlp06MtRa9CiSCnlA2U3VRdKW9LXjimk2JhwFkSYCxKTBRKdgdDYQ0hJS8SBXBlE
+DQ1QaSr5gKSkJC5LvtuRWhyNBDGFyLiTIFEUyNYkLqFxeRDkteFIFY0eay8fCMwJiUSRejryW0Hh
+LmTmZGOTIBkhOzIQliRH1Lk27CzQrjXp9NDpdH+i1WoDwO9rpCgqJDFdJD2YvGdAsO+UJyz+vDec
+Unojsuu9EakX56P2p1VzH3lDyC/4mKrUa/xUZQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="170111f4-17f1-4f8d-a4d3-2c283360b1a0"
+		isrooted="True"
+		name="ProcessMonitor"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="7494106d-8e9e-4efb-a465-63486041b2e2"
+			name="Done"
+			refimgid="55982327-3a6a-41f3-bc10-6175abab1441"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='processMonitor' and @basetype='QDialog']/button[@text='Done']
+			</item>
+			<basepath>
+				/form[@name='processMonitor' and @basetype='QDialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJpSURBVDhPpdNdSFNhGAfwF7LIJJmkQXRhIGIj
+LDIIs9ZJzRLR0DmkLNvNxBozadMilfmZlp6zzYltfYgxm3HQyGEOpqUGIQ6hBL+GOmo5iSIqG8uc
+0b/tBF10JBg98L95ef8/npuHBIam6V6NRrMSbAI9DmAYxuNbXUWwoRn6OwfQfmDJ7UYw4QCa9nFA
+M/3fAO1xuxfhcjnheOPCu4+fYbbPQDc4hvGpV/731/8GmvzAxIId/ZNj6JlbwugnL4pG5nD43gDK
+zS1gn92Bc2F+fYBh2VAj29Znf9+FSY8Tyz+BFQAPvvggGxpD1aPr6O4vQ2tnI2Znp9ff4OGMYfGM
+xQbj22WM/wCsa4DE/gFCgxXKdjXENWWQqi/jifUxH7hm6a7eVtGOzVdMiL01gr19TsR0O7BBbUG4
+yogKsxEdfRYo6jXovKuH+2+A0ptcW2StIPk3QIpvg5SaQRQdIIUGxNfcx/DLYbimX2ByiEVvO8Pf
+QHiV/rq90F/OqgTJqwMR14PkNCJCqkHr4HNMTNkxamNhs7IwMuV8IL9O/bRA6y8dLwVJuQQikoMc
+LYYgUwVlcy1Mhlp06MtRa9CiSCnlA2U3VRdKW9LXjimk2JhwFkSYCxKTBRKdgdDYQ0hJS8SBXBlE
+DQ1QaSr5gKSkJC5LvtuRWhyNBDGFyLiTIFEUyNYkLqFxeRDkteFIFY0eay8fCMwJiUSRejryW0Hh
+LmTmZGOTIBkhOzIQliRH1Lk27CzQrjXp9NDpdH+i1WoDwO9rpCgqJDFdJD2YvGdAsO+UJyz+vDec
+Unojsuu9EakX56P2p1VzH3lDyC/4mKrUa/xUZQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="contextmenu,qtelement,qtwindow,nativewindow"
+		capname="contextmenu"
+		id="ab54eb33-74a5-4a50-bb2a-e0867116844b"
+		isrooted="True"
+		name="MenuFile"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="4f6f4144-7c40-4d24-900c-99b417e20777"
+			name="Create"
+			refimgid="09ea3b92-7731-403c-b883-db5638e345a1"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@name='menuFile']/menuitem[@name='menuCreate']
+			</item>
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="a1980d2b-d26c-4e3f-9d96-bff6c7081d5d"
+			name="Open"
+			refimgid="c1f63545-c853-49a0-8b95-0c4d21d983a8"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@name='menuFile']/menuitem[@name='actOpen']
+			</item>
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="81af665a-9516-4cd6-8d39-3d820e75e664"
+			name="RecentProject"
+			refimgid="0ecfc6eb-de55-490a-a98a-46d5a0e0b968"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@name='menuFile']/menuitem[@name='menuRecent']
+			</item>
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="10f95e5f-6eaa-4172-9cb9-21dfb41eeb0d"
+			name="Close"
+			refimgid="cf9b268d-e528-48f2-9713-93cb7ea036a1"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@name='menuFile']/menuitem[@name='actClose']
+			</item>
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="723961ff-7215-4d14-b8b7-c5d03996a984"
+			name="Exit"
+			refimgid="7cc5ef43-60b9-4065-8567-24ccb37d5ab8"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@name='menuFile']/menuitem[@name='actExit']
+			</item>
+			<basepath>
+				/contextmenu[@name='menuFile']
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="contextmenu,qtelement,qtwindow,nativewindow"
+		capname="contextmenu"
+		id="a43e1b77-f975-48e4-884e-80edb651986f"
+		isrooted="True"
+		name="MenuCreate"
+		refpath="/contextmenu[@name='menuCreate']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="d41331cf-a9a2-41aa-b6c7-eb2e6e601102"
+			name="CreateProject"
+			refimgid="58f7cbb8-5e9f-42df-bcff-f55efb4f2e64"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@name='menuCreate']/menuitem[@name~'actCreate']
+			</item>
+			<basepath>
+				/contextmenu[@name='menuCreate']
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="e449124e-0db5-4931-99c4-8479aabbe103"
+		isrooted="True"
+		name="ProjectWindow"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="7f3bc8e5-16d5-4d28-af2f-712ec810848f"
+			name="File"
+			refimgid="553b9ada-5ec6-4966-bc9a-1adc7b628a0f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name~'ProjectWindow' and @basetype='QMainWindow']/element[@type='ui::MenuBar']/?/?/menuitem[@text='File' and @type='QAction']
+			</item>
+			<basepath>
+				/form[@name~'ProjectWindow' and @basetype='QMainWindow']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJpSURBVDhPpdNdSFNhGAfwF7LIJJmkQXRhIGIj
+LDIIs9ZJzRLR0DmkLNvNxBozadMilfmZlp6zzYltfYgxm3HQyGEOpqUGIQ6hBL+GOmo5iSIqG8uc
+0b/tBF10JBg98L95ef8/npuHBIam6V6NRrMSbAI9DmAYxuNbXUWwoRn6OwfQfmDJ7UYw4QCa9nFA
+M/3fAO1xuxfhcjnheOPCu4+fYbbPQDc4hvGpV/731/8GmvzAxIId/ZNj6JlbwugnL4pG5nD43gDK
+zS1gn92Bc2F+fYBh2VAj29Znf9+FSY8Tyz+BFQAPvvggGxpD1aPr6O4vQ2tnI2Znp9ff4OGMYfGM
+xQbj22WM/wCsa4DE/gFCgxXKdjXENWWQqi/jifUxH7hm6a7eVtGOzVdMiL01gr19TsR0O7BBbUG4
+yogKsxEdfRYo6jXovKuH+2+A0ptcW2StIPk3QIpvg5SaQRQdIIUGxNfcx/DLYbimX2ByiEVvO8Pf
+QHiV/rq90F/OqgTJqwMR14PkNCJCqkHr4HNMTNkxamNhs7IwMuV8IL9O/bRA6y8dLwVJuQQikoMc
+LYYgUwVlcy1Mhlp06MtRa9CiSCnlA2U3VRdKW9LXjimk2JhwFkSYCxKTBRKdgdDYQ0hJS8SBXBlE
+DQ1QaSr5gKSkJC5LvtuRWhyNBDGFyLiTIFEUyNYkLqFxeRDkteFIFY0eay8fCMwJiUSRejryW0Hh
+LmTmZGOTIBkhOzIQliRH1Lk27CzQrjXp9NDpdH+i1WoDwO9rpCgqJDFdJD2YvGdAsO+UJyz+vDec
+Unojsuu9EakX56P2p1VzH3lDyC/4mKrUa/xUZQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="list,nativewindow"
+		capname="list"
+		id="affa1615-928c-4438-be53-4cb2ac4a956c"
+		isrooted="True"
+		name="List"
+		refpath="/list[@controlid='1000']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="listitem"
+			capname="listitem"
+			id="43dc5d30-1806-4e09-9b09-a08a72cdf0c3"
+			name="AllFiles"
+			refimgid="59b1a4fb-63df-4102-b235-6e4f82e57e49"
+			robustPath=""
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text~'All']
+			</item>
+			<basepath>
+				/list[@controlid='1000']
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="4211b6b2-cfdf-40e6-ab93-b95b311f0025"
+		isrooted="True"
+		name="QMessageBox1"
+		refimgid="c8509605-0441-40d3-9223-383f005631a8"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="dfad96b3-2c78-4303-b74f-bc22c11a4a2f"
+			name="NoBtn"
+			refimgid="4a63a75b-630f-4356-bf7b-adc7d21984c9"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@windowstyle='Tiled, DialogFrame, ClipChildren, ClipSiblings, Visible, PopupWindow' and @type='QMessageBox']/container[@name='qt_msgbox_buttonbox']/button[@text='&amp;No']
+			</item>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="cd3a15a0-9791-429e-9ce0-22802d56b011"
+			name="YesBtn"
+			refimgid="077fb53b-87ed-4036-9f02-3bcc42006145"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@windowstyle='Tiled, DialogFrame, ClipChildren, ClipSiblings, Visible, PopupWindow' and @type='QMessageBox']/?/?/button[@text='&amp;Yes']
+			</item>
+			<basepath>
+				/form[@windowstyle='Tiled, DialogFrame, ClipChildren, ClipSiblings, Visible, PopupWindow' and @type='QMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJpSURBVDhPpdNdSFNhGAfwF7LIJJmkQXRhIGIj
+LDIIs9ZJzRLR0DmkLNvNxBozadMilfmZlp6zzYltfYgxm3HQyGEOpqUGIQ6hBL+GOmo5iSIqG8uc
+0b/tBF10JBg98L95ef8/npuHBIam6V6NRrMSbAI9DmAYxuNbXUWwoRn6OwfQfmDJ7UYw4QCa9nFA
+M/3fAO1xuxfhcjnheOPCu4+fYbbPQDc4hvGpV/731/8GmvzAxIId/ZNj6JlbwugnL4pG5nD43gDK
+zS1gn92Bc2F+fYBh2VAj29Znf9+FSY8Tyz+BFQAPvvggGxpD1aPr6O4vQ2tnI2Znp9ff4OGMYfGM
+xQbj22WM/wCsa4DE/gFCgxXKdjXENWWQqi/jifUxH7hm6a7eVtGOzVdMiL01gr19TsR0O7BBbUG4
+yogKsxEdfRYo6jXovKuH+2+A0ptcW2StIPk3QIpvg5SaQRQdIIUGxNfcx/DLYbimX2ByiEVvO8Pf
+QHiV/rq90F/OqgTJqwMR14PkNCJCqkHr4HNMTNkxamNhs7IwMuV8IL9O/bRA6y8dLwVJuQQikoMc
+LYYgUwVlcy1Mhlp06MtRa9CiSCnlA2U3VRdKW9LXjimk2JhwFkSYCxKTBRKdgdDYQ0hJS8SBXBlE
+DQ1QaSr5gKSkJC5LvtuRWhyNBDGFyLiTIFEUyNYkLqFxeRDkteFIFY0eay8fCMwJiUSRejryW0Hh
+LmTmZGOTIBkhOzIQliRH1Lk27CzQrjXp9NDpdH+i1WoDwO9rpCgqJDFdJD2YvGdAsO+UJyz+vDec
+Unojsuu9EakX56P2p1VzH3lDyC/4mKrUa/xUZQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="2d5450a1-53df-48fb-8f2a-6a93bc234f85"
+		isrooted="True"
+		name="QMessageBox2"
+		refimgid="c8509605-0441-40d3-9223-383f005631a8"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="3e66b093-f26a-4011-908b-4fd6d28571f3"
+			name="CloseBtn"
+			refimgid="73568e5a-04e0-4213-82aa-61bc144dbdec"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@windowstyle='Tiled, DialogFrame, ClipChildren, ClipSiblings, Visible, PopupWindow' and @accessiblerole='Client']/?/?/button[@accessiblename='Close']
+			</item>
+			<basepath>
+				/form[@windowstyle='Tiled, DialogFrame, ClipChildren, ClipSiblings, Visible, PopupWindow' and @accessiblerole='Client']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJpSURBVDhPpdNdSFNhGAfwF7LIJJmkQXRhIGIj
+LDIIs9ZJzRLR0DmkLNvNxBozadMilfmZlp6zzYltfYgxm3HQyGEOpqUGIQ6hBL+GOmo5iSIqG8uc
+0b/tBF10JBg98L95ef8/npuHBIam6V6NRrMSbAI9DmAYxuNbXUWwoRn6OwfQfmDJ7UYw4QCa9nFA
+M/3fAO1xuxfhcjnheOPCu4+fYbbPQDc4hvGpV/731/8GmvzAxIId/ZNj6JlbwugnL4pG5nD43gDK
+zS1gn92Bc2F+fYBh2VAj29Znf9+FSY8Tyz+BFQAPvvggGxpD1aPr6O4vQ2tnI2Znp9ff4OGMYfGM
+xQbj22WM/wCsa4DE/gFCgxXKdjXENWWQqi/jifUxH7hm6a7eVtGOzVdMiL01gr19TsR0O7BBbUG4
+yogKsxEdfRYo6jXovKuH+2+A0ptcW2StIPk3QIpvg5SaQRQdIIUGxNfcx/DLYbimX2ByiEVvO8Pf
+QHiV/rq90F/OqgTJqwMR14PkNCJCqkHr4HNMTNkxamNhs7IwMuV8IL9O/bRA6y8dLwVJuQQikoMc
+LYYgUwVlcy1Mhlp06MtRa9CiSCnlA2U3VRdKW9LXjimk2JhwFkSYCxKTBRKdgdDYQ0hJS8SBXBlE
+DQ1QaSr5gKSkJC5LvtuRWhyNBDGFyLiTIFEUyNYkLqFxeRDkteFIFY0eay8fCMwJiUSRejryW0Hh
+LmTmZGOTIBkhOzIQliRH1Lk27CzQrjXp9NDpdH+i1WoDwO9rpCgqJDFdJD2YvGdAsO+UJyz+vDec
+Unojsuu9EakX56P2p1VzH3lDyC/4mKrUa/xUZQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="6d4612c9-8d02-49c8-b61f-f6da99934401"
+		isrooted="True"
+		name="QMessageBox3"
+		refimgid="eb8f670f-47ee-4423-96e0-91ea41d5bda5"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="99f71b56-902f-4ccd-a68e-edcf80900231"
+			name="OKBtn"
+			refimgid="98cc3c98-0299-411a-9ef3-977aee217e0b"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@type='QMessageBox']/container[@name='qt_msgbox_buttonbox']/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@type='QMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJpSURBVDhPpdNdSFNhGAfwF7LIJJmkQXRhIGIj
+LDIIs9ZJzRLR0DmkLNvNxBozadMilfmZlp6zzYltfYgxm3HQyGEOpqUGIQ6hBL+GOmo5iSIqG8uc
+0b/tBF10JBg98L95ef8/npuHBIam6V6NRrMSbAI9DmAYxuNbXUWwoRn6OwfQfmDJ7UYw4QCa9nFA
+M/3fAO1xuxfhcjnheOPCu4+fYbbPQDc4hvGpV/731/8GmvzAxIId/ZNj6JlbwugnL4pG5nD43gDK
+zS1gn92Bc2F+fYBh2VAj29Znf9+FSY8Tyz+BFQAPvvggGxpD1aPr6O4vQ2tnI2Znp9ff4OGMYfGM
+xQbj22WM/wCsa4DE/gFCgxXKdjXENWWQqi/jifUxH7hm6a7eVtGOzVdMiL01gr19TsR0O7BBbUG4
+yogKsxEdfRYo6jXovKuH+2+A0ptcW2StIPk3QIpvg5SaQRQdIIUGxNfcx/DLYbimX2ByiEVvO8Pf
+QHiV/rq90F/OqgTJqwMR14PkNCJCqkHr4HNMTNkxamNhs7IwMuV8IL9O/bRA6y8dLwVJuQQikoMc
+LYYgUwVlcy1Mhlp06MtRa9CiSCnlA2U3VRdKW9LXjimk2JhwFkSYCxKTBRKdgdDYQ0hJS8SBXBlE
+DQ1QaSr5gKSkJC5LvtuRWhyNBDGFyLiTIFEUyNYkLqFxeRDkteFIFY0eay8fCMwJiUSRejryW0Hh
+LmTmZGOTIBkhOzIQliRH1Lk27CzQrjXp9NDpdH+i1WoDwO9rpCgqJDFdJD2YvGdAsO+UJyz+vDec
+Unojsuu9EakX56P2p1VzH3lDyC/4mKrUa/xUZQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="ec5d04e8-b39c-43ef-aa9e-dba9bb65a9fe"
+		isrooted="True"
+		name="FileReplaceDialog"
+		refimgid="ae0c78f6-ac14-4b13-8f10-e98deebb1818"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="15d1e663-2a17-44a2-9326-6dafd3bcbee0"
+			name="ReplaceAllBtn"
+			refimgid="89634091-f124-48a1-9cef-e8a6c7c3d44e"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='FileReplaceDialog']/button[@name='replaceAll' and @type='QPushButton']
+			</item>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="7f2482c8-bd50-4c50-aff9-a6fce719c682"
+			name="SkipAllBtn"
+			refimgid="d24d4316-3974-4de6-8d91-9bcb0178bc0d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='FileReplaceDialog']/button[@name='skipAll' and @type='QPushButton']
+			</item>
+			<basepath>
+				/form[@name='FileReplaceDialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJjSURBVDhPtdBdTFJhHMdxqnmRV63VmhexuXDZ
+pqNCp6tWc3aFLkSFFIVSGybkS05tWBsunRpNZhoGyUgpJsf3kTYtXiQlTAoSly+gdNFFK/KmrW5a
+/DrLZ3NNL7zxc/mc//d/nnMYu87hcBwwmZ7et1gs8eRo5+gofXl56XMotBZZWPD/GhkZalCr1WLy
+eHujowMpdrvdYLNZ51yumcj6+nesrgbh9b7HzMw0gsFApK/P1Nzf3y/p7u0+QbINOp0uanJyIhAI
+rETot/6LnM4peDxz8Pm8sFqt8Pv9mJ11Y3Hx4x+zuec8STcZqWYWNdzz7IPPFxkbew63+w3opfQi
+J6anX4P+FOj0DyeM5g42SbbSj1cltT0Rz1GjGvoWXtD/gV7khol6BK2lSUnGtjLaCs/YPpW+0o8L
+0WrIRNdADho1fFAjaphflqPTq8HgWgPefq2wWzz1p0m2oUhx8rCsMS1fMyh48S4sh8rVCdnjetT1
+VqN7XgVDQIvZcBmcIenvTuqyRj1UEEPSDefE8bJUUdwK70ZSfUlFQpjXfhcDoVbM/6yEO3wdnm/l
+aOnJct3WZh0jySapMjO69MHZmotXmD+40jhkFzGRLjmIW7Uc6IcF6BrMQmoeM5LIi50kySapjhNV
+2XFhqlh1HAoDF/lNheBVJCNHwoFQngZR9SkkZh8CX8lERhnLn6dIOULS/2n76kRX2xsWJb1SZCtY
+4BYfRbE6EZdqY5HMjwnmViUUkNHttVFt+5VK5V55C0907R57KfcOC7ybrC/CGnapQMDYR8Z2CIw9
+/Cp2RqaUE01OdguD8Rckp0Fm8J57pwAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

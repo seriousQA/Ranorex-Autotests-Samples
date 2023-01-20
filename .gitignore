@@ -1,10 +1,16 @@
-# Ranorex
+# Ranorex (Autotests)
+/Ranorex-Autotests-Samples/**/*.csproj.rxuser
+/Ranorex-Autotests-Samples/**/*.rxsln.pref
+/Ranorex-Autotests-Samples/**/*.rxsettings
+/Ranorex-Autotests-Samples/**/*.csproj.pref
+/Ranorex-Autotests-Samples/Reports/*.*
+/Ranorex-Autotests-Samples/Bin/*.*
+/Ranorex-Autotests-Samples/Obj/*.*
+/Ranorex-Autotests-Samples/**/*.rximg
+/Ranorex-Autotests-Samples/RepositoryImages/*.*
 *.rxlog
 *.rximgres
-*.rxsettings
-*.rximg
-*.rxrep
-*.rxuser
+
 
 # Object files
 *.o
@@ -55,3 +61,4 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+*.rximg

@@ -1,0 +1,2414 @@
+﻿<repository
+id="4bb6123b-1205-46f9-8758-6b4889eec156"
+name="TestProductRepository"
+rxversion="9.0">
+	<codegen
+	classname="TestProductRepository"
+	namespace="TestProductRepository">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="89f861dc-98dc-49c2-bf42-20af7dcabd34"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="6077366d-523e-4f94-b73e-70149eaae062"
+		isrooted="True"
+		name="FirstDialog"
+		refpath="/form[@name='FirstRunDialog']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="00e4622f-1f08-4055-926c-e834bbb9e745"
+			name="OKBtn"
+			refimgid="4d87b99f-4d58-4d41-8070-9b0b0503bf7d"
+			refpath="/form[@name='FirstRunDialog']/container[@name='buttonBox']/button[@text='OK']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='FirstRunDialog']/?/?/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@name='FirstRunDialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAHPSURBVDhPlZFdSNNRGIcPgoIO0mkXGYmEUtaC
+CEvoIkJiUn4QqCWU2YUhKlTQii3w42orpPZXmVImUtQqxY90uqDFlGQqhsuKBPGjEvRCEroTU3ni
+f6iLub/D/eDhHM77nueFc8TWfP65yMPnX6h7OUxjtwfllZ+hiSX+lUPH1NFLYY8Np78Hl38A77Qb
+q+sjlx9MYmn2hpbcGnjD0fHD3JgtY27lK2t/Fvi2+Iu2yRXK3y5TaPNxTbmnLal4NsiJkdMkfYrg
+xe/bbG4sAKssr8PBNEMAWXc7AiWt/TNku+8QNSzInI1jatOKwXBkR0hBZdsEWb4SIj0J5M9fxLc+
+w80Dgo2xzJCoPVJw3u4luaWMWNsj0t+NykI4iNRyN6Kolqi8VuKrv8tDrYlaSIEutxdxth1htCOK
+3wfYd4LYX9BFhLEbceY1+tJSTCZTWAiLY5w9OZ3ozznZa8khrUsEfd12yEdUk1HSR0p+O0nmKyQ+
+jWF3k042RJp3yVWdpDQ/lvvj5g+Bl//n5NV+Dl1yklidh96hI9YeQ5wSHSRo8fzQFqgprholpbKB
++PsZ7HMcI1m5ECRQ+7YVqCmwujDUXefUkxqM9X2agrASWiDEX4kcp6FQuwZDAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="contextmenu,qtelement,qtwindow,nativewindow"
+		capname="contextmenu"
+		id="bebf0b80-827c-4635-8d0f-02383ef3e9f1"
+		isrooted="True"
+		name="MenuFile"
+		refpath="/contextmenu[@name='menuFile']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="d47a3fbc-cb02-47b5-9089-20984f92b218"
+			name="GeodesicLibrary"
+			refimgid="de131cf8-2b67-4d9e-af55-3d55bb5fc1eb"
+			refpath="/contextmenu[@name='menuFile']/menuitem[@name='actGdsLibrary']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@name='menuFile']/menuitem[@name='actGdsLibrary']
+			</item>
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="cde21152-09df-4a1c-9d5f-5ae4a7900c22"
+			name="ProjectProperties"
+			refimgid="6dce8253-53c7-48ae-98bd-d18ebf40ad0e"
+			refpath="/contextmenu[@name='menuFile']/menuitem[@name='actProjectProperties']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@name='menuFile']/menuitem[@name='actProjectProperties']
+			</item>
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="53bbb5a8-aa17-4c57-b16d-a2ba6756b78f"
+			name="PointsTable1"
+			refimgid="e19ae87e-4afe-40e3-bbb6-92b9be5d9e50"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@name='menuFile']/menuitem[@text='Points Table 1']
+			</item>
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="63ade35b-490b-4874-b906-406df2d639f4"
+			name="PointsTable2"
+			refimgid="e392b689-e388-45b1-b4fd-68a4beb00a7a"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@name='menuFile']/menuitem[@text='Points Table 2']
+			</item>
+			<basepath>
+				/contextmenu[@name='menuFile']
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="b82375e8-7b20-4a8d-8b88-14d484b49f45"
+		isrooted="True"
+		name="GeodeticLibraryDialog"
+		refimgid="0359dd49-799d-4391-baea-4593dbaaf101"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="1733866e-6aa5-4f2e-9f72-e6dd2100931d"
+			name="CoordinateSystems"
+			refimgid="71ab209b-262b-4563-b32b-bb998db548d1"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='GeodeticLibraryDialog']//tree[@name='treeWidget']/treeitem[@text='Coordinate systems']
+			</item>
+			<folder
+			addcaps="container,qtelement"
+			capname="container"
+			id="bc62a9f0-f109-4126-a23e-cc9871d4edff"
+			isrooted="True"
+			name="Splitter"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,qtelement"
+				capname="button"
+				id="c6f24fa9-7104-4e98-a006-8ecbe156921f"
+				name="Create"
+				refimgid="84063c33-fd50-4491-9e2e-e42363cdf1e5"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']/container[@name='splitter']//container[@name='groupBox_2']/?/?/button[@text='Create']
+				</item>
+				<item
+				addcaps="text,qtelement"
+				capname="text"
+				id="84196115-c9a4-43af-9f48-2b64caa4bb9c"
+				name="QtSpinboxLineedit"
+				refimgid="b2bee98c-e3a3-4f90-a615-f9c5e4a13c6a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']/container[@name='splitter']//tree[@name='paramWidget']/?/?/text[@name='qt_spinbox_lineedit']
+				</item>
+				<item
+				addcaps="text,qtelement"
+				capname="text"
+				id="9cb64a84-603a-4959-9d2d-5a522b1fbfc1"
+				name="QLineEdit"
+				refimgid="7a975394-8a36-4d9c-ba64-5cf09726bfb9"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']/container[@name='splitter']//tree[@name='paramWidget']/text[@type='QLineEdit']
+				</item>
+				<basepath>
+					/form[@name='GeodeticLibraryDialog']/container[@name='splitter']
+				</basepath>
+			</folder>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="ef8df49b-401e-4b0f-b6ed-89d940f520dc"
+			name="Apply"
+			refimgid="fd1271f5-054c-49cd-b0e3-fa40478938d9"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='GeodeticLibraryDialog']/?/?/button[@text='Apply']
+			</item>
+			<folder
+			addcaps="tree,qtelement"
+			capname="tree"
+			id="b508f491-2f2e-4fd3-9d47-dd7b91b17518"
+			isrooted="True"
+			name="ParamWidget"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="cell"
+				id="6bcf97af-dc7c-4b7e-a86a-2ddc851f84f3"
+				name="Name"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='name']/descendant::cell[@columnindex='1']
+				</item>
+				<item
+				capname="cell"
+				id="fccd35f3-f7f3-4793-ab06-deab09906598"
+				name="Datum"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='datum']/cell[@text='WGS 84']
+				</item>
+				<item
+				capname="cell"
+				id="aab6cb1b-e051-4352-9a4f-e5e00e0e7036"
+				name="ZoneWidth"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='zone width']/cell[@columnindex='1']
+				</item>
+				<item
+				capname="cell"
+				id="5ac9b76d-9210-4305-b267-1e323dedd529"
+				name="ZoneNo"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='zone']/cell[@columnindex='1']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="91057c2c-0dfd-40fc-bd46-fcf5e4541c01"
+				name="WGS84"
+				refimgid="829533a5-44ad-4cac-8a5d-cc982187ff14"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='datum']/cell[@text='WGS 84']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="9ca05364-9a77-4648-93f6-4634f97d5cba"
+				name="NewCS"
+				refimgid="5dc3466b-895e-4f5e-b332-e15a60aedabb"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='name']/cell[@text&gt;'New CS']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="10bc7268-6c4c-47da-b2d4-459049416b1a"
+				name="CellWidhZone"
+				refimgid="d0ea7ae3-f3c6-46b1-8631-6bd675d38423"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='zone width']/cell[@text='2']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="b0e7c84f-a3d4-4854-92f3-bf1139743ef6"
+				name="CellZone"
+				refimgid="d273ca38-170c-4157-a4ae-f8bcf15c27c0"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='zone']/cell[@text='1']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="e6e53473-243b-42de-85fe-1eccd06b3e81"
+				name="Cell1"
+				refimgid="03bfcdf1-0b41-4f7e-addf-97483f58c348"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='zone']/cell[@text='1']
+				</item>
+				<item
+				capname="cell"
+				id="ac7caf96-5acd-4a23-a70c-bdccd5d05176"
+				name="B0"
+				refimgid="ceec49b1-ab70-4305-a0e8-d275be9eb233"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='B0, &#176;''&quot;']/descendant::cell[@columnindex='1']
+				</item>
+				<item
+				capname="cell"
+				id="ab48aa2f-373d-4f99-89ca-0fbfbbc77530"
+				name="B1"
+				refimgid="ceec49b1-ab70-4305-a0e8-d275be9eb233"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='B1, &#176;''&quot;']/descendant::cell[@columnindex='1']
+				</item>
+				<item
+				capname="cell"
+				id="26363f5d-e050-428a-8bc0-dff5ae78f695"
+				name="B2"
+				refimgid="ceec49b1-ab70-4305-a0e8-d275be9eb233"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='B2, &#176;''&quot;']/descendant::cell[@columnindex='1']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="5647e271-6266-4ef4-9173-09182f5c3f70"
+				name="L0"
+				refimgid="bebaf0e2-6228-4e30-a101-796546fe9e2d"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='L0, &#176;''&quot;']/descendant::cell[@columnindex='1']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="5e991637-de51-44e0-9138-ffb0bdc0d47a"
+				name="Eo"
+				refimgid="daff180d-85b0-4d8f-809d-f7437167c699"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='shift to the east (Eo), m']/descendant::cell[@columnindex='1']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="f1c221b9-5f4f-4223-b51a-0fad2e44b2b0"
+				name="No"
+				refimgid="e544e7da-02d3-4e3f-b22b-82d2752661ba"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='shift to the north (No), m']/descendant::cell[@columnindex='1']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="802f255f-fd51-4086-8e54-f2bc6602eb1f"
+				name="AxisMeridian"
+				refimgid="f160e53a-bf93-49e3-b608-f2c76a411f87"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']//tree[@name='paramWidget']/treeitem[@text='axis meridian, &#176;''&quot;']/descendant::cell[@columnindex='1']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="d0086130-e27f-40b0-bf6f-d99a686845d8"
+				name="AxisMeridianScale"
+				refimgid="e544e7da-02d3-4e3f-b22b-82d2752661ba"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='axial meridian scale']/descendant::cell[@columnindex='1']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="a345e5c6-c960-4541-a2f3-e691cc57506e"
+				name="Cell60"
+				refimgid="f2af5c5e-5699-48c9-9649-2c75331595d4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='zone']/cell[@text='60']
+				</item>
+				<item
+				addcaps="treeitem,qtitem"
+				capname="treeitem"
+				id="82f51b5d-03de-42e4-855e-926b9b823a53"
+				name="Ellipsoid"
+				refimgid="6c3bf602-9dd7-456d-855d-3e726218509d"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']/treeitem[@text='ellipsoid']
+				</item>
+				<basepath>
+					/form[@name='GeodeticLibraryDialog']//tree[@name='paramWidget']
+				</basepath>
+			</folder>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="2e628a6b-1d0c-43ab-971d-98d7ecf798a5"
+			name="OKBtn"
+			refimgid="1034b082-7c3a-4fc8-92aa-a501403a2864"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='GeodeticLibraryDialog']/?/?/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@name='GeodeticLibraryDialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAADBSURBVDhPpY89CgIxFIT3NIoIgoWFhWBhIQRk
+ccFrKIKFhRALGxsLYS0sBPE01nbeZJYwkuDTrD/obga+EB7ke5OoMgZDcILqBKxNwfoMbMzB5gJs
+LcH2Cuyswe4G7G3B/g5Ue3BwAOOjJwghSpKE58uVEntP05RZlt0n32PfPgRaa4cvkNkn3gSS0g3k
+T6UbGGMcIvgnOYGYfYG/8RWb4AajWD0FwxMcRRrkBMENxCwCO/+FE9gjqIEIfAoLyqN4AxTNAnR1
++6L9AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,qtelement,qtwindow,nativewindow"
+		capname="container"
+		id="47515030-6af2-4cc2-9c6a-bbe145e19e7a"
+		isrooted="True"
+		name="ComboDropdown"
+		refpath="/container[@name='comboDropdown']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="listitem,qtitem"
+			capname="listitem"
+			id="0fd69379-a686-4c9d-b156-14466439bda9"
+			name="CK42"
+			refimgid="dfb1a07f-fc91-40bb-aeee-ec4396d18ce3"
+			robustPath=""
+			searchtimeout="30000ms">
+				/container[@name='comboDropdown']/?/?/listitem[@text='CK-42']
+			</item>
+			<item
+			addcaps="listitem,qtitem"
+			capname="listitem"
+			id="9f173861-9298-4073-9f10-7985e52ac085"
+			name="ListItem6Deg"
+			refimgid="fa2e4f87-2411-4988-ad5e-1938c02c8c9b"
+			refpath="/container[@name='comboDropdown']/list[@type='QComboBoxListView']/listitem[@text='6°']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/container[@name='comboDropdown']/?/?/listitem[@text='6°']
+			</item>
+			<item
+			addcaps="listitem,qtitem"
+			capname="listitem"
+			id="b487fb99-bfb8-49ba-b4e9-d6cee2522b81"
+			name="ListItemYes"
+			refimgid="fce791aa-3d91-41fa-bda3-4f4b6d676487"
+			robustPath=""
+			searchtimeout="30000ms">
+				/container[@name='comboDropdown']/?/?/listitem[@text='Yes']
+			</item>
+			<item
+			addcaps="listitem,qtitem"
+			capname="listitem"
+			id="b25ee5e3-b50f-49c6-be99-f9c3f46205ec"
+			name="Clarke1866"
+			refimgid="37cb44d4-2624-4e3f-b7c8-d9ad2afab5d7"
+			refpath="/container[@name='comboDropdown']/list[@type='QComboBoxListView']/listitem[@text='Clarke 1866']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/container[@name='comboDropdown']/?/?/listitem[@text='Clarke 1866']
+			</item>
+			<item
+			addcaps="listitem,qtitem"
+			capname="listitem"
+			id="eca2a038-4c1d-436f-98dd-b31c78e41864"
+			name="LambertConformalConic1SP"
+			refimgid="e89ba30d-9def-4a48-a168-19fdf0c574fa"
+			refpath="/container[@name='comboDropdown']/list[@type='QComboBoxListView']/listitem[@text='Lambert Conformal Conic 1SP']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/container[@name='comboDropdown']/?/?/listitem[@text~'^Lambert\ Conformal\ Conic\ 1']
+			</item>
+			<item
+			addcaps="listitem,qtitem"
+			capname="listitem"
+			id="a60c64f1-2714-440b-93b4-d25a4d3f2860"
+			name="ListItem1"
+			refimgid="75c447b0-8fbb-4052-b3e4-042a06bb9fc8"
+			refpath="/container[@name='comboDropdown']/list[@type='QComboBoxListView']/listitem[@text='0.0001']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/container[@name='comboDropdown']/?/?/listitem[@text='0.0001']
+			</item>
+			<item
+			addcaps="listitem,qtitem"
+			capname="listitem"
+			id="3e83cce0-ab8a-4f5a-b964-0547117933e3"
+			name="LambertConformalConic2SP"
+			refimgid="978f5e19-5955-4ff2-8555-64045912faaf"
+			refpath="/container[@name='comboDropdown']/list[@type='QComboBoxListView']/listitem[@text='Lambert Conformal Conic 2SP']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/container[@name='comboDropdown']/?/?/listitem[@text~'^Lambert\ Conformal\ Conic\ 2']
+			</item>
+			<item
+			addcaps="listitem,qtitem"
+			capname="listitem"
+			id="09973209-0d1c-4d2b-8496-14583d6a7b2a"
+			name="ListItem3Deg"
+			refimgid="6ce81405-e0c8-4762-b5fd-535cc078c62a"
+			refpath="/container[@name='comboDropdown']/list[@type='QComboBoxListView']/listitem[@text='3°']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/container[@name='comboDropdown']/?/?/listitem[@text='3°']
+			</item>
+			<item
+			addcaps="listitem,qtitem"
+			capname="listitem"
+			id="e6ae8e4a-c05d-4954-b80a-dae1e367d799"
+			name="TransverseMercator"
+			refimgid="f0b01764-a3d6-4f29-abf6-f3e63054a39d"
+			refpath="/container[@name='comboDropdown']/list[@type='QComboBoxListView']/listitem[@text='Transverse Mercator']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/container[@name='comboDropdown']/?/?/listitem[@text='Transverse Mercator']
+			</item>
+			<item
+			addcaps="listitem,qtitem"
+			capname="listitem"
+			id="ff0f0cdf-14e3-4a0e-977c-b5e825a83c63"
+			name="CK42GOST"
+			refimgid="ebebf726-41c2-4b2c-94e4-c28c603f1cf0"
+			robustPath=""
+			searchtimeout="30000ms">
+				/container[@name='comboDropdown']/?/?/listitem[@text='CK-42 (GOST 32453-2017)']
+			</item>
+			<item
+			addcaps="listitem,qtitem"
+			capname="listitem"
+			id="5535fc97-e1c0-4661-919b-6d8b6712e0bd"
+			name="ListItem5"
+			refimgid="92c3cbae-8934-4a08-bd14-4f563dd5e5b4"
+			refpath="/container[@name='comboDropdown']/list[@type='QComboBoxListView']/listitem[@text='5']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/container[@name='comboDropdown']/?/?/listitem[@text='5']
+			</item>
+			<item
+			addcaps="listitem,qtitem"
+			capname="listitem"
+			id="b42c84d5-9622-48e4-9d21-82c15b6e9454"
+			name="WGS84"
+			refimgid="4f5197e7-5e5a-410b-8ebe-1b6bab978e8f"
+			refpath="/container[@name='comboDropdown']/list[@type='QComboBoxListView']/listitem[@text='WGS-84']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/container[@name='comboDropdown']/?/?/listitem[@text='WGS-84']
+			</item>
+			<item
+			addcaps="listitem,qtitem"
+			capname="listitem"
+			id="5a9ce205-bd51-4ffe-bd43-0b9b366e6573"
+			name="ListItem0001"
+			refimgid="03b36170-07f0-4196-a76f-217a1f835949"
+			refpath="/container[@name='comboDropdown']/list[@type='QComboBoxListView']/listitem[@text='0.001']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/container[@name='comboDropdown']/?/?/listitem[@text='0.001']
+			</item>
+			<item
+			addcaps="listitem,qtitem"
+			capname="listitem"
+			id="7c81a933-bd5b-4ebf-a626-23b0d64a114d"
+			name="NotStandart"
+			refimgid="e13f0edc-9fd6-41e7-aba3-3161977b17a1"
+			robustPath=""
+			searchtimeout="30000ms">
+				/container[@name='comboDropdown']/?/?/listitem[@text='Non-standard']
+			</item>
+			<item
+			addcaps="listitem,qtitem"
+			capname="listitem"
+			id="6e5362d2-5127-44c1-9424-04aabcfe6b45"
+			name="ImportFromGeodeticLibrary"
+			refimgid="fb976b67-94de-441c-be9c-56503d053bca"
+			robustPath=""
+			searchtimeout="30000ms">
+				/container[@name='comboDropdown']/?/?/listitem[@text&gt;'Import from geodetic library']
+			</item>
+			<item
+			addcaps="listitem,qtitem"
+			capname="listitem"
+			id="018dbf65-357d-41f0-9325-44c63050d86f"
+			name="Helmert"
+			refimgid="d7edfc65-bef9-4bd6-a530-67f21dce700d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/container[@name='comboDropdown']/?/?/listitem[@text='Helmert']
+			</item>
+			<item
+			capname="listitem"
+			id="ddcd7e64-d41d-4e66-b890-f06011549c19"
+			name="ListItenZoneWidth"
+			robustPath=""
+			searchtimeout="30000ms">
+				/container[@name='comboDropdown']/?/?/listitem[@text=$ZoneWidthValue]
+			</item>
+			<basepath>
+				/container[@name='comboDropdown']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAABhUlEQVQ4T8WQvUsCYRzHb++F/oSGiMiiV4qWakiiqWyJGiK0cmxw
+kUhtMHqzTuWC0KKh2ZBqsTSHlt6oNkENBF+OoJZCKlO/PY/PGaIXCQ19jw/3e7787sPdcX/OkCOC
+LiGOVruIZqsIhS2BJj6BFnuCnBOoJ3OdJQYFL6LR+ohOWxS9y7cQ/FHkBNVaL2qmfajUeFFF7nno
+uULNoHOD/gK1uit0zx1hdGwBeuEALpcLnPk4gkAkjrtwDPfheAGF5xiug1HcEC5DInzBJ0zMO8Hz
+PLid82fkky26fupo+me3mGDbL0pVqgw+c1DRgNbOBI6zOClp8gvFD5WSE8zw0id4o6SkkV8uhb5B
+GkrNBhPsnkZISSO3LAcVZKBUrzHBnueBlDRyy3JIgqkVJtj3hEhJ/3ZGIv0LdCeLwcklJnAeBvCa
+TOEl+UF4J7xJszz53W+BevEEPeMC2lUWifWCuZS24VV0qDbRN6JjAhpBEGAymWA0GsvCYDDAbDbD
+7XYzwT+G474AUqqnq7MiKz0AAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="3662a38e-71ee-45f1-9923-847fba9fbb81"
+		isrooted="True"
+		name="ProjectWindow"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="a975bca5-0616-4936-85ca-2e2f9784746e"
+			name="File"
+			refimgid="ed246129-d3e4-4040-997f-1b46f0fa1ce8"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='ProjectWindow']/element[@type='ui::MenuBar']/?/?/menuitem[@text='File']
+			</item>
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="4af58311-cabf-41ed-8ca8-5cbd6f39f5a5"
+			name="Operations"
+			refimgid="7b4b0fa5-1157-44f7-8f18-19fbca433355"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='ProjectWindow']/element[@type='ui::MenuBar']/?/?/menuitem[@text='Operations']
+			</item>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="6df0b446-55d9-4268-bbed-d72fcc9ed89c"
+			name="Calculation"
+			refimgid="39a19395-0966-46c0-9e18-58452d760ac7"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='ProjectWindow']//form[@name~'Widget']/toolbar[@name='_Custom_Toolbar_1']/button[@text='Calculation']
+			</item>
+			<folder
+			capname="form"
+			id="c712a20e-a860-4f72-91e6-7068de16fef9"
+			isrooted="True"
+			name="LeftWidget"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,qtelement"
+				capname="button"
+				id="bf69ceda-87c5-4407-b72b-0fa794714e52"
+				name="Local"
+				refimgid="a6add9d4-6e78-4be2-b30e-7308f6488dd5"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='ProjectWindow']/container[@type~'Widget']//form[@name~'Widget']/?/?/form[@name~'Widget']/toolbar[@name='_Custom_Toolbar_1']/button[@text&gt;'Local' and @basetype='QToolButton']
+				</item>
+				<basepath>
+					/form[@name='ProjectWindow']
+				</basepath>
+			</folder>
+			<folder
+			addcaps="table,qtelement"
+			capname="table"
+			id="c3cda832-e016-4a86-bfb8-c88920bf6453"
+			isrooted="True"
+			name="PointItemView"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="listitem,qtitem"
+				capname="listitem"
+				id="fc7267e2-d417-47a4-9ea4-9792540e66d9"
+				name="ListItemName"
+				refimgid="ec9a2285-05af-4d94-ab11-418981fc4ac0"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='ProjectWindow']//form[@name~'Widget']/table[@name~'PointItemView']/?/?/listitem[@text='name']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="c9dd0dc9-6689-4d96-a0fb-f53a7048ce7d"
+				name="CellC46"
+				refimgid="16b5e1ad-5f43-4d74-bccd-9f2c05ad3d8a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='ProjectWindow']//form[@name~'Widget']/table[@name~'PointItemView']/row[@index='0']/cell[@text='c46']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="698b46aa-e2d8-4bfd-9f00-39fd787a6696"
+				name="CellC47"
+				refimgid="2cb661bf-1b05-4ab5-87bb-c69d6e010f5f"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='ProjectWindow']//form[@name~'Widget']/table[@name~'PointItemView']/row[@index='1']/cell[@text='c47']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="0e169b37-1c2d-422a-a647-4178c27edaf2"
+				name="CellC48"
+				refimgid="ea085050-8c7f-44ff-a62d-9ef1e2503f4c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='ProjectWindow']//form[@name~'Widget']/table[@name~'PointItemView']/row[@index='2']/cell[@text='c48']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="f3b00fc3-b38b-4890-a18f-f951fe7f2ee8"
+				name="Cell1"
+				refimgid="f9d5a1c3-1509-470f-a776-abbe3950fbea"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='ProjectWindow']//form[@name~'Widget']/table[@name~'PointItemView']/row[@index='0']/cell[@text='1']
+				</item>
+				<item
+				addcaps="listitem,qtitem"
+				capname="listitem"
+				id="5d86217d-0019-400d-a072-37380cf5e69a"
+				name="ListItemName1"
+				refimgid="c348fe00-c90d-4d55-8d15-76ba6446aabf"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='ProjectWindow']//form[@name~'Widget']/table[@name~'PointItemView']/container[@caption='Horizontal']/listitem[@text='name']
+				</item>
+				<item
+				addcaps="listitem,qtitem"
+				capname="listitem"
+				id="9f20c495-4b61-4919-b788-c2ef3c626aca"
+				name="ListItemName2"
+				refimgid="58616505-3a8e-4bd1-9b21-eeb808ef6248"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='ProjectWindow']//form[@name~'Widget']/table[@name~'PointItemView']/container[@caption='Horizontal']/listitem[@text='name']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="0e2f1d36-650b-45e1-aa71-23a10377cab7"
+				name="Cell11"
+				refimgid="748f0c93-b4aa-45a5-8c69-6d39c865ee56"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='ProjectWindow']//form[@name~'Widget']/table[@name~'PointItemView']/row[@index='0']/cell[@columnindex='0' and @rowindex='0']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="2f9896da-0bf5-4035-8a7c-bfffac8404be"
+				name="CTCell"
+				refimgid="748f0c93-b4aa-45a5-8c69-6d39c865ee56"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='ProjectWindow']//form[@name~'Widget']/table[@name~'PointItemView']/?/cell[@columnindex=$columnID and @rowindex=$rowID]
+				</item>
+				<basepath>
+					/form[@name='ProjectWindow']//form[@name~'Widget']/table[@name~'PointItemView']
+				</basepath>
+			</folder>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="187ba548-55c8-4095-aa16-632bc2e33385"
+			name="Close"
+			refimgid="fdcd316c-2a2d-4766-8dec-b6c8c41700e6"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='ProjectWindow']/?/?/button[@accessiblename='Close' and @accessiblerole='PushButton']
+			</item>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="2aac67a6-d15d-43e3-ab62-17fcd301b4f4"
+			name="ShowAll"
+			refimgid="2f13e6b1-6251-452b-8790-2fc9c5449d8d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='ProjectWindow']//form[@name='GraphicsWidget']/toolbar[@name='_Custom_Toolbar_1']/button[@text='Show All']
+			</item>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="28f6dcf6-2cea-46ad-873f-e7885836da1c"
+			name="InsertLine"
+			refimgid="f95587e3-f78e-48d2-ad3a-5dc97e66e311"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='ProjectWindow']//form[@name~'Widget']/?/?/form[@name~'Widget']/toolbar[@name='_Custom_Toolbar_1']/button[@text='Insert line']
+			</item>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="37555617-7d6f-4ade-970c-a4d271b4de1b"
+			name="DeleteLine"
+			refimgid="dcab34fd-3f43-4aba-b4e5-afa025aae6fa"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='ProjectWindow']//form[@name~'Widget']/?/?/form[@name~'Widget']/toolbar[@name='_Custom_Toolbar_1']/button[@text='Delete line']
+			</item>
+			<folder
+			addcaps="form,qtelement"
+			capname="form"
+			id="e12b3b7e-44c0-4fa4-add1-53b1e882d302"
+			isrooted="True"
+			name="RightWidget"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,qtelement"
+				capname="button"
+				id="466fee7d-aff8-4843-b2e3-10a3fa38b6dd"
+				name="Cax423"
+				refimgid="c8ec215b-c57e-44eb-9815-88dd49c009f7"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='ProjectWindow']//form[@name~'Widget']/?/?/form[@name~'Widget']/toolbar[@name='_Custom_Toolbar_1']/button[@text='Cax_423']
+				</item>
+				<item
+				addcaps="button,qtelement"
+				capname="button"
+				id="07d43a1a-2bf1-4f1b-9537-3a1ec68abfe1"
+				name="Cax633"
+				refimgid="1017cb1e-c597-4cb5-abc4-072db5b0118a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='ProjectWindow']//form[@name~'Widget']/container[@name~'Widget']/form[@name~'Widget']/?/?/button[@text='Cax_633']
+				</item>
+				<item
+				addcaps="cell,qtitem"
+				capname="cell"
+				id="ca10ee20-d0d0-4a5f-8ffa-ab7c96cb9d0c"
+				name="Cell1"
+				refimgid="90ed00f2-f375-45c8-a902-0d781fd912f9"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='ProjectWindow']//form[@name~'Widget']/?/?/form[@name~'Widget']/table[@name~'PointItemView']/row[@index='0']/cell[@text='1' and @rowindex='0']
+				</item>
+				<item
+				addcaps="button,qtelement"
+				capname="button"
+				id="72068750-06b2-44e2-accd-5ac6c61261fc"
+				name="Local"
+				refimgid="18b28d21-f281-4934-a1d6-1ffb6616ca52"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@name='ProjectWindow']//form[@name~'Widget']/?/?/form[@name~'Widget']/toolbar[@name='_Custom_Toolbar_1']/button[@text&gt;'Local']
+				</item>
+				<basepath>
+					/form[@name='ProjectWindow']//form[@name~'Widget']
+				</basepath>
+			</folder>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="1d8c51ef-7ce3-4dac-8751-cb74881b7224"
+			name="ChangePanels"
+			refimgid="a57bb744-0d23-42f1-8b3d-7843339f9eee"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='ProjectWindow']/?/?/button[@text='Change panels']
+			</item>
+			<basepath>
+				/form[@name='ProjectWindow']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAHPSURBVDhPlZFdSNNRGIcPgoIO0mkXGYmEUtaC
+CEvoIkJiUn4QqCWU2YUhKlTQii3w42orpPZXmVImUtQqxY90uqDFlGQqhsuKBPGjEvRCEroTU3ni
+f6iLub/D/eDhHM77nueFc8TWfP65yMPnX6h7OUxjtwfllZ+hiSX+lUPH1NFLYY8Np78Hl38A77Qb
+q+sjlx9MYmn2hpbcGnjD0fHD3JgtY27lK2t/Fvi2+Iu2yRXK3y5TaPNxTbmnLal4NsiJkdMkfYrg
+xe/bbG4sAKssr8PBNEMAWXc7AiWt/TNku+8QNSzInI1jatOKwXBkR0hBZdsEWb4SIj0J5M9fxLc+
+w80Dgo2xzJCoPVJw3u4luaWMWNsj0t+NykI4iNRyN6Kolqi8VuKrv8tDrYlaSIEutxdxth1htCOK
+3wfYd4LYX9BFhLEbceY1+tJSTCZTWAiLY5w9OZ3ozznZa8khrUsEfd12yEdUk1HSR0p+O0nmKyQ+
+jWF3k042RJp3yVWdpDQ/lvvj5g+Bl//n5NV+Dl1yklidh96hI9YeQ5wSHSRo8fzQFqgprholpbKB
++PsZ7HMcI1m5ECRQ+7YVqCmwujDUXefUkxqM9X2agrASWiDEX4kcp6FQuwZDAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="contextmenu,qtelement,qtwindow,nativewindow"
+		capname="contextmenu"
+		id="029d411f-c967-4984-8a69-747f961ce402"
+		isrooted="True"
+		name="TContextMenu"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="menuitem,qtelement,checkable"
+			capname="menuitem"
+			id="0cd43eba-cb39-45ed-a2ad-87f33e4d2e4e"
+			name="Name"
+			refimgid="5c9bfd66-4123-4a75-aa60-2531ed2dedd8"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='TestProduct']/menuitem[@text='name']
+			</item>
+			<item
+			addcaps="menuitem,qtelement,checkable"
+			capname="menuitem"
+			id="9f068e8c-4c79-4859-a9a2-55ecedbe411a"
+			name="B"
+			refimgid="161085f8-645f-4cd8-9f00-87e6734a3712"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='TestProduct']/menuitem[@text='B']
+			</item>
+			<item
+			addcaps="menuitem,qtelement,checkable"
+			capname="menuitem"
+			id="e6eb8efb-53c7-46a0-86ca-8c2e70a795dc"
+			name="L"
+			refimgid="71525a9b-938b-47c9-a0b4-2f17105de2a4"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='TestProduct']/menuitem[@text='L']
+			</item>
+			<item
+			addcaps="menuitem,qtelement,checkable"
+			capname="menuitem"
+			id="45414568-add7-4b8c-8590-84f4c01eab8a"
+			name="E"
+			refimgid="016d5c53-8376-4054-94f1-eeee17bb3ce2"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='TestProduct']/menuitem[@text='E']
+			</item>
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="4e491b7b-5d8b-4dfe-9bcb-505ba1122206"
+			name="ImportPointWithPattern"
+			refimgid="6933ebdd-830a-4770-b59d-eab85c99e916"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='TestProduct']/menuitem[@text='Import point with pattern']
+			</item>
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="6a51f363-b466-44e3-8cd6-ad2dd73b9dec"
+			name="ImportFromGeodeticLibrary"
+			refimgid="ff1c5e2d-db60-4c2b-97f9-907d88bdf281"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='TestProduct']/menuitem[@text='Import from geodetic library']
+			</item>
+			<basepath>
+				/contextmenu[@processname='TestProduct']
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="513e8dad-47db-417b-8e17-f00f756d0faa"
+		isrooted="True"
+		name="ProjectionType"
+		refimgid="a3a32732-12b2-41f1-91b5-70c573326fb9"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="b43c8ce1-9825-4889-a14b-6689f24c52fe"
+			name="OKBtn"
+			refimgid="18fe843c-9d5d-4195-85a0-fee1b0b68fd1"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Test Product']/?/?/button[@text='OK']
+			</item>
+			<item
+			addcaps="listitem,accessible"
+			capname="listitem"
+			id="91066ce3-86db-4be3-9b78-d3561196e321"
+			name="CK42_1"
+			refimgid="a1b6ec6e-9ab7-478d-a3c7-7bc93c595b67"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Test Product']/?/?/list[@accessiblerole='List']/listitem[@accessiblename='CK-42']
+			</item>
+			<item
+			addcaps="listitem,accessible"
+			capname="listitem"
+			id="b6764401-4cd1-4355-929d-af75ba2b1d66"
+			name="ListItem6Deg"
+			refimgid="9812382f-4bef-4709-a530-b2b55ad6f776"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Test Product']/?/?/list[@accessiblerole='List']/listitem[@accessiblename='6°']
+			</item>
+			<item
+			addcaps="listitem,accessible"
+			capname="listitem"
+			id="7d6d4afc-887d-4901-98fc-b5a7f3568abd"
+			name="ListItemYes"
+			refimgid="92e10438-1f09-4365-921c-827b277ebfd5"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Test Product']/?/?/list[@accessiblerole='List']/listitem[@accessiblename='Yes']
+			</item>
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="79bdd279-039c-4dd5-89e2-37b910af837e"
+			name="CK42_2"
+			refimgid="221699ed-1e3f-4ca8-8a20-c234e8ae4a61"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Test Product']/container[@accessiblerole='Client']/tree[@accessiblerole='Outline']/treeitem[2]
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="61470076-01c0-4374-8352-5d97cebf9982"
+			name="CopyLine"
+			refimgid="052b80d3-e8f9-4b0d-8366-3d035401566c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Test Product']/?/?/menuitem[@accessiblename='Copy line']
+			</item>
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="11a79526-55ee-4b62-bcb6-605d9ada3cfa"
+			name="WGS84"
+			refimgid="bcbd3295-60bc-438d-ab70-33942a645809"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Test Product']//tree[@name='itemWidget']/treeitem[@text='Geocentric CS']/treeitem[@text='WGS 84']
+			</item>
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="55a66b4b-0da9-40f0-86f8-577957016ffe"
+			name="Lambert2SP"
+			refimgid="63dc9f48-6d66-40ad-bf50-8e92d36df786"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Test Product']//tree[@name='itemWidget']/treeitem[@text='Lambert_2SP']
+			</item>
+			<basepath>
+				/form[@title='Test Product']
+			</basepath>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="2e67d1e6-b77b-4203-9ebb-fa79ad6e9a6b"
+		isrooted="True"
+		name="ProjectConfDialog"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="11e70162-766d-4009-aa4a-576483e5d457"
+			name="Parameters"
+			refimgid="ef58e2e6-25ac-4884-bdb8-838d8da741b2"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='Geodetic project configuration dialog']/container[@name='splitter']/?/?/tree[@name='treeWidget']/treeitem[@text='Project card']/?/treeitem[@text='Parameters']
+			</item>
+			<item
+			addcaps="cell,qtitem"
+			capname="cell"
+			id="9349ea2c-ba84-411f-85c7-250f49a7a10e"
+			name="NZone"
+			refimgid="e9b617a6-2c55-4f22-89da-acbbb0ff015f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='Geodetic project configuration dialog']/container[@name='splitter']//tree[@type='ParamWidget']/treeitem[@text='display zone number']/cell[@text='0' and @columnindex='1']
+			</item>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="10a88b42-919d-4d86-b3f6-bb073ca3b8b9"
+			name="OKBtn"
+			refimgid="cecc480c-25c6-4f5e-b9ba-5233194df49b"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='Geodetic project configuration dialog']/?/?/button[@text='OK']
+			</item>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="91d1a44e-ab8e-4aa7-a7a9-ec5a3ede95bc"
+			name="Apply"
+			refimgid="3d53555d-d955-43cf-ab44-e50035ee7f3c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='Geodetic project configuration dialog']/?/?/button[@text='Apply']
+			</item>
+			<basepath>
+				/form[@name='Geodetic project configuration dialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAHPSURBVDhPlZFdSNNRGIcPgoIO0mkXGYmEUtaC
+CEvoIkJiUn4QqCWU2YUhKlTQii3w42orpPZXmVImUtQqxY90uqDFlGQqhsuKBPGjEvRCEroTU3ni
+f6iLub/D/eDhHM77nueFc8TWfP65yMPnX6h7OUxjtwfllZ+hiSX+lUPH1NFLYY8Np78Hl38A77Qb
+q+sjlx9MYmn2hpbcGnjD0fHD3JgtY27lK2t/Fvi2+Iu2yRXK3y5TaPNxTbmnLal4NsiJkdMkfYrg
+xe/bbG4sAKssr8PBNEMAWXc7AiWt/TNku+8QNSzInI1jatOKwXBkR0hBZdsEWb4SIj0J5M9fxLc+
+w80Dgo2xzJCoPVJw3u4luaWMWNsj0t+NykI4iNRyN6Kolqi8VuKrv8tDrYlaSIEutxdxth1htCOK
+3wfYd4LYX9BFhLEbceY1+tJSTCZTWAiLY5w9OZ3ozznZa8khrUsEfd12yEdUk1HSR0p+O0nmKyQ+
+jWF3k042RJp3yVWdpDQ/lvvj5g+Bl//n5NV+Dl1yklidh96hI9YeQ5wSHSRo8fzQFqgprholpbKB
++PsZ7HMcI1m5ECRQ+7YVqCmwujDUXefUkxqM9X2agrASWiDEX4kcp6FQuwZDAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="2af969e3-33b0-411d-8189-a623ebf9b6c2"
+		isrooted="True"
+		name="ImportPointWithPattern"
+		searchtimeout="30000ms"
+		usecache="True">
+			<folder
+			addcaps="form,qtelement"
+			capname="form"
+			id="1f784b05-0960-457c-85ea-3f1bf8e1bf7a"
+			isrooted="True"
+			name="MainWindow"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,qtelement"
+				capname="button"
+				id="958dfc74-3c2e-46ef-8018-744247802543"
+				name="Import"
+				refimgid="18272a79-77a6-4e81-b03a-64fe12c02ff1"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='Import point with pattern']/form[@name='MainWindow']/?/?/button[@text='Import']
+				</item>
+				<item
+				addcaps="button,qtelement"
+				capname="button"
+				id="52697387-a716-4b05-8ba1-65a38a9b36c9"
+				name="Open"
+				refimgid="8ce5ab6e-ce4f-4ea8-978c-4493c157fb2f"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='Import point with pattern']/form[@name='MainWindow']/?/?/button[@text='Open']
+				</item>
+				<basepath>
+					/form[@title='Import point with pattern']/form[@name='MainWindow']
+				</basepath>
+			</folder>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="28235af3-e8a8-4ad7-8b8d-89b09c9f87d9"
+			name="Pattern"
+			refimgid="6032d93f-5f13-461e-8516-7d845a91f40d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Import point with pattern']/form[@name='MainWindow']/?/?/menuitem[@text='&amp;Pattern' and @type='QAction']
+			</item>
+			<folder
+			addcaps="table,accessible"
+			capname="table"
+			id="abe5129a-9bc0-428d-8696-20281dca06a3"
+			isrooted="True"
+			name="Table"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="0ff6a469-f729-4362-947c-6ae5b5df5b44"
+				name="CellB"
+				refimgid="f521b1a7-2db6-4eb7-b71a-600823bf80b4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='Import point with pattern']//table[@accessiblerole='Table']/cell[@accessiblename='B']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="9aa855ab-f707-4b47-8654-2951151551df"
+				name="CellL"
+				refimgid="e3ffa9dc-7f2b-4603-8401-cd7a2fb2ef26"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='Import point with pattern']//table[@accessiblerole='Table']/cell[@accessiblename='L']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="d239e2b5-ac55-41b3-bdc9-7fcfaf463d27"
+				name="CellName"
+				refimgid="e7b8911e-a025-4ea8-bc61-2e95d4654190"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='Import point with pattern']//table[@accessiblerole='Table']/cell[@accessiblename='name']
+				</item>
+				<basepath>
+					/form[@title='Import point with pattern']//table[@accessiblerole='Table']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@title='Import point with pattern']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAHPSURBVDhPlZFdSNNRGIcPgoIO0mkXGYmEUtaC
+CEvoIkJiUn4QqCWU2YUhKlTQii3w42orpPZXmVImUtQqxY90uqDFlGQqhsuKBPGjEvRCEroTU3ni
+f6iLub/D/eDhHM77nueFc8TWfP65yMPnX6h7OUxjtwfllZ+hiSX+lUPH1NFLYY8Np78Hl38A77Qb
+q+sjlx9MYmn2hpbcGnjD0fHD3JgtY27lK2t/Fvi2+Iu2yRXK3y5TaPNxTbmnLal4NsiJkdMkfYrg
+xe/bbG4sAKssr8PBNEMAWXc7AiWt/TNku+8QNSzInI1jatOKwXBkR0hBZdsEWb4SIj0J5M9fxLc+
+w80Dgo2xzJCoPVJw3u4luaWMWNsj0t+NykI4iNRyN6Kolqi8VuKrv8tDrYlaSIEutxdxth1htCOK
+3wfYd4LYX9BFhLEbceY1+tJSTCZTWAiLY5w9OZ3ozznZa8khrUsEfd12yEdUk1HSR0p+O0nmKyQ+
+jWF3k042RJp3yVWdpDQ/lvvj5g+Bl//n5NV+Dl1yklidh96hI9YeQ5wSHSRo8fzQFqgprholpbKB
++PsZ7HMcI1m5ECRQ+7YVqCmwujDUXefUkxqM9X2agrASWiDEX4kcp6FQuwZDAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="7c6236c3-ca81-40bd-8dba-a7ab90e4f10b"
+		isrooted="True"
+		name="OpenFile"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="93f924ee-75f4-4e79-85e9-28a636bb92e2"
+			name="FileName"
+			refimgid="77e6fb0f-3e2e-4cbd-9e3e-bc98e88dfdd6"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Open file']/?/?/text[@controlid='1148']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="58259494-628a-4798-bc4b-0a0ccd6d6091"
+			name="OpenBtn"
+			refimgid="7fa43191-8958-430c-a46f-eb731a858ffb"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Open file']/button[@text='&amp;Open']
+			</item>
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="ecd0aa47-06a3-40c0-9340-fedbcf69def7"
+			name="Text41477"
+			refimgid="7a47c2ee-3b81-4bb9-8b00-530d95e92e52"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Open file']/element[@class='WorkerW']//combobox[@controlid='41477']/text[@controlid='41477']
+			</item>
+			<item
+			addcaps="button,nativeitem,checkable"
+			capname="button"
+			id="febb9a91-799a-4a9e-845f-88c4fc85791f"
+			name="PreviousLocations"
+			refimgid="b6f718df-f16a-4d16-859d-b7f29b3305ac"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Open file']/element[@class='WorkerW']//progressbar/toolbar[@class='ToolbarWindow32']/button[@text='Previous locations']
+			</item>
+			<basepath>
+				/form[@title='Open file']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAHPSURBVDhPlZFdSNNRGIcPgoIO0mkXGYmEUtaC
+CEvoIkJiUn4QqCWU2YUhKlTQii3w42orpPZXmVImUtQqxY90uqDFlGQqhsuKBPGjEvRCEroTU3ni
+f6iLub/D/eDhHM77nueFc8TWfP65yMPnX6h7OUxjtwfllZ+hiSX+lUPH1NFLYY8Np78Hl38A77Qb
+q+sjlx9MYmn2hpbcGnjD0fHD3JgtY27lK2t/Fvi2+Iu2yRXK3y5TaPNxTbmnLal4NsiJkdMkfYrg
+xe/bbG4sAKssr8PBNEMAWXc7AiWt/TNku+8QNSzInI1jatOKwXBkR0hBZdsEWb4SIj0J5M9fxLc+
+w80Dgo2xzJCoPVJw3u4luaWMWNsj0t+NykI4iNRyN6Kolqi8VuKrv8tDrYlaSIEutxdxth1htCOK
+3wfYd4LYX9BFhLEbceY1+tJSTCZTWAiLY5w9OZ3ozznZa8khrUsEfd12yEdUk1HSR0p+O0nmKyQ+
+jWF3k042RJp3yVWdpDQ/lvvj5g+Bl//n5NV+Dl1yklidh96hI9YeQ5wSHSRo8fzQFqgprholpbKB
++PsZ7HMcI1m5ECRQ+7YVqCmwujDUXefUkxqM9X2agrASWiDEX4kcp6FQuwZDAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="contextmenu"
+		id="27f3d10f-b95c-47d1-9f8a-b1ca64914fd5"
+		isrooted="True"
+		name="contextmenuitems"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="menuitem,qtelement,checkable"
+			capname="menuitem"
+			id="bf17cf7d-23c9-41f6-96d8-88c861645933"
+			name="ToIgnore"
+			refimgid="a91e9477-c583-4a02-8e3f-c01f16078b33"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='TestProduct']/menuitem[@text='Ignore']
+			</item>
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="4e7b4c50-e30c-4814-ba23-e9b2dd322272"
+			name="SheetTable"
+			refimgid="af743182-55d8-4c7c-9f33-94f2edc8ba46"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='TestProduct']/menuitem[@text='Sheet table']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="fe8b9718-1d72-49c5-8d39-151ccaf8df7e"
+			name="ExcelExport"
+			refimgid="09f317f3-9f81-4d20-964f-4dd83799834f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='TestProduct']/?/?/menuitem[@accessiblename='Export in Microsoft Excel']
+			</item>
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="bea2ac41-b13a-4f89-9831-4b14960f0c0f"
+			name="CopyLine"
+			refimgid="7296bf82-6db4-4fb9-b3b5-c8ee3703a3cc"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='TestProduct']/menuitem[@text='Copy line']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="de3e6c4f-9603-4ab9-96da-d1c27091fb17"
+			name="Insert"
+			refimgid="93734a0f-c44d-4f10-86c6-63c3b87e997b"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='TestProduct']/?/?/menuitem[@accessiblename='Insert']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="882c39f1-ff7a-457a-a166-d4b178739d06"
+			name="SaveAs"
+			refimgid="17af3da8-0a44-4ac4-a7d0-42608058885a"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='TestProduct']/?/?/menuitem[@accessiblename&gt;'Save as']
+			</item>
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="6dcedeae-4496-4a42-a27c-28f38b046978"
+			name="MenuItemProperties"
+			refimgid="62a16de0-e1ca-4ba0-820c-a15fa8791190"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='TestProduct']/menuitem[@text='&amp;Properties']
+			</item>
+			<item
+			addcaps="menuitem,qtelement,checkable"
+			capname="menuitem"
+			id="410430bf-e405-4ce6-b2e8-25d5ec4eab17"
+			name="MenuItemN"
+			refimgid="59c9ae76-e04d-43e4-8c63-cf84fcb9f3a2"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='TestProduct']/menuitem[@text='N']
+			</item>
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="d6f29f0c-9d77-4d02-abac-268042c16613"
+			name="ImportPointPattern"
+			refimgid="56dfd60d-3258-4b7e-aa62-ae457c7c4da5"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='TestProduct']/menuitem[@text='Import pointwith pattern']
+			</item>
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="62836c22-d970-489b-91c6-99a914ffac1e"
+			name="Calculation"
+			refimgid="9267385b-bca5-4351-9ef0-5eda9c7b2d4f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='TestProduct']/menuitem[@text='Calculation']
+			</item>
+			<basepath>
+				/contextmenu[@processname='TestProduct']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="4b39be0d-4297-4760-952d-53ac9c58b42b"
+		isrooted="True"
+		name="SetProjectionType"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="2f51adb0-1cf9-4612-b391-42ace9b316fa"
+			name="OKBtn"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Test Product']/container[@type='QDialogButtonBox']/button[@text='OK']
+			</item>
+			<item
+			capname="combobox"
+			id="565524ff-34fd-44fd-b87e-d23878ce1d4e"
+			name="List"
+			refimgid="5ab590bf-c8d6-4776-bd92-97f83a4fa469"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Test Product']/combobox[@accessiblename='Set the projection type']
+			</item>
+			<basepath>
+				/form[@title='Test Product']
+			</basepath>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="959ddcdd-d1e6-4695-9c7f-9f5d35f89162"
+		isrooted="True"
+		name="NotePadDlg"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="5d2e4190-3710-4252-8742-e57a3021efa5"
+			name="Text15"
+			refimgid="2d022b06-4c8c-4095-b13b-26ca88cef1b2"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title~'NotePad']/text[@controlid='15']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="7db917ee-f212-4921-8563-41ebce774f0d"
+			name="File"
+			refimgid="4d5519e3-6ce7-4b9f-9447-36eb836e3cfc"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title~'NotePad']/?/?/menuitem[@accessiblename='File']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="555b601f-c48b-48aa-a4d3-0a56df572415"
+			name="Close"
+			refimgid="0d9ea964-0207-4a8c-bd30-f9d92b227723"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title~'NotePad']/?/?/button[@accessiblename='Close']
+			</item>
+			<basepath>
+				/form[@title~'NotePad']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKPSURBVDhPjZHLTxNRFMbZm7j2/zG6cEPUxD07
+486QaCIhYHhoqZSXpRFsAVseQaUBQkHBSqGl005n2k470+l0Xi2lD2irjWv5vDMotdEFJzk5NzO5
+3/f7zu34X/VNzeAq85+a5dT07XsPQJ3UcKvzPvx61ZzruRNzevi8OV9RPEaDCbgtnf2/r3Z0ULXa
+dVssW5YbP5CpNZGofkOkVEfg+Aw7WgVeIrIo5OHkVAwGWFgP45gY7GqRuHn9piOeE6V6E/xpE2y5
+gaNiDf58FVtKCR+lY7gFHTMJBf1faDhjmXYBR1weWhT0A0o9xqFSgF/S4RNUeFM5LMdFzDECpqmU
+6fx4bRcrDN8uYItJe+ty0cudfgdTaSBM8PcLVWxrZYJfxFKG4Kc0TDA5dG8eIFGptwuMREVtV624
+AnIBe9kL9zXivhLPYp7JEPc0xkIcBvYZPFzaglattQSsicQ1a1TMbyonc9FyHaHimZndpxJ36cLd
+lVJhjysYDqfx1BfEz/PzlsAonb3zmpXZVbEw/0nUsMEr+MBJWCLZXTEjO3EPJjF0wOKZL4Seja9o
+NJstgRFaHHFyyrYnrS0Eiqf4rFewKZfwnmzeQzb/ltMwxeZgoUX0+RnYwykYdSkwHBEO3eSyM6m8
+86ZlrCYluNkMZmM87GTzo4Y7efuevRi6vX4sUMl2gkFK0FycOm1nZY9PLWGN5F7OFDCX1uFIyBhj
+JLyIiOgNGvlDoAnlJUFfJH3jZVSUyJIcM5y6+Ce7sfk3UR6TRxyshGCYEPT6aTxa9iFbqrYInh8J
+dwkBLFHRdJogWcfJW4+Ts83oWBaT5JvRNjqLJzth092oywh/V07VTfWr9H8Fxge6NowfV2m3pbP/
+F0Wgr4voafeUAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="59708ed9-8550-4132-93e9-695517f3888c"
+		isrooted="True"
+		name="SaveDlg"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="7b88a3d5-4592-49bd-94e3-0adc99785246"
+			name="Text41477"
+			refimgid="fe82bc2d-e51d-444b-b153-eb76ba87914c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Save']/element[@class='WorkerW']//combobox[@controlid='41477']/text[@controlid='41477']
+			</item>
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="5a6c0280-8aec-4c94-b9c2-9d96ad6576a4"
+			name="Text1001"
+			refimgid="86dc75db-f636-49b4-8887-9233d687d0cf"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Save']/element[@class='DUIViewWndClassName']//combobox[@class='ComboBox']/text[@controlid='1001']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="bdce8aa6-511a-49de-a3a5-9df192e0a88a"
+			name="Save"
+			refimgid="6697cba1-cf38-4669-9766-76f47e6c4ac6"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Save']/button[@text='Save']
+			</item>
+			<item
+			addcaps="button,nativeitem,checkable"
+			capname="button"
+			id="c910ead6-42b8-4783-b711-81f3d1841b8b"
+			name="PreviousLocations"
+			refimgid="139ca43d-5685-450b-925e-40508ba7f754"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Save']/element[@class='WorkerW']//progressbar/toolbar[@class='ToolbarWindow32']/button[@text='Previous locations']
+			</item>
+			<basepath>
+				/form[@title='Save']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKPSURBVDhPjZHLTxNRFMbZm7j2/zG6cEPUxD07
+486QaCIhYHhoqZSXpRFsAVseQaUBQkHBSqGl005n2k470+l0Xi2lD2irjWv5vDMotdEFJzk5NzO5
+3/f7zu34X/VNzeAq85+a5dT07XsPQJ3UcKvzPvx61ZzruRNzevi8OV9RPEaDCbgtnf2/r3Z0ULXa
+dVssW5YbP5CpNZGofkOkVEfg+Aw7WgVeIrIo5OHkVAwGWFgP45gY7GqRuHn9piOeE6V6E/xpE2y5
+gaNiDf58FVtKCR+lY7gFHTMJBf1faDhjmXYBR1weWhT0A0o9xqFSgF/S4RNUeFM5LMdFzDECpqmU
+6fx4bRcrDN8uYItJe+ty0cudfgdTaSBM8PcLVWxrZYJfxFKG4Kc0TDA5dG8eIFGptwuMREVtV624
+AnIBe9kL9zXivhLPYp7JEPc0xkIcBvYZPFzaglattQSsicQ1a1TMbyonc9FyHaHimZndpxJ36cLd
+lVJhjysYDqfx1BfEz/PzlsAonb3zmpXZVbEw/0nUsMEr+MBJWCLZXTEjO3EPJjF0wOKZL4Seja9o
+NJstgRFaHHFyyrYnrS0Eiqf4rFewKZfwnmzeQzb/ltMwxeZgoUX0+RnYwykYdSkwHBEO3eSyM6m8
+86ZlrCYluNkMZmM87GTzo4Y7efuevRi6vX4sUMl2gkFK0FycOm1nZY9PLWGN5F7OFDCX1uFIyBhj
+JLyIiOgNGvlDoAnlJUFfJH3jZVSUyJIcM5y6+Ce7sfk3UR6TRxyshGCYEPT6aTxa9iFbqrYInh8J
+dwkBLFHRdJogWcfJW4+Ts83oWBaT5JvRNjqLJzth092oywh/V07VTfWr9H8Fxge6NowfV2m3pbP/
+F0Wgr4voafeUAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="e26e0e9e-c4d7-47f3-a53a-13b613983f3d"
+		isrooted="True"
+		name="GeodeticDataLibrary"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="ac09d605-da3b-4cc5-9b33-81995ee8090c"
+			name="CoordinateSystems"
+			refimgid="af413aec-99b7-4f5e-9235-a1ba859fd05f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Geodetic data library']//tree[@accessiblerole='Outline']/treeitem[@accessiblename='Coordinate systems']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="1e440c4d-dd93-4bb8-819a-01476e96da3a"
+			name="Create"
+			refimgid="201e3a37-74c6-440e-90e1-943d4c032d22"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Geodetic data library']/button[@accessiblerole='SplitButton']/container[1]//button[@accessiblename='Create']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="4e608e86-c072-4ae1-9585-477931165aa9"
+			name="Apply"
+			refimgid="bab5726f-4b21-4e21-b962-f2d4f2a7a795"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Geodetic data library']/?/?/button[@accessiblename='Apply']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="402dfb93-baa6-4e70-877c-b3ee2ae720e7"
+			name="OKEnter"
+			refimgid="3c0709bb-9bd1-4527-8b39-9f7c94cdf7c9"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Geodetic data library']/?/?/button[@accessiblename='OK Enter']
+			</item>
+			<folder
+			addcaps="tree,accessible"
+			capname="tree"
+			id="2a3faaf4-0da5-4196-898a-9c8afc02844b"
+			isrooted="True"
+			name="Outline"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="78c6a29d-e491-4803-8782-c6f68249d855"
+				name="WGS84"
+				refimgid="0906a737-85d4-4bad-a232-ed0cc7b09158"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='Geodetic data library']/button[@accessiblerole='SplitButton']/?/?/container[@accessiblerole='Client']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='WGS 84']
+				</item>
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="d09c3f7f-d488-4a6e-9ce2-837265e351cc"
+				name="NewCS"
+				refimgid="c27a6a75-b78d-4b51-9c50-d2c91cac03b2"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='Geodetic data library']/button[@accessiblerole='SplitButton']/?/?/container[@accessiblerole='Client']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='New CS 1']
+				</item>
+				<basepath>
+					/form[@title='Geodetic data library']/button[@accessiblerole='SplitButton']/?/?/container[@accessiblerole='Client']/tree[@accessiblerole='Outline']
+				</basepath>
+			</folder>
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="43eeed8e-da09-43d6-830f-2cd8073da08d"
+			name="Datums"
+			refimgid="f3720f6e-830d-4e55-afb0-63c5731bf460"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Geodetic data library']//tree[@name='treeWidget']/treeitem[@text='Datums']
+			</item>
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="f1bf6853-bc21-4c49-9b09-d9296fc2dfbb"
+			name="WGS84"
+			refimgid="837400b4-dde2-4738-9ae0-c4bacb01de4d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Geodetic data library']/container[@name='splitter']//tree[@name='itemWidget']/treeitem[@text='WGS-84']
+			</item>
+			<item
+			addcaps="cell,qtitem"
+			capname="cell"
+			id="ea12c637-f86c-4511-9258-b7ed122f9eea"
+			name="WGS1984"
+			refimgid="ac5088f7-6cbb-4c22-bea4-cbfd85bca13e"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Geodetic data library']//tree[@name='paramWidget']/treeitem[@text='ellipsoid']/cell[@text='WGS 1984']
+			</item>
+			<item
+			addcaps="text,qtelement"
+			capname="text"
+			id="38fd185a-1724-4d63-a3c2-b949a9c181fb"
+			name="QLineEdit"
+			refimgid="61b7bbd8-25f6-4b4b-b72f-5b3f0ddb2ce3"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Geodetic data library']//tree[@name='paramWidget']/combobox[@type='CComboBox']/text[@type='QLineEdit']
+			</item>
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="e5828e20-994c-40a3-bb25-63db8947d200"
+			name="PseudoMercator"
+			refimgid="d534099e-a391-46be-8b5c-28edf39027a2"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Geodetic data library']/container[@name='splitter']//tree[@name='itemWidget']/treeitem[@text='Pseudo Mercator']
+			</item>
+			<basepath>
+				/form[@title='Geodetic data library']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAADBSURBVDhPpY89CgIxFIT3NIoIgoWFhWBhIQRk
+ccFrKIKFhRALGxsLYS0sBPE01nbeZJYwkuDTrD/obga+EB7ke5OoMgZDcILqBKxNwfoMbMzB5gJs
+LcH2Cuyswe4G7G3B/g5Ue3BwAOOjJwghSpKE58uVEntP05RZlt0n32PfPgRaa4cvkNkn3gSS0g3k
+T6UbGGMcIvgnOYGYfYG/8RWb4AajWD0FwxMcRRrkBMENxCwCO/+FE9gjqIEIfAoLyqN4AxTNAnR1
++6L9AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="23e9b40d-55f2-40c8-aadc-506601fcb7fe"
+		isrooted="True"
+		name="ProjectProperties"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="02051527-3f3e-4356-9b26-712ca867f173"
+			name="UnitsMeasurementAndAccuracy"
+			refimgid="f1fa9c19-ee7d-41d5-a7c7-19e8f72f20db"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Project properties']/container[@name='splitter']/?/?/tree[@name='treeWidget']/treeitem[@text='Units of measurement and accuracy']
+			</item>
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="7fce364c-f339-403e-961c-995f00fabea2"
+			name="Parameters"
+			refimgid="43e87bfb-9f40-4bf5-b634-704fe0631712"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Project properties']/button[@accessiblerole='SplitButton']/container[12]/tree[@accessiblerole='Outline']/treeitem[15]
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="7e626538-d470-4469-beec-19078600c93f"
+			name="Apply"
+			refimgid="b0f93402-18bb-478a-b38c-9109e5efba19"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Project properties']/?/?/button[@accessiblename='Apply']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="7c6bf372-938a-4873-89cd-db720d09666b"
+			name="OKBtn"
+			refimgid="3a7acbf1-3101-4eea-99f6-5f0587f01ce2"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Project properties']/?/?/button[@accessiblename='OK']
+			</item>
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="645de70d-15cf-42ef-b461-24af95b0c142"
+			name="PlaneCoordinates"
+			refimgid="d710d6eb-a855-4b9a-a2b5-8b78aeac0fb4"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Project properties']/container[@name='splitter']/?/?/element/tree[@type='QTreeWidget']/treeitem[@text='Plane coordinates']
+			</item>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="f828af1d-c05f-4a4f-94bd-356cc5e176c6"
+			name="RestoreUtility"
+			refimgid="01a93543-4676-4fcd-a6b5-de474b026cb3"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Project properties']/button[@text='Restore utility']
+			</item>
+			<item
+			addcaps="cell,qtitem"
+			capname="cell"
+			id="4bb485c0-9d81-44f0-bbbe-b4f6562af6bd"
+			name="plCoord"
+			refimgid="d8e33d0a-c05a-4c1f-8841-3b158bb71899"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Project properties']/container[@name='splitter']/?/?/element/tree[@type='QTreeWidget']/?/?/cell[@columnindex='2' and @rowindex='2']
+			</item>
+			<basepath>
+				/form[@title='Project properties']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAlFJREFUOE+lk+tLk2EYh/eX9CGipCIyCKLo4HHlzA8SVoR9KogkkKDM
+CKRCCwQtKUjtIJSdrKggqQ+CFZmHHGlzzrU552HqNnWbO7zHXT3bBLXQoG74fXvv63c9z8tj+O9p
+aDFz55WDmuYBqpp+cLnRzJnqTk5UdlNc8YWic60Ulr6koOTJshw8/RjjkXIMdc9tNLVrNLZp3GqV
+qX4dofJZkIpHs5Q3+Tl710fJ7UlO1o5zvNrN0SoXh644yS8zsyZtB4baZjN1bwLcfBvm4oMpTt1w
+U3zdybFrDg5ftVNYYaPg0iCmcisHLgxgLLOQe95CRmk369KNGGoaXuAPxAhHNeZFQhGVYFghIDIb
+SsUbUPDMyLi9Mg6PhHVMosvqYePW7QJQ38JqE4+DokJEijMX0ZkKaoz6VSwuLxs2b8Nw/+n7hU//
+HE0HSYkzH9OZmdeYnNNw+xR+Tir0DP0FoItmWSwnm8M606J5TDQ7pxSs4zKd1tUACW1NLMtxglEd
+X0hjYlbD5VWwTSj0j8h8tgjAphUAi+pxZsRySl3FLtQtozK9wxLtfSsAkupqQl1PqQdS6o6kusJ3
+l0yXQ6LNnACkLwckb1yDqDh3YKn6dEq9zy3R45TosMX40PsbQOyiLqiHhLo/eesqIwl1z6L6V3uM
+T9Yo73q8rE8A7i0xEOVI4p+HYggATMyByxdnyKPRP6rxbVilw67wcVBOAtambRFvof4hufvzyTGa
+yBbJEskUycg1sS/HxN7sPPaI7M7KY1dmKjszUsnJL2LhTf7rGAy/AP7X5rYY5FLEAAAAAElFTkSu
+QmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="78ba93be-8a78-4147-b467-bc6182b0153e"
+		isrooted="True"
+		name="ImportTemplateSettings"
+		refimgid="9fefcae2-91c2-47d8-946e-c3cb21818180"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="04afd387-5d8d-4896-82c1-df5cf72f0500"
+			name="TemplateSettings"
+			refimgid="aed8fffa-3fcb-4175-9da7-93494680effe"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Import template settings' and @basetype='QDialog']/container[@name='splitter']/?/?/tree[@name='treeWidget']/treeitem[@text='Template settings']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="1ee858ef-98d8-49c1-af43-fa30fdcbe640"
+			name="Separators"
+			refimgid="6fcf0e8d-da58-431a-b01c-9f92054bc9c3"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Import template settings' and @basetype='QDialog']/container[@name='splitter']//container[@caption='Separators']/text[@name='separators']
+			</item>
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="688bc4d4-dae4-4a39-9e77-bc10926116cb"
+			name="UnitsOfMeasurement"
+			refimgid="0e0a6e86-3f98-44f5-9919-56e8f5e3aeb7"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Import template settings' and @basetype='QDialog']/container[@name='splitter']/?/?/tree[@name='treeWidget']/treeitem[@text='Units of measurement']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="4bbc1222-7b47-4ac7-a7ff-bb7bdc655517"
+			name="Apply"
+			refimgid="6348d4be-7f3b-4646-9d29-5fbee0d3eed8"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Import template settings' and @basetype='QDialog']/?/?/button[@accessiblename='Apply']
+			</item>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="1967083f-605d-47e4-859e-e52372c04e35"
+			name="OKBtn"
+			refimgid="ad34ce86-ac0f-4e3c-9452-7b4dc2a35f65"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Import template settings' and @basetype='QDialog']/?/?/button[@text='OK']
+			</item>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="b4da0aca-9a25-4dce-a9c2-ce9052446e71"
+			name="RestoreUtility"
+			refimgid="2c8b94d6-f503-455c-9335-ac7f608258b1"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Import template settings' and @basetype='QDialog']/button[@text='Restore utility']
+			</item>
+			<basepath>
+				/form[@title='Import template settings' and @basetype='QDialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAlFJREFUOE+lk+tLk2EYh/eX9CGipCIyCKLo4HHlzA8SVoR9KogkkKDM
+CKRCCwQtKUjtIJSdrKggqQ+CFZmHHGlzzrU552HqNnWbO7zHXT3bBLXQoG74fXvv63c9z8tj+O9p
+aDFz55WDmuYBqpp+cLnRzJnqTk5UdlNc8YWic60Ulr6koOTJshw8/RjjkXIMdc9tNLVrNLZp3GqV
+qX4dofJZkIpHs5Q3+Tl710fJ7UlO1o5zvNrN0SoXh644yS8zsyZtB4baZjN1bwLcfBvm4oMpTt1w
+U3zdybFrDg5ftVNYYaPg0iCmcisHLgxgLLOQe95CRmk369KNGGoaXuAPxAhHNeZFQhGVYFghIDIb
+SsUbUPDMyLi9Mg6PhHVMosvqYePW7QJQ38JqE4+DokJEijMX0ZkKaoz6VSwuLxs2b8Nw/+n7hU//
+HE0HSYkzH9OZmdeYnNNw+xR+Tir0DP0FoItmWSwnm8M606J5TDQ7pxSs4zKd1tUACW1NLMtxglEd
+X0hjYlbD5VWwTSj0j8h8tgjAphUAi+pxZsRySl3FLtQtozK9wxLtfSsAkupqQl1PqQdS6o6kusJ3
+l0yXQ6LNnACkLwckb1yDqDh3YKn6dEq9zy3R45TosMX40PsbQOyiLqiHhLo/eesqIwl1z6L6V3uM
+T9Yo73q8rE8A7i0xEOVI4p+HYggATMyByxdnyKPRP6rxbVilw67wcVBOAtambRFvof4hufvzyTGa
+yBbJEskUycg1sS/HxN7sPPaI7M7KY1dmKjszUsnJL2LhTf7rGAy/AP7X5rYY5FLEAAAAAElFTkSu
+QmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="1fdb154d-2681-4f97-a929-9b88e6aaea83"
+		isrooted="True"
+		name="ImportSettings"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="1795a11f-a866-4656-9002-c4da5bb6a33e"
+			name="OKBtn"
+			refimgid="03328bf3-4918-4bef-88a4-4ad5351d81b3"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='Import settings']/?/?/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@name='Import settings']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAHPSURBVDhPlZFdSNNRGIcPgoIO0mkXGYmEUtaC
+CEvoIkJiUn4QqCWU2YUhKlTQii3w42orpPZXmVImUtQqxY90uqDFlGQqhsuKBPGjEvRCEroTU3ni
+f6iLub/D/eDhHM77nueFc8TWfP65yMPnX6h7OUxjtwfllZ+hiSX+lUPH1NFLYY8Np78Hl38A77Qb
+q+sjlx9MYmn2hpbcGnjD0fHD3JgtY27lK2t/Fvi2+Iu2yRXK3y5TaPNxTbmnLal4NsiJkdMkfYrg
+xe/bbG4sAKssr8PBNEMAWXc7AiWt/TNku+8QNSzInI1jatOKwXBkR0hBZdsEWb4SIj0J5M9fxLc+
+w80Dgo2xzJCoPVJw3u4luaWMWNsj0t+NykI4iNRyN6Kolqi8VuKrv8tDrYlaSIEutxdxth1htCOK
+3wfYd4LYX9BFhLEbceY1+tJSTCZTWAiLY5w9OZ3ozznZa8khrUsEfd12yEdUk1HSR0p+O0nmKyQ+
+jWF3k042RJp3yVWdpDQ/lvvj5g+Bl//n5NV+Dl1yklidh96hI9YeQ5wSHSRo8fzQFqgprholpbKB
++PsZ7HMcI1m5ECRQ+7YVqCmwujDUXefUkxqM9X2agrASWiDEX4kcp6FQuwZDAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="8e7376e4-9bb6-40da-9990-2a5c2b432af2"
+		isrooted="True"
+		name="SelectCoordinateSystem"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="4b69b938-f0d6-4c3b-b983-70cbfd529e70"
+			name="CK42GOST"
+			refimgid="16a38bef-8c48-4491-a95d-9f1d3c07b6d4"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Select coordinate system']//tree[@name='itemWidget']/treeitem[@text='Geodetic CS']/treeitem[@text='CK-42 (GOST 32453-2017)']
+			</item>
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="44658d5e-c263-4d75-8feb-8962eaa02768"
+			name="GeodeticCS"
+			refimgid="db5e1d6a-0980-4c1d-97ad-20f2f88b22a4"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Select coordinate system']//tree[@name='itemWidget']/treeitem[@text='Geodetic CS']
+			</item>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="a4be8ce8-70e8-4546-8e56-5ecca34aeb7f"
+			name="OKBtn"
+			refimgid="1a43b555-b02b-4bee-9f73-63febf47d7cf"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Select coordinate system']/?/?/button[@text='OK']
+			</item>
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="d82c5af9-eb28-4762-92de-11f3af80bb70"
+			name="National"
+			refimgid="88c9d169-7d98-4608-87c5-2257d7f63582"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Select coordinate system']//tree[@name='itemWidget']/treeitem[@text='National']
+			</item>
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="61ec7312-039d-4546-b60c-865a296aea96"
+			name="CS5_426"
+			refimgid="3620e0a8-2270-4209-ab36-4de9aef2190e"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Select coordinate system']//tree[@name='itemWidget']/?/?/treeitem[@text='5_426']
+			</item>
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="d36a39b4-3e3d-4b51-9f8a-5d375c139f20"
+			name="WGS84"
+			refimgid="e5b5de5e-704d-42a5-8643-ebee06a73e62"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Select coordinate system']//tree[@name='itemWidget']/treeitem[@text='Geodetic CS']/treeitem[@text='WGS-84']
+			</item>
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="c502dc8a-49be-47be-9fa5-4fccb04f45b6"
+			name="Lambert1SP"
+			refimgid="0e94b02b-68ab-44e2-ac3d-4ad5809c37a9"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Select coordinate system']//tree[@name='itemWidget']/treeitem[@text='Lambert_1SP']
+			</item>
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="bb5e5a05-0391-45c4-906e-8b7940b4c952"
+			name="Lambert2SP"
+			refimgid="fae349d2-9c35-4946-bc70-f9f8c060b526"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Select coordinate system']//tree[@name='itemWidget']/treeitem[@text='Lambert_2SP']
+			</item>
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="527d49ab-9b82-42a5-b0a3-e4dbe9499d1b"
+			name="CK24_426"
+			refimgid="af0195bf-1b8e-4037-b010-4ae7478b896e"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Select coordinate system']//tree[@name='itemWidget']//treeitem[@text='24_426']
+			</item>
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="44a1a41a-430c-4859-bacf-c9ea485acc78"
+			name="CK25_426"
+			refimgid="369021b4-a21f-499f-b62e-82e2bcdbbaeb"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Select coordinate system']//tree[@name='itemWidget']//treeitem[@text='25_426']
+			</item>
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="00833305-9449-4166-bfd2-2d7cc76259ab"
+			name="Cax423"
+			refimgid="6cbba0aa-d9a3-47e9-8ee5-c96bfa4b3210"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Select coordinate system']//tree[@name='itemWidget']//treeitem[@text='Cax_423']
+			</item>
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="be7f13f7-ef22-4cff-b99c-636ff35249cb"
+			name="Cax633"
+			refimgid="1a7107b6-e127-46a8-8cef-6f6890f898ed"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Select coordinate system']//tree[@name='itemWidget']//treeitem[@text='Cax_633']
+			</item>
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="59f9b7c2-d3fb-45a8-9651-ff82a4a0793c"
+			name="CaxMCK"
+			refimgid="f0ce3205-31dd-4904-bbdd-b3b2ae27585f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Select coordinate system']//tree[@name='itemWidget']//treeitem[@text='Cax_MCK']
+			</item>
+			<item
+			addcaps="tree,qtelement"
+			capname="tree"
+			id="efedf1c8-59a5-4ab0-a3f6-345b18124e0d"
+			name="ItemWidget"
+			refimgid="b5afd47f-bed4-41a0-81fb-c8bcb3d58e7f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Select coordinate system']/element[@name='ResourceEditor']/?/?/tree[@name='itemWidget']
+			</item>
+			<item
+			capname="treeitem"
+			id="17729cf9-a705-4d97-bae7-60ae6bb01372"
+			name="CS"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Select coordinate system']//tree[@name='itemWidget']//treeitem[@text=$CSname]
+			</item>
+			<basepath>
+				/form[@title='Select coordinate system']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAHPSURBVDhPlZFdSNNRGIcPgoIO0mkXGYmEUtaC
+CEvoIkJiUn4QqCWU2YUhKlTQii3w42orpPZXmVImUtQqxY90uqDFlGQqhsuKBPGjEvRCEroTU3ni
+f6iLub/D/eDhHM77nueFc8TWfP65yMPnX6h7OUxjtwfllZ+hiSX+lUPH1NFLYY8Np78Hl38A77Qb
+q+sjlx9MYmn2hpbcGnjD0fHD3JgtY27lK2t/Fvi2+Iu2yRXK3y5TaPNxTbmnLal4NsiJkdMkfYrg
+xe/bbG4sAKssr8PBNEMAWXc7AiWt/TNku+8QNSzInI1jatOKwXBkR0hBZdsEWb4SIj0J5M9fxLc+
+w80Dgo2xzJCoPVJw3u4luaWMWNsj0t+NykI4iNRyN6Kolqi8VuKrv8tDrYlaSIEutxdxth1htCOK
+3wfYd4LYX9BFhLEbceY1+tJSTCZTWAiLY5w9OZ3ozznZa8khrUsEfd12yEdUk1HSR0p+O0nmKyQ+
+jWF3k042RJp3yVWdpDQ/lvvj5g+Bl//n5NV+Dl1yklidh96hI9YeQ5wSHSRo8fzQFqgprholpbKB
++PsZ7HMcI1m5ECRQ+7YVqCmwujDUXefUkxqM9X2agrASWiDEX4kcp6FQuwZDAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="e9b07378-28fd-45e7-98d8-41a9788b7d73"
+		isrooted="True"
+		name="SelectTransformationParameters"
+		refimgid="b00835a4-3f6a-42f5-939f-2c2680e382d4"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="083f99f2-ecd4-440d-85e8-061c47d97489"
+			name="OKBtn"
+			refimgid="daa2033e-36e6-4390-99f7-a42c10d9634b"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Select transformation parameters' and @basetype='QDialog' and @type='Calc2DDialog']/?/?/button[@text='OK']
+			</item>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="516350ec-279b-4c02-a904-e89f39dabdf6"
+			name="Create"
+			refimgid="e0685f39-a89e-4ee3-9876-8897e78bb08f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Select transformation parameters' and @basetype='QDialog' and @type='Calc2DDialog']/?/?/container[@name='groupBox_2']/?/?/button[@text='Create']
+			</item>
+			<item
+			addcaps="text,qtelement"
+			capname="text"
+			id="a94cfc57-2858-47ea-928b-3c405e4456fe"
+			name="QExpandingLineEdit"
+			refimgid="881ebb2e-05d6-4218-8a6d-51e2ab4aa2d2"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Select transformation parameters' and @basetype='QDialog' and @type='Calc2DDialog']//tree[@name='itemWidget']/text[@type='QExpandingLineEdit']
+			</item>
+			<item
+			addcaps="cell,qtitem"
+			capname="cell"
+			id="70358d30-dc38-48d4-839e-dc7718c36951"
+			name="TransformationType"
+			refimgid="c7f45061-3d38-4232-94eb-2ea825cfc740"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Select transformation parameters' and @basetype='QDialog' and @type='Calc2DDialog']/element[@name='ResourceEditor']/?/?/treeitem[@text='Transformation type']/descendant::cell[@columnindex='1']
+			</item>
+			<item
+			addcaps="cell,qtitem"
+			capname="cell"
+			id="a0281364-8247-49c8-b6aa-5bd3289a157a"
+			name="x1"
+			refimgid="5ca6dab1-c64c-4bd9-bce7-ed0b3bbe60cf"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Select transformation parameters' and @basetype='QDialog' and @type='Calc2DDialog']/element[@name='ResourceEditor']/?/?/treeitem[@text='N1, m']/descendant::cell[@columnindex='1' and @rowindex='2']
+			</item>
+			<item
+			addcaps="text,qtelement"
+			capname="text"
+			id="e7b8f73b-12a4-4094-8a83-8c0878d60cac"
+			name="QtSpinboxLineedit"
+			refimgid="364d8729-bfd3-4be3-b7a3-b886e82824d1"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Select transformation parameters' and @basetype='QDialog' and @type='Calc2DDialog']/element[@name='ResourceEditor']/tree[@name='paramWidget']/?/?/text
+			</item>
+			<item
+			addcaps="cell,qtitem"
+			capname="cell"
+			id="eb16251e-d83f-4dd1-9238-f6b85d9bdcf8"
+			name="y1"
+			refimgid="6e39e6db-c265-49bc-ac6a-c36207afa536"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Select transformation parameters' and @basetype='QDialog' and @type='Calc2DDialog']/element[@name='ResourceEditor']/?/?/treeitem[@text='E1, m']/descendant::cell[@columnindex='1' and @rowindex='3']
+			</item>
+			<item
+			addcaps="cell,qtitem"
+			capname="cell"
+			id="ed2e8b00-3f0a-4e61-9ad5-88a5335e7ad7"
+			name="alpha"
+			refimgid="69fd34a2-b8b3-40c7-b345-5a5dd814b2f5"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Select transformation parameters' and @basetype='QDialog' and @type='Calc2DDialog']/element[@name='ResourceEditor']/?/?/treeitem[@text='&#945;, &#176;''&quot;']/descendant::cell[@columnindex='1' and @rowindex='7']
+			</item>
+			<item
+			addcaps="treeitem,qtitem"
+			capname="treeitem"
+			id="624fd479-167c-488d-b696-38b0399508c8"
+			name="N1_2"
+			refimgid="55248832-75fe-4c3e-8632-fe3b59861f19"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Select transformation parameters' and @basetype='QDialog' and @type='Calc2DDialog']//tree[@name='itemWidget']/treeitem[@text='1_2']
+			</item>
+			<item
+			addcaps="cell,qtitem"
+			capname="cell"
+			id="8bbc16d8-4861-4597-a06d-6afc00b41268"
+			name="Typ"
+			refimgid="e37b7c53-0c30-4467-9fb7-6b7b0cc704f0"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Select transformation parameters' and @basetype='QDialog' and @type='Calc2DDialog']/element[@name='ResourceEditor']/?/?/treeitem[@text='Transformation type']/descendant::cell[@columnindex='1' and @rowindex='1']
+			</item>
+			<item
+			addcaps="cell,qtitem"
+			capname="cell"
+			id="c5b74344-3c86-43b3-895f-70758231e502"
+			name="x2"
+			refimgid="91a5bd4b-3430-413d-a970-9bac7d9a09cf"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Select transformation parameters' and @basetype='QDialog' and @type='Calc2DDialog']/element[@name='ResourceEditor']/?/?/treeitem[@text='x2, m']/descendant::cell[@columnindex='1' and @rowindex='4']
+			</item>
+			<item
+			addcaps="cell,qtitem"
+			capname="cell"
+			id="0641d6c8-6a8e-40dd-b101-786a4299c8ac"
+			name="y2"
+			refimgid="36d3e37a-1a64-44a6-99ee-c81345471f68"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Select transformation parameters' and @basetype='QDialog' and @type='Calc2DDialog']/element[@name='ResourceEditor']/?/?/treeitem[@text='y2, m']/descendant::cell[@columnindex='1' and @rowindex='5']
+			</item>
+			<item
+			addcaps="tree,qtelement"
+			capname="tree"
+			id="142d14e5-e7c4-45c5-9932-48c9f7adf772"
+			name="ItemWidget"
+			refimgid="ce5650af-cff4-4e87-a67e-75fc13289369"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Select transformation parameters' and @basetype='QDialog' and @type='Calc2DDialog']/element[@name='ResourceEditor']/?/?/tree[@name='itemWidget']
+			</item>
+			<basepath>
+				/form[@title&gt;'Select transformation parameters' and @basetype='QDialog' and @type='Calc2DDialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAHPSURBVDhPlZFdSNNRGIcPgoIO0mkXGYmEUtaC
+CEvoIkJiUn4QqCWU2YUhKlTQii3w42orpPZXmVImUtQqxY90uqDFlGQqhsuKBPGjEvRCEroTU3ni
+f6iLub/D/eDhHM77nueFc8TWfP65yMPnX6h7OUxjtwfllZ+hiSX+lUPH1NFLYY8Np78Hl38A77Qb
+q+sjlx9MYmn2hpbcGnjD0fHD3JgtY27lK2t/Fvi2+Iu2yRXK3y5TaPNxTbmnLal4NsiJkdMkfYrg
+xe/bbG4sAKssr8PBNEMAWXc7AiWt/TNku+8QNSzInI1jatOKwXBkR0hBZdsEWb4SIj0J5M9fxLc+
+w80Dgo2xzJCoPVJw3u4luaWMWNsj0t+NykI4iNRyN6Kolqi8VuKrv8tDrYlaSIEutxdxth1htCOK
+3wfYd4LYX9BFhLEbceY1+tJSTCZTWAiLY5w9OZ3ozznZa8khrUsEfd12yEdUk1HSR0p+O0nmKyQ+
+jWF3k042RJp3yVWdpDQ/lvvj5g+Bl//n5NV+Dl1yklidh96hI9YeQ5wSHSRo8fzQFqgprholpbKB
++PsZ7HMcI1m5ECRQ+7YVqCmwujDUXefUkxqM9X2agrASWiDEX4kcp6FQuwZDAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="49f4bbdd-bf9e-47cb-92e4-3a06609b657d"
+		isrooted="True"
+		name="TransformParamWidget"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="cell,qtitem"
+			capname="cell"
+			id="7f5f8762-d6ea-4ba7-b8e0-224bb7804720"
+			name="Local"
+			refimgid="cd0d083a-74da-4279-906a-4e5f31c13023"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='Transform parameters widget']/tree[@type='TransformParamWidget']/?/?/cell[@text='Local']
+			</item>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="5ae995d2-f655-4852-b5d0-4c9abaa7e5d6"
+			name="OKBtn"
+			refimgid="147d6de8-e60f-429d-9afb-a310c1a185ee"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='Transform parameters widget']/?/?/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@name='Transform parameters widget']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKaSURBVDhPrY5rSJNRGIA/K6KgMmdMMYUN2gZN
+SUcgljqJSHI2TWmVoum8o+bURmhJLfzRaJo4srIQKqG07Iq3xDLSlqLNC2qX2azUlU78dN42zvne
+mvvMhC4IPfBy4HCe57zEfwMA7HKqtQmX2rTdje8eGZs/tZh1Y4/NtZ0Fpsa+cwOvh5MuPzcksejn
+y7HKFR1Z9e1DN8zGaQ0yzenRrJlEXfpONDrZh6q1TWiIrELthrS3tPILP+SytqMZtT1ZZs1AJZ6Y
+6cHzZhLPzE3jnhEdNpKDqK6/C1d1NOGCZw8tEUXlxXKlfCNt2zhYVN2a+VSPFJpRPGzsRRbLLCJJ
+Eg9PGYDPd4eLJVcXzsU5LFOE0KqNoAstI+l1X7Di1Sh+M9iKZ+fHcfxuF1CrUqAwkw2KMCacT3SG
+4mwmnD7AhPxoJ8iXOAGtE0RAXoNJWqXDJ5tGkFLzmXr/rR9f378WLGPl1EQNk+rNIajxMgLm6gmq
+4zgBH4pWUTqF3VJgZ+pdU3hpN0p+oke5L7+iihgWzLcIYPLBdrCGNHkbQHdzPfTdcYYXsQTI3Qlo
+lhJQG7XaFuGEqAz+uQ1YXKLF0vsf8YoDrv7Zze4R1/AueQ3ae+oejg9gQeEJPpTmeEOJLBQKkj1B
+mcaCMylsyAiwBxHPAbL3OECqkGELMPhh4W4+MsQTKdGOY7ewR2AyxeVy4V/D4XDOLgSsbOFLZGzf
+9GnPUBX2kqixICiT8hIIIDI6BoLFYvD18/s5PB5vuUxjZ7/VO4zrnzrle0SFAuOuYOsv+2LVlCj8
+EDg6uVDR8UnY+vB3MiEUCtcwGNs2rdvMznVk+5S6eQTftgZc+aLKxUBUXOKfA3+DDuBIaQKir1bG
+4gYRsXELGyxBEN8BxDaQ4k0yQ/oAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="cfc0bef3-1814-4a7d-9c31-a12635c9373e"
+		name="columnID">
+			0
+		</var>
+		<var
+		id="b2ae164c-074c-48f8-a375-e4fe806269ee"
+		name="rowID">
+			0
+		</var>
+		<var
+		id="83dc6318-eda2-424f-98f2-5d8f78602637"
+		name="conversionTyp">
+			parallel shift
+		</var>
+		<var
+		id="fbbe8d63-70bb-4dc8-9cd2-692f45363917"
+		name="value">
+		</var>
+		<var
+		id="f02e0e13-e9c1-47a4-be2c-cab901a50a07"
+		name="CSname">
+		</var>
+		<var
+		id="70268e19-ee17-4fe9-848f-568a2dfa8b00"
+		name="ZoneWidthValue">
+		</var>
+	</variables>
+</repository>

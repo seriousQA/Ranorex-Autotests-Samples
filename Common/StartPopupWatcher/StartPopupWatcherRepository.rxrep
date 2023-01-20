@@ -1,0 +1,220 @@
+﻿<repository
+id="567c4d32-2810-4de6-9b54-9a102fa81b32"
+name="StartPopupWatcherRepository">
+	<codegen
+	classname="StartPopupWatcherRepository"
+	namespace="TestProductRepository.StartPopupWatcher">
+	</codegen>
+	<rootfolder
+	capname="host"
+	id="8ff4a2c8-e4aa-4b95-97f5-5576edb6ee7b"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="False">
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="013f3f0c-f1ad-4ea3-8c96-afb106948229"
+		isrooted="True"
+		name="FileReplaceDialog"
+		refimgid="ae0c78f6-ac14-4b13-8f10-e98deebb1818"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="e4c6df77-4e70-47ed-b317-464fe66b0960"
+			name="ReplaceAllBtn"
+			refimgid="89634091-f124-48a1-9cef-e8a6c7c3d44e"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='FileReplaceDialog']/button[@name='replaceAll' and @type='QPushButton']
+			</item>
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="71cc0893-30d0-4564-b469-474f1e8d2a7a"
+			name="SkipAllBtn"
+			refimgid="d24d4316-3974-4de6-8d91-9bcb0178bc0d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='FileReplaceDialog']/button[@name='skipAll' and @type='QPushButton']
+			</item>
+			<basepath>
+				/form[@name='FileReplaceDialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJjSURBVDhPtdBdTFJhHMdxqnmRV63VmhexuXDZ
+pqNCp6tWc3aFLkSFFIVSGybkS05tWBsunRpNZhoGyUgpJsf3kTYtXiQlTAoSly+gdNFFK/KmrW5a
+/DrLZ3NNL7zxc/mc//d/nnMYu87hcBwwmZ7et1gs8eRo5+gofXl56XMotBZZWPD/GhkZalCr1WLy
+eHujowMpdrvdYLNZ51yumcj6+nesrgbh9b7HzMw0gsFApK/P1Nzf3y/p7u0+QbINOp0uanJyIhAI
+rETot/6LnM4peDxz8Pm8sFqt8Pv9mJ11Y3Hx4x+zuec8STcZqWYWNdzz7IPPFxkbew63+w3opfQi
+J6anX4P+FOj0DyeM5g42SbbSj1cltT0Rz1GjGvoWXtD/gV7khol6BK2lSUnGtjLaCs/YPpW+0o8L
+0WrIRNdADho1fFAjaphflqPTq8HgWgPefq2wWzz1p0m2oUhx8rCsMS1fMyh48S4sh8rVCdnjetT1
+VqN7XgVDQIvZcBmcIenvTuqyRj1UEEPSDefE8bJUUdwK70ZSfUlFQpjXfhcDoVbM/6yEO3wdnm/l
+aOnJct3WZh0jySapMjO69MHZmotXmD+40jhkFzGRLjmIW7Uc6IcF6BrMQmoeM5LIi50kySapjhNV
+2XFhqlh1HAoDF/lNheBVJCNHwoFQngZR9SkkZh8CX8lERhnLn6dIOULS/2n76kRX2xsWJb1SZCtY
+4BYfRbE6EZdqY5HMjwnmViUUkNHttVFt+5VK5V55C0907R57KfcOC7ybrC/CGnapQMDYR8Z2CIw9
+/Cp2RqaUE01OdguD8Rckp0Fm8J57pwAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="6531c7bf-9cad-48b1-ab10-82a71c1f0587"
+		isrooted="True"
+		name="ImportSettings"
+		refpath="/form[@name='ImportSettings']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="ede38051-7a20-4ef8-a2ea-1f7663998889"
+			name="OKBtn"
+			refimgid="1b04f9f8-bb4b-4e94-8a31-05acdf64efcb"
+			refpath="/form[@name='ImportSettings']/container[@type='QDialogButtonBox']/button[@text='OK']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='ImportSettings']/?/?/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@name='ImportSettings']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJpSURBVDhPpdNdSFNhGAfwF7LIJJmkQXRhIGIj
+LDIIs9ZJzRLR0DmkLNvNxBozadMilfmZlp6zzYltfYgxm3HQyGEOpqUGIQ6hBL+GOmo5iSIqG8uc
+0b/tBF10JBg98L95ef8/npuHBIam6V6NRrMSbAI9DmAYxuNbXUWwoRn6OwfQfmDJ7UYw4QCa9nFA
+M/3fAO1xuxfhcjnheOPCu4+fYbbPQDc4hvGpV/731/8GmvzAxIId/ZNj6JlbwugnL4pG5nD43gDK
+zS1gn92Bc2F+fYBh2VAj29Znf9+FSY8Tyz+BFQAPvvggGxpD1aPr6O4vQ2tnI2Znp9ff4OGMYfGM
+xQbj22WM/wCsa4DE/gFCgxXKdjXENWWQqi/jifUxH7hm6a7eVtGOzVdMiL01gr19TsR0O7BBbUG4
+yogKsxEdfRYo6jXovKuH+2+A0ptcW2StIPk3QIpvg5SaQRQdIIUGxNfcx/DLYbimX2ByiEVvO8Pf
+QHiV/rq90F/OqgTJqwMR14PkNCJCqkHr4HNMTNkxamNhs7IwMuV8IL9O/bRA6y8dLwVJuQQikoMc
+LYYgUwVlcy1Mhlp06MtRa9CiSCnlA2U3VRdKW9LXjimk2JhwFkSYCxKTBRKdgdDYQ0hJS8SBXBlE
+DQ1QaSr5gKSkJC5LvtuRWhyNBDGFyLiTIFEUyNYkLqFxeRDkteFIFY0eay8fCMwJiUSRejryW0Hh
+LmTmZGOTIBkhOzIQliRH1Lk27CzQrjXp9NDpdH+i1WoDwO9rpCgqJDFdJD2YvGdAsO+UJyz+vDec
+Unojsuu9EakX56P2p1VzH3lDyC/4mKrUa/xUZQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="16ebe8dc-8644-411b-ba3f-4061fa8b3aae"
+		isrooted="True"
+		name="ExportDialog"
+		refpath="/form[@name='ExportDialog']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="ab4d1d7a-b45d-41f1-9ed3-3d2f20dcdfb4"
+			name="OKBtn"
+			refimgid="87b29765-93a9-4ed4-85fa-eaa7e77a78ed"
+			refpath="/form[@name='ExportDialog']/container[@name='buttonBoxOkCancel']/button[@text='OK']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='ExportDialog']/?/?/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@name='ExportDialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJjSURBVDhPtdBdTFJhHMdxqnmRV63VmhexuXDZ
+pqNCp6tWc3aFLkSFFIVSGybkS05tWBsunRpNZhoGyUgpJsf3kTYtXiQlTAoSly+gdNFFK/KmrW5a
+/DrLZ3NNL7zxc/mc//d/nnMYu87hcBwwmZ7et1gs8eRo5+gofXl56XMotBZZWPD/GhkZalCr1WLy
+eHujowMpdrvdYLNZ51yumcj6+nesrgbh9b7HzMw0gsFApK/P1Nzf3y/p7u0+QbINOp0uanJyIhAI
+rETot/6LnM4peDxz8Pm8sFqt8Pv9mJ11Y3Hx4x+zuec8STcZqWYWNdzz7IPPFxkbew63+w3opfQi
+J6anX4P+FOj0DyeM5g42SbbSj1cltT0Rz1GjGvoWXtD/gV7khol6BK2lSUnGtjLaCs/YPpW+0o8L
+0WrIRNdADho1fFAjaphflqPTq8HgWgPefq2wWzz1p0m2oUhx8rCsMS1fMyh48S4sh8rVCdnjetT1
+VqN7XgVDQIvZcBmcIenvTuqyRj1UEEPSDefE8bJUUdwK70ZSfUlFQpjXfhcDoVbM/6yEO3wdnm/l
+aOnJct3WZh0jySapMjO69MHZmotXmD+40jhkFzGRLjmIW7Uc6IcF6BrMQmoeM5LIi50kySapjhNV
+2XFhqlh1HAoDF/lNheBVJCNHwoFQngZR9SkkZh8CX8lERhnLn6dIOULS/2n76kRX2xsWJb1SZCtY
+4BYfRbE6EZdqY5HMjwnmViUUkNHttVFt+5VK5V55C0907R57KfcOC7ybrC/CGnapQMDYR8Z2CIw9
+/Cp2RqaUE01OdguD8Rckp0Fm8J57pwAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="a1b01a09-4f85-40c4-ab90-c25c23bc7252"
+		isrooted="True"
+		name="ExplorerMessage"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="391224e9-87cd-48ba-91e6-4467f4e8ed83"
+			name="OKBtn"
+			refimgid="ba4b8284-1796-4a8a-9021-91329ba7803c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Explorer']/?/?/element[@instance='0']/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@title='Explorer']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAHPSURBVDhPlZFdSNNRGIcPgoIO0mkXGYmEUtaC
+CEvoIkJiUn4QqCWU2YUhKlTQii3w42orpPZXmVImUtQqxY90uqDFlGQqhsuKBPGjEvRCEroTU3ni
+f6iLub/D/eDhHM77nueFc8TWfP65yMPnX6h7OUxjtwfllZ+hiSX+lUPH1NFLYY8Np78Hl38A77Qb
+q+sjlx9MYmn2hpbcGnjD0fHD3JgtY27lK2t/Fvi2+Iu2yRXK3y5TaPNxTbmnLal4NsiJkdMkfYrg
+xe/bbG4sAKssr8PBNEMAWXc7AiWt/TNku+8QNSzInI1jatOKwXBkR0hBZdsEWb4SIj0J5M9fxLc+
+w80Dgo2xzJCoPVJw3u4luaWMWNsj0t+NykI4iNRyN6Kolqi8VuKrv8tDrYlaSIEutxdxth1htCOK
+3wfYd4LYX9BFhLEbceY1+tJSTCZTWAiLY5w9OZ3ozznZa8khrUsEfd12yEdUk1HSR0p+O0nmKyQ+
+jWF3k042RJp3yVWdpDQ/lvvj5g+Bl//n5NV+Dl1yklidh96hI9YeQ5wSHSRo8fzQFqgprholpbKB
++PsZ7HMcI1m5ECRQ+7YVqCmwujDUXefUkxqM9X2agrASWiDEX4kcp6FQuwZDAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="94586ecb-8ccc-4fd3-99bc-d76758ef79aa"
+		isrooted="True"
+		name="QMessageBox"
+		refimgid="7ed585dc-b6f3-489d-9aff-0cbba821c6e7"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,qtelement"
+			capname="button"
+			id="90070197-deaa-4fd3-b441-8c1f9db58300"
+			name="OKBtn"
+			refimgid="435886ab-d685-40f2-9366-4039480c205d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@type='QMessageBox' and @basetype='QMessageBox']/?/?/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@type='QMessageBox' and @basetype='QMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAALlSURBVDhPfZJrSFNxGMZHBLJKihI/ZB/M1HXR
+gXNqKV5wMiekLtoHMVRwpog1wggTLzhZCooXhBJpUnjJUEHQvM4ZzswrQYZbbpK3OW+bm9lMnfp0
+ztlAR9EDL//3vOc8v/N//ufQTkooFEb/MpuxuLR0sLC4SBXZa7Vaaj05M+/sgMfj3bZZrUpOSuLv
+7u3BsLkJvcEAo8mEDb0e6tlZakZek3Oy39vfR1RUVJDNahUJ+E0AjEYjUQao1WqMT0xgfn6eWpUz
+M9ggAUSRAC6XG2izWpUQn3IXhMxbm+jrH4RmzgDdspGItII5AqLT6TA8OgrT1ta/AWUV/Nz24Uyc
+S60HLaEHvcMiNLaLoBiRYerbHNbW1ymzhohkOTiwB1TXB9c9eV+M8u4cZHcNoVjWA8tGBhHjPuSj
+DHQOSIldbFBmpUoFy+HhMcAzKFb4QFoN9ksNnnXPoUcpx9KPNKiUfExOcQhAOKTtVzG7MAOzeQ/f
+NRr7HfhltMK9aASPOxbxQTVN5PTA0BgLg1+z8aotEdIWBkreXkNWWRT069vQLi9j32KxAhzOO7ux
+RC3wrfyMfAXQobgP5eoKZleHIB+vI8/UTjL5AH5ubx8f4gUn1xBWWgNulE/jRVshalqZqO0IRvNH
+IToGJZQpXXIKF+Or4MwUQLtmgMlkPAZcuuzI8I17DQ+xAuV1rihqCEfJuzBI6pnoVFRSgK6xZlS0
+fsFpzxQiu/U/sfuM3ORcuCe3Ib2ah3zpLaL8kVVzB1VNj7C6uoDuTzIKREq3osWRrRcIBKEUwCs6
+5KkftwgMYRPccsbAKS2FqMoXSSUsCIo84Rz8HDfDMimTWCyWeLPZbhwOx5uwOlAAUsy0N73+kWL4
+RObh+r1axBYEIL2cj+AMNs4GxqCwdXKXBERERMTYLH/LJS5PFFCgOGInNoLxMJV640n19fXLbI/+
+X3R37ytnmDwfonVycnT08PLyCqXT6S7WuydFo/0BBONQ61JE/woAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

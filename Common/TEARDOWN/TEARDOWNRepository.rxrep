@@ -1,0 +1,75 @@
+﻿<repository
+id="dea5881c-fa54-46b4-91c5-451398ac51a6"
+name="TEARDOWNRepository"
+rxversion="9.0">
+	<codegen
+	classname="TEARDOWNRepository"
+	namespace="TEARDOWN">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="5d41cd6a-52d6-4352-9310-43b487a1d714"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,qtelement,qtwindow,nativewindow"
+		capname="form"
+		id="3662a38e-71ee-45f1-9923-847fba9fbb81"
+		isrooted="True"
+		name="ProjectWindow"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="menuitem,qtelement"
+			capname="menuitem"
+			id="a975bca5-0616-4936-85ca-2e2f9784746e"
+			name="File"
+			refimgid="ed246129-d3e4-4040-997f-1b46f0fa1ce8"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='ProjectWindow']/element[@type='ui::MenuBar']/?/?/menuitem[@text='File']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="187ba548-55c8-4095-aa16-632bc2e33385"
+			name="Close"
+			refimgid="fdcd316c-2a2d-4766-8dec-b6c8c41700e6"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@name='ProjectWindow']/?/?/button[@accessiblename='Close' and @accessiblerole='PushButton']
+			</item>
+			<basepath>
+				/form[@name='ProjectWindow']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAHPSURBVDhPlZFdSNNRGIcPgoIO0mkXGYmEUtaC
+CEvoIkJiUn4QqCWU2YUhKlTQii3w42orpPZXmVImUtQqxY90uqDFlGQqhsuKBPGjEvRCEroTU3ni
+f6iLub/D/eDhHM77nueFc8TWfP65yMPnX6h7OUxjtwfllZ+hiSX+lUPH1NFLYY8Np78Hl38A77Qb
+q+sjlx9MYmn2hpbcGnjD0fHD3JgtY27lK2t/Fvi2+Iu2yRXK3y5TaPNxTbmnLal4NsiJkdMkfYrg
+xe/bbG4sAKssr8PBNEMAWXc7AiWt/TNku+8QNSzInI1jatOKwXBkR0hBZdsEWb4SIj0J5M9fxLc+
+w80Dgo2xzJCoPVJw3u4luaWMWNsj0t+NykI4iNRyN6Kolqi8VuKrv8tDrYlaSIEutxdxth1htCOK
+3wfYd4LYX9BFhLEbceY1+tJSTCZTWAiLY5w9OZ3ozznZa8khrUsEfd12yEdUk1HSR0p+O0nmKyQ+
+jWF3k042RJp3yVWdpDQ/lvvj5g+Bl//n5NV+Dl1yklidh96hI9YeQ5wSHSRo8fzQFqgprholpbKB
++PsZ7HMcI1m5ECRQ+7YVqCmwujDUXefUkxqM9X2agrASWiDEX4kcp6FQuwZDAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="3b6f8db5-c789-4ae1-b52a-c0420255fd19"
+		name="columnID">
+			0
+		</var>
+		<var
+		id="d7e68b10-bade-443e-8df2-63a01028a15d"
+		name="rowID">
+			0
+		</var>
+	</variables>
+</repository>
