@@ -1,6 +1,7 @@
 - # Ranorex-Autotests-Samples
 
 ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
+
 A few examples of automated tests for a Windows-based desktop AUT using Ranorex (C#).
 Data driving testing (DDT). Data source: SimpleDataConnector.
 
