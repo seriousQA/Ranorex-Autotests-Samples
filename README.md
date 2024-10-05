@@ -1,11 +1,15 @@
 - # Ranorex-Autotests-Samples
 
-A few autotests samples for a Windows-based desktop application using Ranorex (C#).
+![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
+A few examples of automated tests for a Windows-based desktop AUT using Ranorex (C#).
 Data driving testing (DDT). Data source: SimpleDataConnector.
 
 ## Requirements:
 * Windows
 * Ranorex Studio
+
+## __License:__
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Solution TestProduct contains:
 ```diff
